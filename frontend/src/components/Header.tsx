@@ -5,7 +5,6 @@ import { useTimelineStore } from "@/stores/timeline-store";
 const INDUSTRY_TABS = [
   { key: "all", label: "ALL" },
   { key: "soju", label: "SOJU" },
-  { key: "beer", label: "BEER" },
   { key: "whisky", label: "WHISKY" },
 ];
 
