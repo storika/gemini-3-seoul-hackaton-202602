@@ -32,25 +32,11 @@ export default function VideoPlayer({ event }: Props) {
     status?.status === "generated" ||
     status?.status === "cached";
 
+  if (!videoAvailable || !status?.path) return null;
+
   return (
     <div className="video-container">
-      {videoAvailable && status?.path ? (
-        <video className="event-video" controls src={status.path} />
-      ) : event ? (
-        <div className="video-placeholder">
-          <button
-            className="btn-video"
-            onClick={handleGenerate}
-            disabled={isGenerating}
-          >
-            {isGenerating
-              ? "Generating..."
-              : error
-                ? `Error: ${error}`
-                : "▶ Generate Veo 3.1 Video"}
-          </button>
-        </div>
-      ) : null}
+      <video className="event-video" controls src={status.path} />
     </div>
   );
 }
