@@ -129,10 +129,11 @@ def upload_jsonl_to_gcs(creators: list[dict], batch_num: int) -> str:
     gcs_client = storage.Client(project=GCP_PROJECT)
     bucket = gcs_client.bucket(GCS_BUCKET)
     blob = bucket.blob(blob_name)
-    blob.upload_from_string(jsonl_content, content_type="application/jsonl")
+    blob.upload_from_string(jsonl_content, content_type="application/jsonl", timeout=600)
 
     gcs_uri = f"gs://{GCS_BUCKET}/{blob_name}"
-    print(f"  Uploaded {len(lines)} requests to {gcs_uri}")
+    size_mb = len(jsonl_content.encode("utf-8")) / 1024 / 1024
+    print(f"  Uploaded {len(lines)} requests ({size_mb:.1f} MB) to {gcs_uri}")
     return gcs_uri
 
 

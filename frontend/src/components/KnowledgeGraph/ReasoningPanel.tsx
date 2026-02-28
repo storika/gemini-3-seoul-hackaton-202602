@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useTimelineStore } from "@/stores/timeline-store";
 import { BRAND_COLORS } from "@/lib/constants";
 import type { KGNode, LiveRecommendation } from "@/lib/types";
@@ -48,6 +49,11 @@ function LiveReasoningView({ data }: { data: LiveRecommendation }) {
           );
         })}
       </div>
+
+      {/* Generate CTA */}
+      <Link href="/generate" className="gen-cta-button">
+        GENERATE — 이 DNA로 크리에이터 찾기 →
+      </Link>
 
       {/* Synthesis FOL chains */}
       {data.synthesis.fol_chains.length > 0 && (
