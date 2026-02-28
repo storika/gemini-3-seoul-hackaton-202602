@@ -62,6 +62,10 @@ _BRAND_MAP: dict[str, str] = {
     "beer_crown": "crown",
     "fruit_soju_sunhari": "sunhari",
     "sparkling_soju_isul_ttokttok": "isul_ttokttok",
+    "whisky_jw_red": "jw_red",
+    "whisky_jw_black": "jw_black",
+    "whisky_jw_blue": "jw_blue",
+    "whisky_jw_global": "jw_global",
 }
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent

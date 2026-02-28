@@ -14,8 +14,11 @@ import networkx as nx
 
 from src.memory.temporal_decay import compute_temporal_weight
 from .event_data import TIMELINE_EVENTS
+from .event_data_whisky import WHISKY_TIMELINE_EVENTS
 from .events import TimelineEvent, KGMutation
 from .fol_evidence import FOL_EVIDENCE
+
+ALL_EVENTS = TIMELINE_EVENTS + WHISKY_TIMELINE_EVENTS
 
 # Timeline-specific alpha: half-life ≈ 2310 days (~6.3 years).
 # Much gentler than the memory alpha (0.02) since we span 100+ years (1924-2026).
@@ -77,7 +80,7 @@ def build_kg_snapshot(
     active_events: list[TimelineEvent] = []
     active_event_ids: set[str] = set()
 
-    for event in TIMELINE_EVENTS:
+    for event in ALL_EVENTS:
         if event.date > target_date:
             continue
         if brand_filter and brand_filter != "all" and event.brand != brand_filter and event.brand != "multi":
@@ -155,7 +158,7 @@ def _build_fol_layer(
 
     # Find event dates for temporal weight computation
     event_dates: dict[str, datetime] = {}
-    for evt in TIMELINE_EVENTS:
+    for evt in ALL_EVENTS:
         event_dates[evt.id] = evt.date
 
     for fol in FOL_EVIDENCE:
