@@ -8,6 +8,7 @@ the existing compute_temporal_weight() from src.memory.temporal_decay.
 from __future__ import annotations
 
 import math
+import re
 from collections import defaultdict
 from datetime import datetime
 from typing import Any
@@ -230,6 +231,29 @@ def _serialize_event(event: TimelineEvent) -> dict[str, Any]:
 # Alpha tuned so a 50-year-old ambassador still has ~22 % weight.
 _LIVE_ALPHA = 0.00008
 
+# Whisky ambassador name translations (Korean → English)
+_WHISKY_NAME_EN: dict[str, str] = {
+    "제품 중심(하이볼 캠페인)": "Product-focused (Highball Campaign)",
+    "제품 중심(The Walkers 캠페인)": "Product-focused (The Walkers Campaign)",
+    "조인성, 쟈니(NCT 127), 허니제이, 손종원": "Cho In-sung, Johnny (NCT 127), Honey J, Son Jong-won",
+    "Sabrina Carpenter(사브리나 카펜터)": "Sabrina Carpenter",
+    "CL(씨엘, 이채린)": "CL",
+    "Robert Carlyle(로버트 칼라일)": "Robert Carlyle",
+    "Mika Häkkinen(미카 해키넨)": "Mika Häkkinen",
+    "Priyanka Chopra Jonas(프리양카 초프라 조나스)": "Priyanka Chopra Jonas",
+    "Jude Law(주드 로)": "Jude Law",
+    "Jenson Button(젠슨 버튼)": "Jenson Button",
+    "Harvey Keitel(하비 카이텔)": "Harvey Keitel",
+    "Christina Hendricks(크리스티나 헨드릭스)": "Christina Hendricks",
+}
+
+
+def _en_name(name: str, industry: str | None) -> str:
+    """For whisky, translate ambassador names to English."""
+    if industry != "whisky":
+        return name
+    return _WHISKY_NAME_EN.get(name, re.sub(r"\([^)]*[\uac00-\ud7a3]+[^)]*\)", "", name).strip())
+
 
 def compute_live_recommendation(
     industry_filter: str | None = None,
@@ -295,16 +319,17 @@ def compute_live_recommendation(
         duration_bonus = min(1.0, (m.end_year - m.start_year) / 10)
         score = temporal_weight * event_impact * (1 + duration_bonus)
 
-        raw[m.name] += score
-        if m.name not in meta:
-            meta[m.name] = {
+        display = _en_name(m.name, industry_filter)
+        raw[display] += score
+        if display not in meta:
+            meta[display] = {
                 "brand": m.brand,
                 "start_year": m.start_year,
                 "end_year": m.end_year,
                 "events": [],
             }
         # widen year range if same name appears in multiple entries
-        info = meta[m.name]
+        info = meta[display]
         info["start_year"] = min(info["start_year"], m.start_year)
         info["end_year"] = max(info["end_year"], m.end_year)
 
@@ -381,8 +406,8 @@ def _build_live_synthesis(
 
     if industry_filter == "whisky":
         narrative_ko = (
-            f"200년간의 위스키 앰배서더 데이터를 시간가중 분석한 결과, "
-            f"현재 최적의 앰배서더 DNA는 {', '.join(top_names[:3])}의 속성을 조합한 형태입니다. "
+            f"Temporal-weighted analysis of 200 years of whisky ambassador data suggests "
+            f"the ideal ambassador DNA combines attributes of {', '.join(top_names[:3])}. "
             + (" ".join(top_conclusions[:3]) if top_conclusions else "")
         )
         narrative_en = (
