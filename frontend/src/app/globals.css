@@ -902,8 +902,28 @@ body {
   color: #B388FF; font-size: 12px; font-weight: 600;
   cursor: pointer; transition: all 0.2s;
 }
+.gen-video-btn.has-video { opacity: 1; cursor: pointer; border-color: #B388FF; }
 .gen-video-btn:hover:not(:disabled) { background: rgba(124,77,255,0.2); border-color: #B388FF; }
 .gen-video-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Video Modal */
+.gen-video-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  display: flex; align-items: center; justify-content: center;
+}
+.gen-video-modal {
+  position: relative; width: 90vw; max-width: 720px;
+  background: var(--bg-panel); border-radius: 12px;
+  overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);
+}
+.gen-video-close {
+  position: absolute; top: 8px; right: 12px; z-index: 1;
+  background: none; border: none; color: #fff;
+  font-size: 28px; cursor: pointer; line-height: 1;
+}
+.gen-video-close:hover { color: var(--accent); }
+.gen-video-player { width: 100%; display: block; }
 
 /* Footer badges */
 .gen-card-footer { display: flex; gap: 8px; }

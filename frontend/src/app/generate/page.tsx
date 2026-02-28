@@ -103,6 +103,14 @@ const REGION_DATA: Record<string, CreatorData[]> = {
   GB: creatorsGB as unknown as CreatorData[],
 };
 
+// Video mapping: creator handle → video path
+const CREATOR_VIDEOS: Record<string, string> = {
+  "@jungha.0": "/creator-videos/jungha.0/jungha.0_boksoondoga.mp4",
+  "@jayeonkim_": "/creator-videos/jayeonkim_/jayeonkim__boksoondoga.mp4",
+  "@hwajung95": "/creator-videos/hwajung95/hwajung95_boksoondoga.mp4",
+  "@bling_cuh__": "/creator-videos/bling_cuh__/bling_cuh___boksoondoga.mp4",
+};
+
 function fmtFollowers(n: number): string {
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
   if (n >= 1_000) return `${(n / 1_000).toFixed(1)}K`;
@@ -129,6 +137,7 @@ export default function GeneratePage() {
   const hasLiveData = !!liveRecommendation && liveRecommendation.ambassadors.length > 0;
 
   const [region, setRegion] = useState<"KR" | "GB">("KR");
+  const [videoModal, setVideoModal] = useState<string | null>(null);
   const creators = REGION_DATA[region];
 
   // weights: 0..100 per celebrity
@@ -373,9 +382,18 @@ export default function GeneratePage() {
                         </span>
                         <span className="gen-overlap">Overlap {(c.risk_management.competitor_overlap_index * 100).toFixed(0)}%</span>
                       </div>
-                      <button className="gen-video-btn" disabled>
-                        ▶ AI 비디오 보기
-                      </button>
+                      {CREATOR_VIDEOS[c.creator_id] ? (
+                        <button
+                          className="gen-video-btn has-video"
+                          onClick={() => setVideoModal(CREATOR_VIDEOS[c.creator_id])}
+                        >
+                          ▶ AI 비디오 보기
+                        </button>
+                      ) : (
+                        <button className="gen-video-btn" disabled>
+                          ▶ AI 비디오 보기
+                        </button>
+                      )}
                     </div>
                   );
                 })}
@@ -384,6 +402,15 @@ export default function GeneratePage() {
           )}
         </main>
       </div>
+      {/* Video Modal */}
+      {videoModal && (
+        <div className="gen-video-overlay" onClick={() => setVideoModal(null)}>
+          <div className="gen-video-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="gen-video-close" onClick={() => setVideoModal(null)}>&times;</button>
+            <video controls autoPlay src={videoModal} className="gen-video-player" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
