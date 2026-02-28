@@ -30,6 +30,7 @@ class SojuModel:
     notes: list[str] = field(default_factory=list)
     confidence: str = "medium"
     real_image_url: str = ""
+    profile_url: str = ""
 
 
 # ── Brand key normalisation from product_id ──────────────────────────────────
@@ -126,6 +127,7 @@ def _load_gallery() -> list[SojuModel]:
     with open(json_path, encoding="utf-8") as f:
         data = json.load(f)
 
+    celebrities = data.get("celebrities", {})
     image_index = _scan_real_images()
     models: list[SojuModel] = []
     counter = 1
@@ -146,6 +148,8 @@ def _load_gallery() -> list[SojuModel]:
 
             display_name = ", ".join(model_names) if model_names else product_name
             real_image = _find_real_image(product_id, start_year, model_names, image_index)
+            first_model = model_names[0] if model_names else ""
+            profile_url = celebrities.get(first_model, "")
 
             model_id = f"model-{counter:03d}"
             models.append(SojuModel(
@@ -162,6 +166,7 @@ def _load_gallery() -> list[SojuModel]:
                 notes=notes,
                 confidence=confidence,
                 real_image_url=real_image,
+                profile_url=profile_url,
             ))
             counter += 1
 
@@ -206,4 +211,5 @@ def serialize_model(m: SojuModel) -> dict:
         "company_ko": m.company_ko,
         "notes": m.notes,
         "confidence": m.confidence,
+        "profile_url": m.profile_url,
     }
