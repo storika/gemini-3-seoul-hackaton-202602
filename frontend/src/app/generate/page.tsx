@@ -107,19 +107,19 @@ const REGION_DATA: Record<string, CreatorData[]> = {
 const CREATOR_MEDIA: Record<string, { image: string; video: string }> = {
   "@jungha.0": {
     image: "/creator-videos/jungha.0/chamisul_hero.png",
-    video: "/creator-videos/jungha.0/jungha.0_boksoondoga.mp4",
+    video: "/creator-videos/jungha.0/jungha.0_chamisul.mp4",
   },
   "@jayeonkim_": {
     image: "/creator-videos/jayeonkim_/chamisul_hero.png",
-    video: "/creator-videos/jayeonkim_/jayeonkim__boksoondoga.mp4",
+    video: "/creator-videos/jayeonkim_/jayeonkim__chamisul.mp4",
   },
   "@hwajung95": {
     image: "/creator-videos/hwajung95/chamisul_hero.png",
-    video: "/creator-videos/hwajung95/hwajung95_boksoondoga.mp4",
+    video: "/creator-videos/hwajung95/hwajung95_chamisul.mp4",
   },
   "@bling_cuh__": {
     image: "/creator-videos/bling_cuh__/chamisul_hero.png",
-    video: "/creator-videos/bling_cuh__/bling_cuh___boksoondoga.mp4",
+    video: "/creator-videos/bling_cuh__/bling_cuh___chamisul.mp4",
   },
 };
 
