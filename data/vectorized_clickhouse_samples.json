@@ -1,0 +1,653 @@
+[
+  {
+    "creator_id": "@danbee.yah",
+    "metadata": {
+      "primary_platform": "tiktok",
+      "follower_count": null,
+      "main_category": "beauty"
+    },
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "pure_innocent": 0.2,
+        "moody_cinematic": 0.3,
+        "chic_cold": 0.2,
+        "sultry_alluring": 0.1,
+        "lovely_juicy": 0.6,
+        "quirky_individualistic": 0.5,
+        "elegant_classic": 0.1,
+        "royal_noble": 0.05,
+        "hip_crush": 0.3,
+        "androgynous_neutral": 0.15,
+        "healthy_vitality": 0.3,
+        "intellectual_calm": 0.2,
+        "vintage_analog": 0.2,
+        "cyber_virtual_perfect": 0.1
+      },
+      "facial_feature_details": {
+        "eye_vibe": "sparkling",
+        "smile_type": "full_sunshine",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": {
+          "glass_skin_level": 0.6,
+          "velvet_matte_level": 0.2,
+          "natural_texture_index": 0.2
+        }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "spring_warm",
+        "dominant_tone": "vivid",
+        "contrast_preference": 0.8
+      }
+    },
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.2,
+        "chumchurum_soft_index": 0.4,
+        "saero_zero_hip_index": 0.3,
+        "jinro_retro_index": 0.3,
+        "premium_single_malt_index": 0.1
+      },
+      "kbeauty_role_suitability": [
+        "color_makeup_expert"
+      ]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.2,
+      "era_1960_1980_industrial": 0.3,
+      "era_1990_2010_digital_y2k": 0.6,
+      "era_2020_2026_future_meta": 0.4
+    },
+    "risk_management": {
+      "brand_safety_score": 0.8,
+      "competitor_overlap_index": 0.2
+    }
+  },
+  [
+    {
+      "creator_id": "@dlanatruong",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": 0,
+        "main_category": "beauty"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.2,
+          "moody_cinematic": 0.2,
+          "chic_cold": 0.25,
+          "sultry_alluring": 0.1,
+          "lovely_juicy": 0.4,
+          "quirky_individualistic": 0.4,
+          "elegant_classic": 0.15,
+          "royal_noble": 0.05,
+          "hip_crush": 0.3,
+          "androgynous_neutral": 0.1,
+          "healthy_vitality": 0.5,
+          "intellectual_calm": 0.2,
+          "vintage_analog": 0.1,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "dreamy",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.6,
+            "velvet_matte_level": 0.3,
+            "natural_texture_index": 0.2
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "spring_warm",
+          "dominant_tone": "pastel",
+          "contrast_preference": 0.6
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.15,
+          "chumchurum_soft_index": 0.25,
+          "saero_zero_hip_index": 0.3,
+          "jinro_retro_index": 0.2,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "skincare_model",
+          "color_makeup_expert",
+          "clean_beauty_advocate"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.2,
+        "era_1990_2010_digital_y2k": 0.4,
+        "era_2020_2026_future_meta": 0.35
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.3
+      }
+    }
+  ],
+  [
+    {
+      "creator_id": "@dreazoj",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": null,
+        "main_category": "beauty"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.2,
+          "moody_cinematic": 0.2,
+          "chic_cold": 0.2,
+          "sultry_alluring": 0.1,
+          "lovely_juicy": 0.4,
+          "quirky_individualistic": 0.3,
+          "elegant_classic": 0.1,
+          "royal_noble": 0.1,
+          "hip_crush": 0.3,
+          "androgynous_neutral": 0.2,
+          "healthy_vitality": 0.5,
+          "intellectual_calm": 0.2,
+          "vintage_analog": 0.1,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "dreamy",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.6,
+            "velvet_matte_level": 0.2,
+            "natural_texture_index": 0.3
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "spring_warm",
+          "dominant_tone": "pastel",
+          "contrast_preference": 0.6
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.2,
+          "chumchurum_soft_index": 0.3,
+          "saero_zero_hip_index": 0.4,
+          "jinro_retro_index": 0.2,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "skincare_model",
+          "clean_beauty_advocate"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.2,
+        "era_1990_2010_digital_y2k": 0.4,
+        "era_2020_2026_future_meta": 0.5
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.3
+      }
+    }
+  ],
+  {
+    "creator_id": "@yeon.mim",
+    "metadata": {
+      "primary_platform": "tiktok",
+      "follower_count": 0,
+      "main_category": "lifestyle"
+    },
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "pure_innocent": 0.3,
+        "moody_cinematic": 0.3,
+        "chic_cold": 0.2,
+        "sultry_alluring": 0.1,
+        "lovely_juicy": 0.5,
+        "quirky_individualistic": 0.6,
+        "elegant_classic": 0.1,
+        "royal_noble": 0.05,
+        "hip_crush": 0.4,
+        "androgynous_neutral": 0.2,
+        "healthy_vitality": 0.4,
+        "intellectual_calm": 0.2,
+        "vintage_analog": 0.2,
+        "cyber_virtual_perfect": 0.1
+      },
+      "facial_feature_details": {
+        "eye_vibe": "dreamy",
+        "smile_type": "full_sunshine",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": {
+          "glass_skin_level": 0.6,
+          "velvet_matte_level": 0.2,
+          "natural_texture_index": 0.2
+        }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "spring_warm",
+        "dominant_tone": "vivid",
+        "contrast_preference": 0.7
+      }
+    },
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.2,
+        "chumchurum_soft_index": 0.3,
+        "saero_zero_hip_index": 0.3,
+        "jinro_retro_index": 0.2,
+        "premium_single_malt_index": 0.1
+      },
+      "kbeauty_role_suitability": [
+        "color_makeup_expert"
+      ]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.1,
+      "era_1960_1980_industrial": 0.2,
+      "era_1990_2010_digital_y2k": 0.6,
+      "era_2020_2026_future_meta": 0.4
+    },
+    "risk_management": {
+      "brand_safety_score": 0.8,
+      "competitor_overlap_index": 0.05
+    }
+  },
+  [
+    {
+      "creator_id": "@miffy_lover6186",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": null,
+        "main_category": "beauty"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.3,
+          "moody_cinematic": 0.2,
+          "chic_cold": 0.1,
+          "sultry_alluring": 0.1,
+          "lovely_juicy": 0.5,
+          "quirky_individualistic": 0.4,
+          "elegant_classic": 0.1,
+          "royal_noble": 0.05,
+          "hip_crush": 0.3,
+          "androgynous_neutral": 0.1,
+          "healthy_vitality": 0.3,
+          "intellectual_calm": 0.1,
+          "vintage_analog": 0.1,
+          "cyber_virtual_perfect": 0.05
+        },
+        "facial_feature_details": {
+          "eye_vibe": "sparkling",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.4,
+            "velvet_matte_level": 0.3,
+            "natural_texture_index": 0.2
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "spring_warm",
+          "dominant_tone": "pastel",
+          "contrast_preference": 0.6
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.2,
+          "chumchurum_soft_index": 0.3,
+          "saero_zero_hip_index": 0.2,
+          "jinro_retro_index": 0.1,
+          "premium_single_malt_index": 0.05
+        },
+        "kbeauty_role_suitability": [
+          "color_makeup_expert"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.2,
+        "era_1990_2010_digital_y2k": 0.4,
+        "era_2020_2026_future_meta": 0.3
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.1
+      }
+    }
+  ],
+  [
+    {
+      "creator_id": "@chereprincess",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": null,
+        "main_category": "lifestyle"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.3,
+          "moody_cinematic": 0.2,
+          "chic_cold": 0.1,
+          "sultry_alluring": 0.1,
+          "lovely_juicy": 0.5,
+          "quirky_individualistic": 0.6,
+          "elegant_classic": 0.2,
+          "royal_noble": 0.1,
+          "hip_crush": 0.3,
+          "androgynous_neutral": 0.1,
+          "healthy_vitality": 0.4,
+          "intellectual_calm": 0.1,
+          "vintage_analog": 0.2,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "dreamy",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.6,
+            "velvet_matte_level": 0.2,
+            "natural_texture_index": 0.3
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "summer_cool",
+          "dominant_tone": "pastel",
+          "contrast_preference": 0.4
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.2,
+          "chumchurum_soft_index": 0.3,
+          "saero_zero_hip_index": 0.4,
+          "jinro_retro_index": 0.3,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "color_makeup_expert",
+          "clean_beauty_advocate"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.2,
+        "era_1990_2010_digital_y2k": 0.5,
+        "era_2020_2026_future_meta": 0.6
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.1
+      }
+    }
+  ],
+  [
+    {
+      "creator_id": "@halcyonsweeties",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": 10000,
+        "main_category": "culture & entertainment"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.2,
+          "moody_cinematic": 0.4,
+          "chic_cold": 0.1,
+          "sultry_alluring": 0.1,
+          "lovely_juicy": 0.3,
+          "quirky_individualistic": 0.3,
+          "elegant_classic": 0.1,
+          "royal_noble": 0.1,
+          "hip_crush": 0.2,
+          "androgynous_neutral": 0.1,
+          "healthy_vitality": 0.2,
+          "intellectual_calm": 0.2,
+          "vintage_analog": 0.3,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "dreamy",
+          "smile_type": "gentle",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.5,
+            "velvet_matte_level": 0.3,
+            "natural_texture_index": 0.2
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "summer_cool",
+          "dominant_tone": "pastel",
+          "contrast_preference": 0.4
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.2,
+          "chumchurum_soft_index": 0.3,
+          "saero_zero_hip_index": 0.3,
+          "jinro_retro_index": 0.4,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "color_makeup_expert"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.2,
+        "era_1960_1980_industrial": 0.3,
+        "era_1990_2010_digital_y2k": 0.4,
+        "era_2020_2026_future_meta": 0.3
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.1
+      }
+    }
+  ],
+  [
+    {
+      "creator_id": "safirahelfi",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": 0,
+        "main_category": "fashion"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.1,
+          "moody_cinematic": 0.2,
+          "chic_cold": 0.25,
+          "sultry_alluring": 0.2,
+          "lovely_juicy": 0.3,
+          "quirky_individualistic": 0.45,
+          "elegant_classic": 0.1,
+          "royal_noble": 0.1,
+          "hip_crush": 0.5,
+          "androgynous_neutral": 0.2,
+          "healthy_vitality": 0.3,
+          "intellectual_calm": 0.1,
+          "vintage_analog": 0.2,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "sparkling",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.4,
+            "velvet_matte_level": 0.3,
+            "natural_texture_index": 0.2
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "summer_cool",
+          "dominant_tone": "vivid",
+          "contrast_preference": 0.7
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.15,
+          "chumchurum_soft_index": 0.2,
+          "saero_zero_hip_index": 0.3,
+          "jinro_retro_index": 0.25,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "color_makeup_expert"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.3,
+        "era_1990_2010_digital_y2k": 0.6,
+        "era_2020_2026_future_meta": 0.4
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.1
+      }
+    }
+  ],
+  [
+    {
+      "creator_id": "@claudia_meendozaa",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": 0,
+        "main_category": "beauty"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.2,
+          "moody_cinematic": 0.2,
+          "chic_cold": 0.1,
+          "sultry_alluring": 0.2,
+          "lovely_juicy": 0.5,
+          "quirky_individualistic": 0.4,
+          "elegant_classic": 0.1,
+          "royal_noble": 0.1,
+          "hip_crush": 0.3,
+          "androgynous_neutral": 0.1,
+          "healthy_vitality": 0.4,
+          "intellectual_calm": 0.1,
+          "vintage_analog": 0.1,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "sparkling",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.4,
+            "velvet_matte_level": 0.3,
+            "natural_texture_index": 0.2
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "spring_warm",
+          "dominant_tone": "vivid",
+          "contrast_preference": 0.7
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.2,
+          "chumchurum_soft_index": 0.3,
+          "saero_zero_hip_index": 0.2,
+          "jinro_retro_index": 0.2,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "color_makeup_expert"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.2,
+        "era_1990_2010_digital_y2k": 0.4,
+        "era_2020_2026_future_meta": 0.3
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.2
+      }
+    }
+  ],
+  [
+    {
+      "creator_id": "@nikorucosmetics",
+      "metadata": {
+        "primary_platform": "tiktok",
+        "follower_count": null,
+        "main_category": "beauty"
+      },
+      "visual_persona_deep": {
+        "beauty_archetype": {
+          "pure_innocent": 0.2,
+          "moody_cinematic": 0.1,
+          "chic_cold": 0.2,
+          "sultry_alluring": 0.1,
+          "lovely_juicy": 0.5,
+          "quirky_individualistic": 0.4,
+          "elegant_classic": 0.1,
+          "royal_noble": 0.05,
+          "hip_crush": 0.3,
+          "androgynous_neutral": 0.1,
+          "healthy_vitality": 0.4,
+          "intellectual_calm": 0.2,
+          "vintage_analog": 0.1,
+          "cyber_virtual_perfect": 0.1
+        },
+        "facial_feature_details": {
+          "eye_vibe": "sparkling",
+          "smile_type": "full_sunshine",
+          "face_shape_index": "oval_smooth",
+          "skin_texture_spec": {
+            "glass_skin_level": 0.6,
+            "velvet_matte_level": 0.2,
+            "natural_texture_index": 0.2
+          }
+        },
+        "color_harmony_vector": {
+          "seasonal_type": "spring_warm",
+          "dominant_tone": "vivid",
+          "contrast_preference": 0.7
+        }
+      },
+      "brand_fit_logic": {
+        "soju_affinity_matrix": {
+          "chamisul_clean_index": 0.2,
+          "chumchurum_soft_index": 0.3,
+          "saero_zero_hip_index": 0.3,
+          "jinro_retro_index": 0.2,
+          "premium_single_malt_index": 0.1
+        },
+        "kbeauty_role_suitability": [
+          "color_makeup_expert",
+          "clean_beauty_advocate"
+        ]
+      },
+      "temporal_evolution_compatibility": {
+        "era_1924_1950_classic": 0.1,
+        "era_1960_1980_industrial": 0.2,
+        "era_1990_2010_digital_y2k": 0.4,
+        "era_2020_2026_future_meta": 0.3
+      },
+      "risk_management": {
+        "brand_safety_score": 0.8,
+        "competitor_overlap_index": 0.2
+      }
+    }
+  ]
+]
