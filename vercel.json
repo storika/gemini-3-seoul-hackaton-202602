@@ -1,31 +1,28 @@
 {
   "version": 2,
-  "builds": [
+  "functions": {
+    "api/index.py": {
+      "runtime": "@vercel/python"
+    }
+  },
+  "rewrites": [
     {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
     },
+    {
+      "source": "/images/(.*)",
+      "destination": "/generated_images/$1"
+    },
+    {
+      "source": "/videos/(.*)",
+      "destination": "/generated_videos/$1"
+    }
+  ],
+  "builds": [
     {
       "src": "frontend/package.json",
       "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/index.py"
-    },
-    {
-      "src": "/videos/(.*)",
-      "dest": "generated_videos/$1"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "generated_images/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "frontend/$1"
     }
   ]
 }
