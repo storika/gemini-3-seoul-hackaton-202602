@@ -234,8 +234,10 @@ def section_carousel():
 
 
 def section_video():
-    """Section 6: Short-Form Video (30s)"""
-    print_header("STEP 6: AI-Generated Video (Veo 3.1)", "🎬")
+    """Section 6: Short-Form Video — Imagen 4 hero + Veo 3.1 image-to-video (30s)"""
+    print_header("STEP 6: 참이슬 Video (Imagen 4 → Veo 3.1 Image-to-Video)", "🎬")
+    print("  Pipeline: Imagen 4 generates creator + 참이슬 hero image")
+    print("            → Veo 3.1 animates into 5-8s vertical video\n")
 
     video_dir = OUTPUT_DIR / "video"
 
@@ -243,14 +245,20 @@ def section_video():
     for c in all_creators():
         creator_dir = video_dir / c.handle
         if creator_dir.exists():
+            hero = creator_dir / "chamisul_hero.png"
             videos = list(creator_dir.glob("*.mp4"))
             prompts = list(creator_dir.glob("*.txt"))
-            if videos:
-                for v in videos:
-                    size_mb = v.stat().st_size / (1024 * 1024)
-                    print(f"  @{c.handle}: ✓ {v.name} ({size_mb:.1f}MB)")
+            if hero.exists():
+                size_kb = hero.stat().st_size // 1024
+                print(f"  @{c.handle}: ✓ Hero image ({size_kb}KB)", end="")
+                if videos:
+                    for v in videos:
+                        size_mb = v.stat().st_size / (1024 * 1024)
+                        print(f" → Video {v.name} ({size_mb:.1f}MB)")
+                else:
+                    print(" → Video pending")
             elif prompts:
-                print(f"  @{c.handle}: Video prompt saved (API pending)")
+                print(f"  @{c.handle}: Image prompt saved (generation pending)")
             else:
                 print(f"  @{c.handle}: [not generated yet]")
         else:
@@ -309,7 +317,7 @@ def section_summary():
     print("  │  Social Posts         → Ready-to-publish content        │")
     print("  │  Creator Content      → Gemini analyzes + Imagen creates│")
     print("  │  Carousel Images      → Imagen 4 + Korean text          │")
-    print("  │  Short-Form Video     → Veo 3.1 vertical clips          │")
+    print("  │  Short-Form Video     → Imagen 4 + Veo 3.1 image-to-video│")
     print("  │  Product Swap         → Consistent aesthetic swap        │")
     print("  └──────────────────────────────────────────────────────────┘\n")
     print("  Gemini 3 Features Used:")

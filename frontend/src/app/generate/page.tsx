@@ -103,12 +103,24 @@ const REGION_DATA: Record<string, CreatorData[]> = {
   GB: creatorsGB as unknown as CreatorData[],
 };
 
-// Video mapping: creator handle → video path
-const CREATOR_VIDEOS: Record<string, string> = {
-  "@jungha.0": "/creator-videos/jungha.0/jungha.0_boksoondoga.mp4",
-  "@jayeonkim_": "/creator-videos/jayeonkim_/jayeonkim__boksoondoga.mp4",
-  "@hwajung95": "/creator-videos/hwajung95/hwajung95_boksoondoga.mp4",
-  "@bling_cuh__": "/creator-videos/bling_cuh__/bling_cuh___boksoondoga.mp4",
+// Media mapping: creator handle → { image, video }
+const CREATOR_MEDIA: Record<string, { image: string; video: string }> = {
+  "@jungha.0": {
+    image: "/creator-videos/jungha.0/chamisul_hero.png",
+    video: "/creator-videos/jungha.0/jungha.0_boksoondoga.mp4",
+  },
+  "@jayeonkim_": {
+    image: "/creator-videos/jayeonkim_/chamisul_hero.png",
+    video: "/creator-videos/jayeonkim_/jayeonkim__boksoondoga.mp4",
+  },
+  "@hwajung95": {
+    image: "/creator-videos/hwajung95/chamisul_hero.png",
+    video: "/creator-videos/hwajung95/hwajung95_boksoondoga.mp4",
+  },
+  "@bling_cuh__": {
+    image: "/creator-videos/bling_cuh__/chamisul_hero.png",
+    video: "/creator-videos/bling_cuh__/bling_cuh___boksoondoga.mp4",
+  },
 };
 
 function fmtFollowers(n: number): string {
@@ -137,7 +149,8 @@ export default function GeneratePage() {
   const hasLiveData = !!liveRecommendation && liveRecommendation.ambassadors.length > 0;
 
   const [region, setRegion] = useState<"KR" | "GB">("KR");
-  const [videoModal, setVideoModal] = useState<string | null>(null);
+  const [modalMedia, setModalMedia] = useState<{ image: string; video: string } | null>(null);
+  const [showVideo, setShowVideo] = useState(false);
   const creators = REGION_DATA[region];
 
   // weights: 0..100 per celebrity
@@ -382,10 +395,10 @@ export default function GeneratePage() {
                         </span>
                         <span className="gen-overlap">Overlap {(c.risk_management.competitor_overlap_index * 100).toFixed(0)}%</span>
                       </div>
-                      {CREATOR_VIDEOS[c.creator_id] ? (
+                      {CREATOR_MEDIA[c.creator_id] ? (
                         <button
                           className="gen-video-btn has-video"
-                          onClick={() => setVideoModal(CREATOR_VIDEOS[c.creator_id])}
+                          onClick={() => { setModalMedia(CREATOR_MEDIA[c.creator_id]); setShowVideo(false); }}
                         >
                           ▶ AI 비디오 보기
                         </button>
@@ -402,12 +415,21 @@ export default function GeneratePage() {
           )}
         </main>
       </div>
-      {/* Video Modal */}
-      {videoModal && (
-        <div className="gen-video-overlay" onClick={() => setVideoModal(null)}>
+      {/* Media Modal */}
+      {modalMedia && (
+        <div className="gen-video-overlay" onClick={() => { setModalMedia(null); setShowVideo(false); }}>
           <div className="gen-video-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="gen-video-close" onClick={() => setVideoModal(null)}>&times;</button>
-            <video controls autoPlay src={videoModal} className="gen-video-player" />
+            <button className="gen-video-close" onClick={() => { setModalMedia(null); setShowVideo(false); }}>&times;</button>
+            {showVideo ? (
+              <video controls autoPlay src={modalMedia.video} className="gen-video-player" />
+            ) : (
+              <div className="gen-modal-image-wrap">
+                <img src={modalMedia.image} alt="AI Generated" className="gen-modal-image" />
+                <button className="gen-modal-play" onClick={() => setShowVideo(true)}>
+                  ▶ 비디오 재생
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}
