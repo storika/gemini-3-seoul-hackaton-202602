@@ -4,24 +4,9 @@
     {
       "src": "frontend/package.json",
       "use": "@vercel/next"
-    },
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
     }
   ],
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
-    },
-    {
-      "source": "/images/(.*)",
-      "destination": "/generated_images/$1"
-    },
-    {
-      "source": "/videos/(.*)",
-      "destination": "/generated_videos/$1"
-    }
+  "routes": [
+    { "src": "/(.*)", "dest": "/frontend/$1" }
   ]
 }
