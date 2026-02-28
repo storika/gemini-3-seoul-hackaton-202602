@@ -1,0 +1,15 @@
+=== PRODUCT SWAP PROMPT TEMPLATE ===
+
+Premium product photography: {product_description} on a dark volcanic stone surface with soft natural backlighting. The bottle/glass is centered, with subtle moisture droplets. A few {garnish} placed artfully nearby. Clean minimalist composition, lots of negative space. Warm white and soft gold color palette. Jeju-inspired natural backdrop. 1:1 aspect ratio, editorial quality, shot on medium format camera.
+
+=== PRODUCTS ===
+  복순도가 손막걸리: a milky white ceramic Boksoondoga makgeolli bottle with minimalist Korean label
+  프리미엄 위스키: an amber-colored premium whiskey bottle with gold label, whiskey glass with ice
+  프리미엄 소주: a sleek frosted green premium soju bottle with modern minimalist label, small soju glass
+
+=== KEY INSIGHT ===
+Same scene structure, same lighting, same composition.
+Only the product description and garnish change.
+This demonstrates prompt engineering for consistent brand aesthetics
+while swapping the featured product — a key capability for
+scaling influencer content across multiple brand partnerships.
