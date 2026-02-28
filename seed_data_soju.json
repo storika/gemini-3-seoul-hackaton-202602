@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "created": "2026-02-28",
+    "description": "Korean Liquor (Soju & Beer) 100-year history for Space-Time Knowledge Graph",
+    "schema": "entity-relationship-attribute model with temporal tags"
+  },
+  "industry_context": {
+    "trends_over_time": {
+      "1920_1990": "고도수 소주(25도 이상), 남성 중심 마케팅, 노동자의 술",
+      "1990_2000": "마일드 소주 등장, 23도로 하락, 여성 모델 최초 기용 (이영애)",
+      "2006_2010": "저도수 경쟁 심화 (20도 이하), '흔들어 마시는' 마케팅 (처음처럼 이효리 돌풍)",
+      "2010_2020": "과일소주 열풍(순하리), 당대 최고 아이돌 모델 경쟁 (아이유 vs 수지)",
+      "2022_present": "제로 슈거 열풍 (새로, 켈리), 캐릭터/세계관 마케팅(새로구미)"
+    }
+  },
+  "brands": {
+    "chamisul": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "Chamisul",
+        "name_kr": "참이슬",
+        "parent_company": "HiteJinro"
+      },
+      "founding": {
+        "year": 1924,
+        "historical_origin": "진천양조상회에서 '진로'로 시작. 1998년 '참이슬'로 리뉴얼하며 소주 마일드화 선도."
+      },
+      "philosophy": {
+        "core_mission": "대한민국 대표 소주로서의 오리지널리티와 깨끗함 유지",
+        "brand_ethos": "대나무 숯 정제로 100% 이슬같은 깨끗함 (Clean & Pure)"
+      },
+      "historical_events": [
+        {
+          "year": 1998,
+          "event": "참이슬 출시",
+          "significance": "소주 도수를 23도로 낮추며 마일드 소주 시장 개척",
+          "sales_impact": "출시 2년만에 단일 브랜드 최고 판매량 기록"
+        }
+      ],
+      "ambassador_history": [
+        {
+          "name": "Lee Young-ae",
+          "period": "1998",
+          "significance": "소주 역사상 최초의 여성 모델. 깨끗한 이미지 강조."
+        },
+        {
+          "name": "IU",
+          "period": "2014-2018, 2020-Present",
+          "significance": "최장수 모델. '이슬같이 깨끗한' 브랜드 정체성의 인간화. 2030 세대 확장에 기여."
+        },
+        {
+          "name": "Irene",
+          "period": "2019",
+          "significance": "트렌디하고 맑은 이미지"
+        }
+      ],
+      "products": {
+        "chamisul_fresh": {
+          "full_name": "참이슬 Fresh",
+          "abv": "16.0%",
+          "key_claim": "대나무 숯 정제"
+        }
+      }
+    },
+    "chumchurum": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "Chum Churum",
+        "name_kr": "처음처럼",
+        "parent_company": "Lotte Chilsung"
+      },
+      "founding": {
+        "year": 2006,
+        "historical_origin": "두산주류BG 시절 알칼리 환원수 소주로 출시되어 참이슬의 독주를 위협함"
+      },
+      "philosophy": {
+        "core_mission": "부드러운 목넘김과 트렌디한 감성",
+        "brand_ethos": "알칼리 환원수로 만들어 흔들수록 부드러워지는 소주"
+      },
+      "historical_events": [
+        {
+          "year": 2006,
+          "event": "이효리 '회오리주' 마케팅",
+          "significance": "소주를 흔들어 마시는 문화를 전국적으로 유행시킴",
+          "sales_impact": "시장 점유율 단숨에 10%대에서 20%대로 돌파하며 업계 판도 변화"
+        }
+      ],
+      "ambassador_history": [
+        {
+          "name": "Lee Hyori",
+          "period": "2006-2012",
+          "significance": "섹시하고 털털한 이미지로 '흔들어라' 캠페인 대성공. 5년간 20억병 판매 견인."
+        },
+        {
+          "name": "Suzy",
+          "period": "2016-2020",
+          "significance": "국민 첫사랑 이미지로 부드러움 강조"
+        },
+        {
+          "name": "Jennie",
+          "period": "2021",
+          "significance": "글로벌 트렌드 아이콘. 20대 타겟 리브랜딩."
+        },
+        {
+          "name": "Han So-hee",
+          "period": "2023",
+          "significance": "세련되고 부드러운 이미지"
+        },
+        {
+          "name": "Kim Ji-won",
+          "period": "2024",
+          "significance": "직설적이고 솔직한 매력 어필"
+        }
+      ],
+      "products": {
+        "chumchurum_mild": {
+          "full_name": "처음처럼 부드러운",
+          "abv": "16.0%",
+          "key_claim": "알칼리 환원수"
+        }
+      }
+    },
+    "saero": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "Saero",
+        "name_kr": "새로",
+        "parent_company": "Lotte Chilsung"
+      },
+      "founding": {
+        "year": 2022,
+        "historical_origin": "제로 슈거 트렌드에 맞춰 롯데칠성이 야심차게 출시한 신규 브랜드"
+      },
+      "philosophy": {
+        "core_mission": "당류 0%의 깔끔함과 독창적인 세계관",
+        "brand_ethos": "전통 구미호 전설을 현대적으로 재해석한 캐릭터(새로구미) 마케팅"
+      },
+      "historical_events": [
+        {
+          "year": 2022,
+          "event": "제로 슈거 소주 개막",
+          "significance": "기존 연예인 모델 관행을 깨고 '애니메이션 캐릭터'를 전면에 내세움",
+          "sales_impact": "출시 7개월만에 누적 판매 1억병 돌파. 제로슈거 시장 1위 선점."
+        }
+      ],
+      "ambassador_history": [
+        {
+          "name": "Saerogumi (구미호 캐릭터)",
+          "period": "2022-Present",
+          "significance": "인간 모델이 아닌 버추얼 캐릭터. 목소리 연기에 정은지, 이도현 등 기용."
+        }
+      ],
+      "products": {
+        "saero_zero": {
+          "full_name": "새로 257",
+          "abv": "16.0%",
+          "key_claim": "Zero Sugar, 캐릭터 세계관"
+        }
+      }
+    }
+  }
+}

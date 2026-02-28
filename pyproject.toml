@@ -1,0 +1,33 @@
+[project]
+name = "kbeauty-brand-agent"
+version = "0.1.0"
+description = "K-Beauty Brand Agent with Long-Term Memory — A-Mem style knowledge graph + Memoria temporal decay"
+requires-python = ">=3.10"
+dependencies = [
+    "google-adk>=1.0",
+    "google-genai>=1.0",
+    "chromadb>=0.5",
+    "networkx>=3.0",
+    "numpy>=1.24",
+    "pydantic>=2.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "requires_api: marks tests that require API keys (deselect with '-m \"not requires_api\"')",
+]

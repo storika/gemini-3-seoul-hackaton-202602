@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soju Wars: 100-Year Brand Evolution</title>
+
+  <!-- Cytoscape.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/timeline.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="app-header">
+    <h1>Soju Wars: 100-Year Brand Evolution</h1>
+    <nav id="product-type-tabs">
+      <button class="type-tab active" data-type="all">ALL</button>
+      <button class="type-tab" data-type="soju">SOJU</button>
+      <button class="type-tab" data-type="beer">BEER</button>
+    </nav>
+    <nav id="brand-tabs">
+      <button class="brand-tab active" data-brand="all">ALL</button>
+      <button class="brand-tab" data-brand="jinro">JINRO</button>
+      <button class="brand-tab" data-brand="chamisul">CHAMISUL</button>
+      <button class="brand-tab" data-brand="chum_churum">CHUM CHURUM</button>
+      <button class="brand-tab" data-brand="saero">SAERO</button>
+    </nav>
+    <div id="current-date-display">1924년 1월</div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="app-main">
+    <!-- Left: Knowledge Graph -->
+    <section id="kg-panel">
+      <div id="kg-stats">
+        <span id="stat-nodes">0 nodes</span>
+        <span id="stat-edges">0 edges</span>
+        <span id="stat-events">0 events</span>
+        <button id="btn-fol-toggle" class="fol-toggle" title="Toggle FOL Evidence Layer">
+          <span class="fol-icon">&#x2227;</span> FOL
+        </button>
+      </div>
+      <div id="cy"></div>
+      <!-- Node Detail Popup (shows on KG node click) -->
+      <div id="node-popup" class="hidden">
+        <button id="node-popup-close">&times;</button>
+        <div id="node-popup-content"></div>
+      </div>
+    </section>
+
+    <!-- Right: Event Detail Panel -->
+    <section id="detail-panel">
+      <div id="detail-content">
+        <div id="detail-placeholder">
+          <p>타임라인을 스크롤하여<br>소주 브랜드 100년 역사를 탐색하세요</p>
+        </div>
+        <div id="detail-event" class="hidden">
+          <span id="detail-category" class="category-badge"></span>
+          <h2 id="detail-title"></h2>
+          <p id="detail-title-ko" class="title-ko"></p>
+          <time id="detail-date"></time>
+          <!-- Active Model Cards (synced with thumbnail strip) -->
+          <div id="active-model-section" class="hidden">
+            <div id="active-model-cards"></div>
+          </div>
+          <!-- Hero Image (actor/brand visual) -->
+          <div id="hero-image-container" class="image-container hidden">
+            <img id="hero-image" alt="Hero visual">
+          </div>
+          <div id="video-container">
+            <div id="video-placeholder">
+              <button id="btn-generate-video" class="btn-video">
+                <span class="play-icon">&#9654;</span> Generate Veo 3.1 Video
+              </button>
+            </div>
+            <video id="event-video" controls style="display:none"></video>
+          </div>
+          <!-- News Section with Image -->
+          <div id="news-section" class="hidden">
+            <h3>Era Context</h3>
+            <div id="news-image-container" class="image-container hidden">
+              <img id="news-image" alt="Era context">
+            </div>
+            <ul id="news-list"></ul>
+          </div>
+          <!-- Market Share Rankings -->
+          <div id="market-share-section" class="hidden">
+            <h3>Market Share Rankings</h3>
+            <div id="market-share-bars"></div>
+          </div>
+          <div id="detail-kg-changes">
+            <h3>KG Changes</h3>
+            <span id="detail-mutations"></span>
+          </div>
+          <p id="detail-description"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Temporal Decay Chart -->
+  <section id="decay-section">
+    <canvas id="decay-chart"></canvas>
+  </section>
+
+  <!-- Model Thumbnail Strip -->
+  <section id="model-strip">
+    <div id="model-strip-scroll">
+      <div id="model-thumbnails"></div>
+    </div>
+  </section>
+
+  <!-- Timeline Scrubber -->
+  <footer id="timeline-footer">
+    <div id="timeline-track">
+      <span class="timeline-label">1924</span>
+      <div id="timeline-slider-container">
+        <input type="range" id="timeline-slider" min="0" max="1000" value="0" step="1">
+        <div id="timeline-markers"></div>
+      </div>
+      <span class="timeline-label">2026</span>
+    </div>
+    <div id="timeline-controls">
+      <button id="btn-play" title="Auto-play">&#9654; Play</button>
+      <button id="btn-reset" title="Reset to start">&#8634; Reset</button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/model-strip.js"></script>
+  <script src="/js/timeline-slider.js"></script>
+  <script src="/js/kg-renderer.js"></script>
+  <script src="/js/video-panel.js"></script>
+  <script src="/js/decay-chart.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

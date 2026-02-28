@@ -1,0 +1,860 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2026-02-25",
+    "description": "K-beauty brand seed data for AI brand agent knowledge graph",
+    "schema": "entity-relationship-attribute model"
+  },
+
+  "brands": {
+    "tirtir": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "TIRTIR",
+        "name_kr": "티르티르",
+        "full_name": "Trust In Radiance TIRTIR",
+        "acronym_meaning": "Trust In Radiance"
+      },
+      "founding": {
+        "year": 2016,
+        "founder": "Lee Yubin",
+        "founder_background": "Korean beauty influencer who transitioned from fashion and online retail to cosmetics after successful group purchases of beauty products",
+        "country": "South Korea",
+        "production": "100% made in Korea"
+      },
+      "philosophy": {
+        "core_mission": "Create cosmetics that restore the skin's natural healthy glow",
+        "brand_ethos": "Skin-first philosophy combining nature-oriented ingredients with scientific rigor to restore inherent vitality and radiance",
+        "positioning": "Between luxury and mass-market; accessible premium K-beauty",
+        "campaign_slogan": "Your Shade, Our Standard",
+        "campaign_launch_date": "2024-11",
+        "inclusivity_commitment": "Responded to community feedback by developing 20+ deeper shades after beauty creator Miss Darcei highlighted shade diversity gaps in 2023; this moment went viral with 50M+ cross-platform views",
+        "2026_direction": "Deeper resonance over louder messaging; proving brand through repeat purchase loyalty"
+      },
+      "visual_identity": {
+        "primary_color": "Red (iconic red cushion compact)",
+        "packaging_signature": "Egg-shaped compact engineered over 18 months to follow facial contours",
+        "brand_refinement": "Updated logo and typography in 2024 to reflect unmistakable brand direction",
+        "aesthetic": "Clean, modern, skin-focused radiance"
+      },
+      "ambassador": {
+        "name": "V (Kim Taehyung)",
+        "group": "BTS",
+        "role": "First-ever global brand ambassador",
+        "campaign": "V&You, Let's Radiate",
+        "announced": "2025-11",
+        "target_effect": "Reaching younger, trend-conscious global demographics"
+      },
+      "product_lines": {
+        "mask_fit_red_cushion": {
+          "entity_type": "Product",
+          "category": "Cushion Foundation",
+          "full_name": "Mask Fit Red Cushion Foundation",
+          "status": "Hero/Flagship product",
+          "shade_count_global": 40,
+          "shade_count_korea": 45,
+          "spf": "SPF 40 PA++",
+          "key_claims": [
+            "Full coverage",
+            "Weightless",
+            "Skin fit",
+            "Satin glow finish",
+            "No-transfer up to 72 hours",
+            "Buildable coverage",
+            "Brightening",
+            "Wrinkle-improving"
+          ],
+          "key_ingredients": [
+            "Hyaluronic acid",
+            "Glycerin",
+            "Niacinamide",
+            "Propolis"
+          ],
+          "total_ingredients_count": 45,
+          "skin_benefits": [
+            "Anti-acne",
+            "Anti-aging",
+            "Dry skin hydration",
+            "Brightening",
+            "Sensitive skin safe",
+            "Oil control",
+            "Pore reduction",
+            "Scar healing",
+            "Dark spot reduction"
+          ],
+          "awards": [
+            "@cosme Best Cosmetics Award 2022",
+            "@cosme Best Cosmetics Award 2023",
+            "@cosme Best Cosmetics Award 2024",
+            "@cosme Best Cosmetics Award 2025"
+          ],
+          "market_achievements": [
+            "Japan No.1 best-selling foundation",
+            "First Korean cushion foundation to top Amazon US foundation category (2024)",
+            "5 million+ units sold in Japan within 2 years of launch"
+          ],
+          "price_point": "~20,000 KRW"
+        },
+        "milk_skin_toner": {
+          "entity_type": "Product",
+          "category": "Toner",
+          "full_name": "Milk Skin Rice Toner",
+          "key_ingredients": [
+            "Niacinamide (2%)",
+            "Rice bran extract",
+            "Ceramide",
+            "Panthenol",
+            "Licorice root extract"
+          ],
+          "key_claims": [
+            "Deep moisturizing",
+            "Hydrating",
+            "Brightening",
+            "Dark spot reduction",
+            "Skin barrier fortification"
+          ],
+          "formulation": "Nature-oriented, vegan"
+        },
+        "matcha_series": {
+          "entity_type": "ProductLine",
+          "category": "Skincare",
+          "status": "Newly launched line",
+          "description": "New skincare series building momentum alongside Milk Skin line"
+        },
+        "water_glossy_line": {
+          "entity_type": "ProductLine",
+          "category": "Skincare",
+          "notable_products": [
+            "Milk Skin Toner",
+            "SOS Serum",
+            "Ceramic Cream"
+          ]
+        }
+      },
+      "target_demographics": {
+        "primary_age": "18-35",
+        "psychographics": "Trend-conscious, seeking natural healthy-looking skin, value inclusivity and shade diversity",
+        "skin_preference": "Natural, dewy finish over heavy coverage",
+        "market_segments": ["Gen Z", "Millennials", "K-pop fans", "Diversity-conscious consumers"]
+      },
+      "marketing": {
+        "approach": "Authentic listening and rapid community response over manufactured campaigns",
+        "viral_catalyst": "Miss Darcei shade diversity moment (2023) generating 50M+ views",
+        "content_strategy": "Pop-up shade-matching experiences (Los Angeles, Dubai) focused on hands-on interaction rather than spectacle",
+        "social_platforms": ["TikTok", "Instagram", "YouTube"],
+        "global_strategy": "Respects regional beauty ideals while maintaining distinct K-beauty identity"
+      },
+      "global_markets": {
+        "primary": ["South Korea", "Japan"],
+        "expanding": ["United States", "Europe", "Middle East"],
+        "retail_channels": ["Amazon", "Ulta Beauty", "Olive Young", "YesStyle", "Soko Glam"]
+      }
+    },
+
+    "anua": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "ANUA",
+        "name_kr": "아누아",
+        "name_meaning": "Derived from Korean word 'an' (안) meaning 'safe' or 'peaceful'"
+      },
+      "founding": {
+        "year": 2019,
+        "parent_company": "The Founders (brand incubator)",
+        "founders": ["Lee Sunhyung", "Lee Changjoo"],
+        "founding_team_background": "Team of dermatologists and formulators bridging traditional Korean skincare wisdom with modern clinical efficacy",
+        "country": "South Korea"
+      },
+      "philosophy": {
+        "core_mission": "Deliver gentle, effective skincare that supports skin's natural balance with minimal irritation and mindful care",
+        "brand_ethos": "Minimalist, science-backed formulations rooted in Korean skincare philosophy; improving skin conditions relies not only on products but also routine lifestyle and mind",
+        "holistic_view": "Recognizes skin conditions are affected by stress, UV rays, eating habits, hormones, and air pollution",
+        "formulation_philosophy": "Short ingredient lists, transparent formulations, each product targets a specific concern",
+        "clean_beauty_commitment": "Avoids harsh chemicals, artificial fragrances, and unnecessary additives",
+        "sustainability": {
+          "vegan": true,
+          "cruelty_free": true,
+          "eco_packaging": "Recyclable materials, lightweight bottles, eco-conscious shipping",
+          "no_animal_derived_ingredients": true
+        }
+      },
+      "signature_ingredients": {
+        "heartleaf": {
+          "entity_type": "Ingredient",
+          "scientific_name": "Houttuynia cordata",
+          "korean_name": "어성초",
+          "role": "Hero/flagship ingredient",
+          "properties": [
+            "Anti-inflammatory",
+            "Antioxidant",
+            "Barrier-repairing",
+            "Redness reduction",
+            "Hydration improvement (up to 42% over 28 days in studies)"
+          ],
+          "active_compounds": ["Quercetin", "Polyphenols"],
+          "sourcing": "Grown and harvested in Korea"
+        },
+        "quercetinol": {
+          "entity_type": "Ingredient",
+          "description": "Derived from heartleaf for inflammation reduction",
+          "role": "Proprietary active"
+        },
+        "natural_healing_complex": {
+          "entity_type": "IngredientComplex",
+          "components": ["Centella asiatica", "Green tea", "Heartleaf"]
+        },
+        "abc_calmplex": {
+          "entity_type": "IngredientComplex",
+          "description": "Vitamins and antioxidants for skin defense"
+        }
+      },
+      "product_lines": {
+        "heartleaf_line": {
+          "entity_type": "ProductLine",
+          "status": "Core/flagship line",
+          "products": {
+            "heartleaf_77_soothing_toner": {
+              "entity_type": "Product",
+              "full_name": "Heartleaf 77% Soothing Toner",
+              "status": "Hero product / #1 bestseller",
+              "heartleaf_concentration": "77%",
+              "key_claims": ["Soothing", "Toning", "Hydrating", "pH balancing"],
+              "market_achievements": [
+                "Amazon #1 Best Seller in Facial Toners",
+                "Olive Young & Lalavla bestseller in Korea",
+                "28.6M+ TikTok views on product-related content"
+              ]
+            },
+            "heartleaf_77_toner_pad": {
+              "entity_type": "Product",
+              "full_name": "Heartleaf 77% Toner Pad / Clear Pad",
+              "key_claims": ["Pore appearance reduction by 51% in 2 weeks", "Hydration", "Glow"]
+            },
+            "heartleaf_pore_control_cleansing_oil": {
+              "entity_type": "Product",
+              "full_name": "Heartleaf Pore Control Cleansing Oil",
+              "description": "First step in double cleanse routine; removes makeup, excess oil, and sebum",
+              "key_features": ["Non-comedogenic", "Plant-based oils", "Heartleaf extract for calming"]
+            },
+            "heartleaf_80_soothing_ampoule": {
+              "entity_type": "Product",
+              "full_name": "Heartleaf 80% Soothing Ampoule",
+              "status": "Bestseller"
+            },
+            "heartleaf_quercetinol_pore_deep_cleansing_foam": {
+              "entity_type": "Product",
+              "full_name": "Heartleaf Quercetinol Pore Deep Cleansing Foam"
+            }
+          }
+        },
+        "niacinamide_line": {
+          "entity_type": "ProductLine",
+          "products": {
+            "niacinamide_10_txa_4_serum": {
+              "entity_type": "Product",
+              "full_name": "Niacinamide 10% + TXA 4% Dark Spot Corrector Serum",
+              "key_ingredients": ["Niacinamide (10%)", "Tranexamic acid (4%)", "Hyaluronic acid"],
+              "key_claims": ["Dark spot care", "Brightening", "Lightweight hydration", "Glass skin"],
+              "awards": ["Olive Young 2025 Awards winner"]
+            }
+          }
+        },
+        "birch_line": {
+          "entity_type": "ProductLine",
+          "products": {
+            "birch_70_moisture_boosting_cream": {
+              "entity_type": "Product",
+              "full_name": "Birch 70% Moisture Boosting Cream",
+              "key_ingredients": ["Japanese white birch water (70%)"]
+            },
+            "birch_moisture_boosting_serum": {
+              "entity_type": "Product",
+              "full_name": "Birch 70% Moisture Boosting Serum",
+              "key_ingredients": ["Japanese white birch water (70%)", "Panthenol", "10 types of hyaluronic acid"]
+            }
+          }
+        },
+        "sun_care": {
+          "entity_type": "ProductLine",
+          "products": {
+            "5_zero_mild_sun_cream": {
+              "entity_type": "Product",
+              "full_name": "5-Zero Mild Sun Cream",
+              "status": "Bestseller"
+            }
+          }
+        }
+      },
+      "target_demographics": {
+        "primary_age": "18-30",
+        "psychographics": "Young, environmentally-conscious consumers who value transparency, simplicity, and visible improvement without harsh chemicals",
+        "skin_types": ["Sensitive skin", "Reactive skin", "Acne-prone skin"],
+        "market_segments": ["Gen Z", "Clean beauty enthusiasts", "Minimalist skincare advocates"]
+      },
+      "marketing": {
+        "approach": "Digital-first strategy leveraging TikTok and social media",
+        "content_style": "Natural formulation highlights, before-and-after results, ingredient education",
+        "viral_hashtags": ["#anua", "#anua77toner", "#kbeauty", "#viralskincare", "#heartleaf"],
+        "social_platforms": ["TikTok", "Instagram", "YouTube"],
+        "controversy_note": "Some accusations of fake marketing around the brand's TikTok viral growth"
+      },
+      "global_markets": {
+        "primary": ["South Korea"],
+        "key_growth": ["United States", "Southeast Asia"],
+        "retail_channels": ["Amazon", "Ulta Beauty", "Olive Young", "YesStyle", "StyleKorean", "Soko Glam"]
+      }
+    },
+
+    "cosrx": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "COSRX",
+        "name_meaning": "Cosmetics + Rx (Prescription)",
+        "tagline": "Expecting Tomorrow"
+      },
+      "founding": {
+        "year": 2013,
+        "founder": "Jun Sang Hun",
+        "founder_background": "Highly experienced cosmetic producer who created the brand to address his own sensitive skin concerns",
+        "country": "South Korea"
+      },
+      "corporate": {
+        "parent_company": "Amorepacific Group",
+        "acquisition_history": [
+          {
+            "year": 2021,
+            "event": "Amorepacific acquires 38.4% stake",
+            "valuation": "~500 billion KRW"
+          },
+          {
+            "year": 2024,
+            "event": "Amorepacific increases stake to 93.2%",
+            "deal_value": "755.1 billion KRW (~$567.3M USD)",
+            "details": "Acquired 288,000 remaining shares from largest shareholder"
+          }
+        ],
+        "global_presence": "Products sold in 140+ countries; overseas accounts for 90%+ of total sales"
+      },
+      "philosophy": {
+        "core_mission": "Provide effective skincare solutions through minimal yet powerful formulations based on real customer needs",
+        "brand_ethos": "Clinical-grade efficacy at accessible prices; science-backed, research-driven approach; each product designed with highly concentrated active ingredients and low-irritation formulas",
+        "formulation_philosophy": "Clean packaging, simple and effective ingredients at affordable price points; ingredients that work at the core without unnecessary additives",
+        "differentiator": "Unlike trend-driven beauty brands, prioritizes real customer needs over marketing hype",
+        "ethical_sourcing": {
+          "snail_mucin": "Collected naturally without pressure or harm; optimal environment maintained for snails; friendly extraction minimizing stress",
+          "cruelty_free": true,
+          "dermatologist_tested": true
+        }
+      },
+      "signature_ingredients": {
+        "snail_mucin": {
+          "entity_type": "Ingredient",
+          "scientific_name": "Snail secretion filtrate",
+          "role": "Hero/flagship ingredient",
+          "concentration_in_hero_product": "96%",
+          "properties": ["Deep hydration", "Skin repair", "Texture improvement", "Barrier strengthening"],
+          "co_actives": ["Allantoin", "Panthenol"]
+        },
+        "bha_salicylic_acid": {
+          "entity_type": "Ingredient",
+          "role": "Core active for acne line",
+          "properties": ["Exfoliation", "Pore unclogging", "Sebum regulation", "Anti-inflammatory"]
+        },
+        "aha_glycolic_acid": {
+          "entity_type": "Ingredient",
+          "role": "Core active for brightening/surface exfoliation",
+          "properties": ["Surface exfoliation", "Dullness reduction", "Whitehead treatment"]
+        },
+        "other_key_ingredients": [
+          "Niacinamide",
+          "Ceramide",
+          "PDRN",
+          "Hyaluronic acid",
+          "Galactomyces ferment filtrate",
+          "Centella asiatica",
+          "Alpha-arbutin"
+        ]
+      },
+      "product_lines": {
+        "snail_mucin_line": {
+          "entity_type": "ProductLine",
+          "status": "Flagship line",
+          "products": {
+            "advanced_snail_96_mucin_power_essence": {
+              "entity_type": "Product",
+              "full_name": "Advanced Snail 96 Mucin Power Essence",
+              "launch_year": 2014,
+              "status": "Global bestseller / Hero product",
+              "snail_mucin_concentration": "96%",
+              "key_claims": ["Deep hydration", "Skin repair", "Glow-boosting", "All skin types"],
+              "market_achievements": [
+                "Amazon #1 Best Seller in Beauty (US)",
+                "Amazon Australia #1 Best Seller in Beauty and Personal Care",
+                "Amazon Australia #1 in Serums category",
+                "Sales surged 90-1000% from 2023 to 2024"
+              ]
+            },
+            "advanced_snail_92_all_in_one_cream": {
+              "entity_type": "Product",
+              "full_name": "Advanced Snail 92 All in One Cream",
+              "snail_mucin_concentration": "92%"
+            }
+          }
+        },
+        "bha_aha_line": {
+          "entity_type": "ProductLine",
+          "status": "Original/founding line",
+          "products": {
+            "bha_blackhead_power_liquid": {
+              "entity_type": "Product",
+              "full_name": "BHA Blackhead Power Liquid",
+              "launch_year": 2013,
+              "status": "First product ever launched by COSRX",
+              "key_ingredient": "Salicylic acid (BHA)",
+              "key_claims": ["Pore clearing", "Blackhead treatment", "Calming irritation and redness"]
+            },
+            "aha_7_whitehead_power_liquid": {
+              "entity_type": "Product",
+              "full_name": "AHA 7 Whitehead Power Liquid",
+              "key_ingredient": "Glycolic acid (7%)",
+              "key_claims": ["Surface exfoliation", "Dullness reduction", "Whitehead treatment"]
+            }
+          }
+        },
+        "acne_patches": {
+          "entity_type": "ProductLine",
+          "products": {
+            "acne_pimple_master_patch": {
+              "entity_type": "Product",
+              "full_name": "Acne Pimple Master Patch",
+              "technology": "Hydrocolloid",
+              "market_achievements": [
+                "Amazon #1 in Masks category (Australia)",
+                "#25 in Beauty and Personal Care (Australia)"
+              ]
+            }
+          }
+        },
+        "cleansers": {
+          "entity_type": "ProductLine",
+          "products": {
+            "salicylic_acid_daily_gentle_cleanser": {
+              "entity_type": "Product",
+              "full_name": "Salicylic Acid Daily Gentle Cleanser"
+            },
+            "low_ph_good_morning_gel_cleanser": {
+              "entity_type": "Product",
+              "full_name": "Low pH Good Morning Gel Cleanser"
+            }
+          }
+        },
+        "specialized": {
+          "entity_type": "ProductLine",
+          "products": {
+            "galactomyces_95_tone_balancing_essence": {
+              "entity_type": "Product",
+              "full_name": "Galactomyces 95 Tone Balancing Essence",
+              "key_ingredient": "Galactomyces ferment filtrate (95%)"
+            },
+            "alpha_arbutin_dark_spot_serum": {
+              "entity_type": "Product",
+              "full_name": "The Vitamin C 23 Serum / Alpha-Arbutin 2 Discoloration Care Serum",
+              "key_ingredients": ["Alpha-arbutin", "Niacinamide"],
+              "status": "Amazon's Choice"
+            },
+            "aloe_soothing_sun_cream": {
+              "entity_type": "Product",
+              "full_name": "Aloe Soothing Sun Cream SPF50+",
+              "spf": "SPF 50+"
+            },
+            "hyaluronic_acid_hydra_power_essence": {
+              "entity_type": "Product",
+              "full_name": "Hyaluronic Acid Hydra Power Essence"
+            }
+          }
+        },
+        "hair_care": {
+          "entity_type": "ProductLine",
+          "status": "Newest line (2025)",
+          "description": "Peptide 132 Hair Care Line extending skincare expertise to scalp care",
+          "trend_alignment": "Part of the broader K-haircare movement using skincare ingredients"
+        }
+      },
+      "target_demographics": {
+        "primary_age": "18-35",
+        "skin_types": ["Acne-prone", "Sensitive", "Dry", "All skin types"],
+        "psychographics": "Skincare minimalists who want effective, affordable, science-backed routines without complexity",
+        "market_segments": ["Gen Z", "Millennials", "Skincare beginners", "Ingredient-conscious consumers"]
+      },
+      "marketing": {
+        "approach": "Consumer-first, research-driven; authenticity over advertising",
+        "growth_engine": "Word-of-mouth through online forums, YouTube reviews, Reddit communities, and social media before-and-after content",
+        "content_style": "Results-focused, humble messaging; real improvements showcased by community",
+        "social_platforms": ["TikTok", "YouTube", "Reddit", "Instagram"],
+        "pop_up_events": {
+          "2025": "COSRX Glow Market pop-ups in Paris and London to accelerate European expansion"
+        }
+      },
+      "global_markets": {
+        "primary": ["South Korea", "United States"],
+        "expanding": ["Europe (UK, France)", "Australia", "Southeast Asia"],
+        "retail_channels": ["Amazon", "Ulta Beauty", "Dermstore", "Nordstrom", "Target", "Olive Young", "YesStyle"],
+        "overseas_sales_share": "90%+ of total revenue"
+      }
+    }
+  },
+
+  "industry_context": {
+    "kbeauty_trends_2025_2026": {
+      "entity_type": "TrendReport",
+      "period": "2025-2026",
+
+      "market_data": {
+        "kbeauty_market_size_2024": "$14.68 billion",
+        "kbeauty_market_projected_2033": "$31.8 billion",
+        "kbeauty_cagr_2025_2033": "~9%",
+        "us_kbeauty_cagr_2026_2033": "14.1%",
+        "us_kbeauty_projected_2033": "$18.8 billion",
+        "global_beauty_market_2026": "$677 billion",
+        "korea_cosmetics_export_rank": "#2 globally",
+        "korea_q1_2025_exports": "$3.61 billion",
+        "skincare_share_of_global_beauty": "~41%",
+        "makeup_share_of_global_beauty": "~19%",
+        "fragrance_share_of_global_beauty": "~19%"
+      },
+
+      "demographics": {
+        "gen_z_share_of_beauty_consumers": "~40%",
+        "gen_z_skincare_spending_share": "41% of their beauty spending",
+        "primary_kbeauty_audience": ["Gen Z (18-27)", "Millennials (28-42)"],
+        "consumer_values": [
+          "Digital fluency",
+          "Preference for authenticity",
+          "Wellness consciousness",
+          "Ingredient integrity",
+          "Sustainability",
+          "Simplicity"
+        ]
+      },
+
+      "trending_ingredients": {
+        "medicosmetic_actives": {
+          "description": "Clinical/pharmaceutical ingredients mainstreaming into consumer skincare",
+          "ingredients": [
+            {
+              "name": "PDRN",
+              "full_name": "Polydeoxyribonucleotide",
+              "category": "Bioactive",
+              "trend_status": "Rising rapidly"
+            },
+            {
+              "name": "Exosomes",
+              "category": "Bioactive",
+              "trend_status": "Rising rapidly"
+            },
+            {
+              "name": "Tranexamic acid",
+              "category": "Brightening",
+              "trend_status": "Rising"
+            },
+            {
+              "name": "Dexpanthenol",
+              "category": "Barrier repair",
+              "trend_status": "Rising"
+            },
+            {
+              "name": "EGF",
+              "full_name": "Epidermal Growth Factor",
+              "category": "Anti-aging",
+              "trend_status": "Rising"
+            }
+          ]
+        },
+        "modernized_hanbang": {
+          "description": "Traditional Korean herbal medicine ingredients updated with modern delivery technology",
+          "ingredients": [
+            {
+              "name": "Red Ginseng",
+              "properties": ["Anti-aging", "Collagen boosting", "Hyperpigmentation lightening"],
+              "active_compounds": ["Ginsenosides"],
+              "notable_brands": ["Sulwhasoo", "Beauty of Joseon"],
+              "trend_note": "Fermented ginseng is trending"
+            },
+            {
+              "name": "Mugwort",
+              "properties": ["Soothing", "Calming", "Anti-redness"],
+              "popular_formats": ["Masks", "Essences"]
+            },
+            {
+              "name": "Bamboo Sap",
+              "properties": ["Hydration", "Soothing"]
+            }
+          ],
+          "delivery_technology": ["Peptide pairing", "Encapsulation technologies"]
+        },
+        "established_hero_ingredients": [
+          {
+            "name": "Snail Mucin",
+            "status": "Continued strong demand",
+            "properties": ["Hydration", "Barrier strengthening"],
+            "lead_brand": "COSRX"
+          },
+          {
+            "name": "Centella Asiatica (Cica)",
+            "status": "Established staple",
+            "properties": ["Soothing", "Barrier repair"]
+          },
+          {
+            "name": "Niacinamide",
+            "status": "Universal staple",
+            "properties": ["Brightening", "Pore refinement", "Oil regulation"]
+          },
+          {
+            "name": "Ceramides",
+            "status": "Barrier care staple",
+            "properties": ["Barrier support", "Moisture retention"]
+          },
+          {
+            "name": "Fermented Extracts",
+            "examples": ["Galactomyces", "Bifida"],
+            "status": "Growing",
+            "properties": ["Brightening", "Hydration", "Anti-aging"]
+          }
+        ],
+        "emerging_ingredients": [
+          {
+            "name": "Bakuchiol",
+            "description": "Plant-based retinol alternative; gentle, suitable for sensitive skin; day and night use",
+            "trend_status": "Growing"
+          },
+          {
+            "name": "Azelaic acid",
+            "properties": ["Anti-inflammatory", "Anti-bacterial", "Antioxidant"],
+            "use_cases": ["Acne", "Redness", "Rosacea"],
+            "trend_status": "Growing"
+          },
+          {
+            "name": "Encapsulated Retinoids",
+            "description": "Stabilized retinoids with better delivery and less irritation",
+            "trend_status": "Rising"
+          },
+          {
+            "name": "Lab-grown Collagen Alternatives",
+            "trend_status": "Emerging"
+          },
+          {
+            "name": "Precision-fermented Peptides",
+            "trend_status": "Emerging"
+          },
+          {
+            "name": "Microbiome-friendly Probiotics",
+            "trend_status": "Emerging"
+          }
+        ]
+      },
+
+      "macro_trends": {
+        "medicosmetic_pivot": {
+          "description": "Mainstreaming of medical/pharmaceutical ingredients in consumer skincare",
+          "detail": "K-beauty leading by rapidly bringing clinical and bioactive ingredients to market",
+          "example": "VT Cosmetics Reedle Shot (microneedling alternative serum) went viral on TikTok"
+        },
+        "skincare_makeup_hybrid": {
+          "description": "Makeup products merging with skincare benefits",
+          "examples": ["CC creams", "Tinted moisturizers", "Cushion foundations with skincare actives"],
+          "key_ingredients_in_hybrids": ["Squalene", "Hyaluronic acid"],
+          "sub_trend": "Skincaring sunscreen addressing photoaging and hyperpigmentation"
+        },
+        "daily_skincare_devices": {
+          "description": "LED, microcurrent, and radiofrequency devices designed for daily home use",
+          "example": "Medicube AGE-R Booster Pro (Kylie Jenner seen using it)"
+        },
+        "sensory_textures": {
+          "description": "Consumer prioritization of user experience beyond efficacy",
+          "key_term": "After Feel - how skin feels post-application dominates purchase decisions"
+        },
+        "cooling_care": {
+          "description": "Climate-driven demand for temperature-reducing products",
+          "keywords": ["Heat sensation", "Redness relief", "Cooling properties"]
+        },
+        "collectible_fun": {
+          "description": "Playful, aesthetic packaging as engagement driver",
+          "keywords": ["Travel size", "Unique", "Keyring", "Collaboration", "Mini size"]
+        },
+        "k_haircare_emergence": {
+          "description": "Skincare brands entering haircare using skincare ingredients",
+          "ingredients": ["Cica", "Peptides"],
+          "focus": "Scalp care and hair regrowth",
+          "brands_entering": ["VT Cosmetics", "COSRX"]
+        }
+      },
+
+      "content_and_social_media": {
+        "tiktok": {
+          "kbeauty_video_growth": "740,000+ new short videos per quarter (97% QoQ increase)",
+          "top_hashtags": {
+            "#koreanskincare": "3.1 billion views",
+            "#skincareroutine": "3.3 billion views",
+            "#kbeauty": "2.1 billion views"
+          },
+          "popular_content_formats": [
+            {
+              "format": "Get Ready With Me (GRWM)",
+              "description": "Honest daily routine demonstrations showing real product application"
+            },
+            {
+              "format": "Before/After Results",
+              "description": "Transformation content showcasing product efficacy over time"
+            },
+            {
+              "format": "Glow Up in Korea",
+              "description": "Travel content documenting beauty transformations during Korea visits"
+            },
+            {
+              "format": "Product Reaction/Review",
+              "description": "Real-time first-impression product tests, especially cushion foundations and serums"
+            },
+            {
+              "format": "Ingredient Education",
+              "description": "Short-form explainers on ingredients like snail mucin, heartleaf, PDRN"
+            },
+            {
+              "format": "Shade Matching",
+              "description": "Foundation shade comparison and matching content across skin tones"
+            }
+          ],
+          "tiktok_shop_impact": "Direct path from discovery to purchase within the platform; K-beauty brands leveraging TikTok Shop heavily"
+        },
+        "youtube_shorts": {
+          "content_overlap": "Similar formats to TikTok; GRWM, ingredient deep-dives, product comparisons",
+          "longer_format_complement": "Full YouTube videos serve as deep-dive companion content to short-form clips"
+        }
+      },
+
+      "skincare_vs_makeup_trends": {
+        "skincare_dominance": "Skincare makes up ~41% of global beauty sales and continues to lead",
+        "gen_z_preference": "Gen Z spends 41% of beauty budget on skincare, surpassing makeup",
+        "hybrid_growth": "The boundary between skincare and makeup is blurring with cushion foundations, tinted SPFs, and skin-treatment makeup",
+        "makeup_trend": "K-beauty makeup emphasizes natural radiance ('glass skin') over heavy coverage",
+        "emerging_shift": "Wearable, multi-layered radiance promoted through hybrid products"
+      }
+    }
+  },
+
+  "knowledge_graph_relationships": {
+    "description": "Suggested relationships for loading into a knowledge graph",
+    "entity_types": [
+      "Brand",
+      "Product",
+      "ProductLine",
+      "Ingredient",
+      "IngredientComplex",
+      "Person",
+      "Award",
+      "RetailChannel",
+      "Market",
+      "Trend",
+      "ContentFormat",
+      "Demographic"
+    ],
+    "relationship_types": [
+      {
+        "type": "PRODUCES",
+        "from": "Brand",
+        "to": "Product",
+        "example": "TIRTIR -[PRODUCES]-> Mask Fit Red Cushion"
+      },
+      {
+        "type": "BELONGS_TO_LINE",
+        "from": "Product",
+        "to": "ProductLine",
+        "example": "Advanced Snail 96 Mucin Essence -[BELONGS_TO_LINE]-> Snail Mucin Line"
+      },
+      {
+        "type": "CONTAINS_INGREDIENT",
+        "from": "Product",
+        "to": "Ingredient",
+        "attributes": ["concentration", "role"],
+        "example": "Heartleaf 77% Soothing Toner -[CONTAINS_INGREDIENT {concentration: 77%}]-> Heartleaf"
+      },
+      {
+        "type": "HERO_INGREDIENT_OF",
+        "from": "Ingredient",
+        "to": "Brand",
+        "example": "Snail Mucin -[HERO_INGREDIENT_OF]-> COSRX"
+      },
+      {
+        "type": "ENDORSES",
+        "from": "Person",
+        "to": "Brand",
+        "attributes": ["role", "start_date"],
+        "example": "V (BTS) -[ENDORSES {role: Global Ambassador}]-> TIRTIR"
+      },
+      {
+        "type": "SOLD_AT",
+        "from": "Brand",
+        "to": "RetailChannel",
+        "example": "COSRX -[SOLD_AT]-> Amazon"
+      },
+      {
+        "type": "TARGETS_DEMOGRAPHIC",
+        "from": "Brand",
+        "to": "Demographic",
+        "example": "Anua -[TARGETS_DEMOGRAPHIC]-> Gen Z Clean Beauty Enthusiasts"
+      },
+      {
+        "type": "ACTIVE_IN_MARKET",
+        "from": "Brand",
+        "to": "Market",
+        "attributes": ["status"],
+        "example": "TIRTIR -[ACTIVE_IN_MARKET {status: expanding}]-> Europe"
+      },
+      {
+        "type": "WON_AWARD",
+        "from": "Product",
+        "to": "Award",
+        "attributes": ["year"],
+        "example": "Mask Fit Red Cushion -[WON_AWARD {year: 2024}]-> @cosme Best Cosmetics"
+      },
+      {
+        "type": "OWNED_BY",
+        "from": "Brand",
+        "to": "Brand",
+        "example": "COSRX -[OWNED_BY]-> Amorepacific"
+      },
+      {
+        "type": "COMPETES_WITH",
+        "from": "Brand",
+        "to": "Brand",
+        "attributes": ["category"],
+        "example": "Anua -[COMPETES_WITH {category: toner}]-> COSRX"
+      },
+      {
+        "type": "ALIGNS_WITH_TREND",
+        "from": "Product",
+        "to": "Trend",
+        "example": "COSRX Peptide 132 Hair Care -[ALIGNS_WITH_TREND]-> K-Haircare Emergence"
+      },
+      {
+        "type": "VIRAL_ON_PLATFORM",
+        "from": "Product",
+        "to": "ContentFormat",
+        "attributes": ["platform", "views"],
+        "example": "Heartleaf 77% Toner -[VIRAL_ON_PLATFORM {platform: TikTok, views: 28.6M}]-> Product Review"
+      },
+      {
+        "type": "INGREDIENT_HAS_PROPERTY",
+        "from": "Ingredient",
+        "to": "Property",
+        "example": "Heartleaf -[INGREDIENT_HAS_PROPERTY]-> Anti-inflammatory"
+      },
+      {
+        "type": "SUBSIDIARY_OF",
+        "from": "Brand",
+        "to": "Brand",
+        "attributes": ["stake_percentage", "acquisition_year"],
+        "example": "COSRX -[SUBSIDIARY_OF {stake: 93.2%, year: 2024}]-> Amorepacific"
+      }
+    ]
+  }
+}
