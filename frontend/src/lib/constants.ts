@@ -32,6 +32,9 @@ export const BRAND_COLORS: Record<string, string> = {
   sunhari: "#F48FB1",
   isul_ttokttok: "#80DEEA",
   multi: "#7B1FA2",
+  imperial: "#795548",
+  windsor: "#5D4037",
+  golden_blue: "#1565C0",
   "": "#888",
 };
 

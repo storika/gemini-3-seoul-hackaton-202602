@@ -1,13 +1,19 @@
 import type { TimelineEvent, KGSnapshot, ModelEntry, VideoStatus } from "./types";
 
-export async function fetchEvents(): Promise<TimelineEvent[]> {
-  const res = await fetch("/api/timeline/events");
+export async function fetchEvents(industry?: string): Promise<TimelineEvent[]> {
+  const params = new URLSearchParams();
+  if (industry && industry !== "all") params.set("industry", industry);
+  const qs = params.toString();
+  const res = await fetch(`/api/timeline/events${qs ? `?${qs}` : ""}`);
   if (!res.ok) throw new Error("Failed to fetch events");
   return res.json();
 }
 
-export async function fetchModels(): Promise<ModelEntry[]> {
-  const res = await fetch("/api/timeline/models");
+export async function fetchModels(industry?: string): Promise<ModelEntry[]> {
+  const params = new URLSearchParams();
+  if (industry && industry !== "all") params.set("industry", industry);
+  const qs = params.toString();
+  const res = await fetch(`/api/timeline/models${qs ? `?${qs}` : ""}`);
   if (!res.ok) throw new Error("Failed to fetch models");
   return res.json();
 }

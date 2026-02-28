@@ -6,6 +6,10 @@
   --chum_churum: #1565C0;
   --saero: #F57C00;
   --multi: #7B1FA2;
+  --jw_global: #8D6E63;
+  --jw_red: #C62828;
+  --jw_black: #212121;
+  --jw_blue: #1565C0;
   --bg: #0f1117;
   --bg-panel: #1a1d27;
   --bg-hover: #252836;
@@ -59,12 +63,17 @@ body {
 .type-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 .type-tab.active[data-type="soju"] { background: #2E7D32; border-color: #2E7D32; }
 .type-tab.active[data-type="beer"] { background: #F57C00; border-color: #F57C00; }
+.type-tab.active[data-type="whisky"] { background: #8D6E63; border-color: #8D6E63; }
 .brand-tab { font-weight: 500; }
 .brand-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 .brand-tab.active[data-brand="jinro"] { background: var(--jinro); border-color: var(--jinro); }
 .brand-tab.active[data-brand="chamisul"] { background: var(--chamisul); border-color: var(--chamisul); }
 .brand-tab.active[data-brand="chum_churum"] { background: var(--chum_churum); border-color: var(--chum_churum); }
 .brand-tab.active[data-brand="saero"] { background: var(--saero); border-color: var(--saero); }
+.brand-tab.active[data-brand="jw_global"] { background: var(--jw_global); border-color: var(--jw_global); }
+.brand-tab.active[data-brand="jw_red"] { background: var(--jw_red); border-color: var(--jw_red); }
+.brand-tab.active[data-brand="jw_black"] { background: var(--jw_black); border-color: var(--jw_black); }
+.brand-tab.active[data-brand="jw_blue"] { background: var(--jw_blue); border-color: var(--jw_blue); }
 
 .date-display {
   margin-left: auto;

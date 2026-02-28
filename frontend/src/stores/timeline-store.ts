@@ -5,6 +5,7 @@ interface TimelineState {
   currentDate: Date;
   brand: string;
   productType: string;
+  industry: string;
   events: TimelineEvent[];
   models: ModelEntry[];
   snapshot: KGSnapshot | null;
@@ -15,6 +16,7 @@ interface TimelineState {
   setCurrentDate: (date: Date) => void;
   setBrand: (brand: string) => void;
   setProductType: (type: string) => void;
+  setIndustry: (industry: string) => void;
   setEvents: (events: TimelineEvent[]) => void;
   setModels: (models: ModelEntry[]) => void;
   setSnapshot: (snapshot: KGSnapshot | null) => void;
@@ -27,6 +29,7 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   currentDate: new Date(1924, 0, 1),
   brand: "all",
   productType: "all",
+  industry: "all",
   events: [],
   models: [],
   snapshot: null,
@@ -37,6 +40,7 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   setCurrentDate: (date) => set({ currentDate: date }),
   setBrand: (brand) => set({ brand }),
   setProductType: (type) => set({ productType: type }),
+  setIndustry: (industry) => set({ industry }),
   setEvents: (events) => set({ events }),
   setModels: (models) => set({ models }),
   setSnapshot: (snapshot) => set({ snapshot }),
