@@ -2,55 +2,55 @@
 
 **Gemini 3.0 Seoul Hackathon 2026**
 
-이 프로젝트는 한국 소주 시장의 100년 역사(1924~2026)를 기반으로 브랜드의 진화와 마케팅 트렌드를 시각화하고, AI 에이전트를 통해 새로운 브랜드 전략과 크리에이티브 콘텐츠를 생성하는 멀티 에이전트 시스템입니다.
+This project is a multi-agent system that visualizes the 100-year history (1924–2026) of the Korean Soju market, analyzes brand evolution and marketing trends, and generates new brand strategies and creative content using AI agents.
 
 ---
 
 ## 🏗️ Project Architecture & Google Stack
 
-이 프로젝트는 최신 Google AI 기술 스택을 전방위적으로 활용하여 구축되었습니다.
+The project is built entirely on the latest Google AI technology stack.
 
 ### 1. Multi-Agent Orchestration: Google ADK (Agent Development Kit)
-Google ADK를 사용하여 복잡한 워크플로우를 자율적으로 수행하는 전문 에이전트들을 구축했습니다.
-- **Root Agent (Soju Director)**: `LlmAgent`를 사용하여 전체 시스템을 지휘하고 사용자 요청에 따라 적절한 하위 에이전트로 작업을 라우팅합니다.
-- **Trend Analyzer**: `SequentialAgent`와 `google_search` 도구를 결합하여 실시간 시장 트렌드와 역사적 맥락을 조사합니다.
-- **Creative Director**: `imagen-4.0` 및 `veo-3.1`과 통합되어 브랜드 아이덴티티에 맞는 이미지와 비디오 광고 시놉시스를 생성합니다.
-- **Brand Guard**: `LlmAgent`를 통해 생성된 콘텐츠가 브랜드의 역사적 사실(예: 특정 연도의 모델, 도수 등)과 일치하는지 검증하여 Hallucination을 방지합니다.
+We used the Google ADK to build specialized agents that autonomously perform complex workflows:
+- **Root Agent (Soju Director)**: Orchestrates the entire system using `LlmAgent`, routing user requests to the appropriate sub-agents.
+- **Trend Analyzer**: Combines `SequentialAgent` with the `google_search` tool to research real-time market trends and historical context.
+- **Creative Director**: Integrated with `imagen-4.0` and `veo-3.1` to generate images and video ad synopses aligned with brand identity.
+- **Brand Guard**: Uses `LlmAgent` to verify that generated content matches historical brand facts (e.g., specific ambassadors or alcohol percentages for a given year), preventing hallucinations.
 
 ### 2. Core LLM: Gemini 3.0 Flash Preview
-모든 에이전트의 두뇌로 **Gemini 3.0 Flash Preview**를 채택했습니다.
-- **특징**: 초고속 추론 속도와 확장된 컨텍스트 윈도우를 통해 100년 치의 방대한 브랜드 데이터를 실시간으로 분석하고 처리합니다.
-- **활용**: 복잡한 추론, 데이터 구조화(Graph-to-Text), 그리고 에이전트 간의 정교한 협업 로직을 수행합니다.
+**Gemini 3.0 Flash Preview** serves as the brain for all agents:
+- **Features**: Its ultra-fast inference and expanded context window allow for real-time analysis of 100 years of extensive brand data.
+- **Usage**: Handles complex reasoning, data structuring (Graph-to-Text), and sophisticated orchestration between agents.
 
 ### 3. Generative Media: Imagen 4.0 & Veo 3.1
-최신 미디어 생성 모델을 사용하여 브랜드의 과거를 재현하고 미래를 제안합니다.
-- **Imagen 4.0**: 고해상도 제품 이미지 및 라이프스타일 캠페인 비주얼 생성.
-- **Veo 3.1**: 브랜드 스토리텔링을 위한 고품질의 숏폼 광고 영상 생성.
-- **Integration**: `google-genai` SDK를 직접 연동하여 프롬프트 최적화 및 결과물 관리를 자동화했습니다.
+We utilize the latest media generation models to recreate the past and propose the future of brands:
+- **Imagen 4.0**: Generates high-resolution product images and lifestyle campaign visuals.
+- **Veo 3.1**: Produces high-quality short-form video ads for brand storytelling.
+- **Integration**: Directly interfaced via the `google-genai` SDK to automate prompt optimization and asset management.
 
 ### 4. Advanced RAG: Hybrid Memory System
-- **Vector Store (ChromaDB)**: 시맨틱 검색을 통한 관련 정보 추출.
-- **Knowledge Graph (NetworkX)**: 엔티티 간의 관계(브랜드-모델-이벤트)를 정교하게 추적.
-- **Temporal Decay**: 시간에 따른 정보의 중요도를 계산하여, 현재 시점(Timeline)에 가장 적합한 맥락을 Gemini에게 전달합니다.
+- **Vector Store (ChromaDB)**: Extracts relevant information through semantic search.
+- **Knowledge Graph (NetworkX)**: Precisely tracks relationships between entities (Brand-Model-Event).
+- **Temporal Decay**: Calculates information importance over time, providing Gemini with the most relevant context based on the active timeline date.
 
 ---
 
 ## 🌟 Key Features
 
-1. **Interactive 100-Year Timeline**: 1924년부터 2026년까지 소주 브랜드의 변화를 실시간으로 탐색.
-2. **Dynamic Knowledge Graph**: 시간에 따라 브랜드의 지식 네트워크가 어떻게 확장되고 연결되는지 시각화.
-3. **AI Campaign Generator**: 특정 시점의 트렌드를 반영한 광고 이미지 및 영상 즉시 생성.
-4. **Hallucination-Free Guardrail**: Brand Guard 에이전트가 모든 생성 결과물을 역사적 사실(Seed Data)과 대조 검증.
+1. **Interactive 100-Year Timeline**: Explore the evolution of Soju brands from 1924 to 2026 in real-time.
+2. **Dynamic Knowledge Graph**: Visualize how brand knowledge networks expand and connect over a century.
+3. **AI Campaign Generator**: Instantly generate ad images and videos reflecting trends from specific historical periods.
+4. **Hallucination-Free Guardrail**: The Brand Guard agent cross-references all generated output against historical seed data for factual accuracy.
 
 ---
 
-## 📂 Structure
-- `src/agents/`: Google ADK 기반 멀티 에이전트 로직.
-- `src/media/`: Imagen 및 Veo 클라이언트 인터페이스.
-- `src/memory/`: 그래프 데이터베이스와 벡터 DB를 결합한 하이브리드 메모리.
-- `src/api/`: FastAPI 기반 백엔드.
-- `frontend/`: Next.js 기반의 타임라인 시각화 인터페이스.
-- `GEMINI.md`: 기술적 상세 구현 및 에이전트 설계 사양.
+## 📂 Project Structure
+- `src/agents/`: Multi-agent logic based on Google ADK.
+- `src/media/`: Client interfaces for Imagen and Veo.
+- `src/memory/`: Hybrid memory combining Graph and Vector DBs.
+- `src/api/`: Backend powered by FastAPI.
+- `frontend/`: Next.js-based timeline visualization interface.
+- `GEMINI.md`: Technical deep-dive and agent design specifications.
 
 ---
 
@@ -59,7 +59,7 @@ Google ADK를 사용하여 복잡한 워크플로우를 자율적으로 수행�
 1. **Environment Setup**:
    ```bash
    cp .env.example .env
-   # GOOGLE_API_KEY 입력 (Gemini 3.0, Imagen, Veo 권한 필요)
+   # Enter your GOOGLE_API_KEY (Requires Gemini 3.0, Imagen, and Veo permissions)
    ```
 
 2. **Installation**:
