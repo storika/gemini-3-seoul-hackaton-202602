@@ -331,7 +331,7 @@ export function buildFOLPopup(
             className="popup-type-badge fol"
             style={{ background: `${folColor}20`, color: folColor }}
           >
-            FOL {typeLabels[nodeType] || nodeType}
+            {typeLabels[nodeType] || nodeType}
           </span>
           <h3>{label}</h3>
           <span className="popup-brand-sub" style={{ color: brandColor }}>

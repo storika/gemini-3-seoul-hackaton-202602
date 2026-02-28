@@ -8,10 +8,11 @@ export function useKGSnapshot() {
   const currentDate = useTimelineStore((s) => s.currentDate);
   const brand = useTimelineStore((s) => s.brand);
   const folVisible = useTimelineStore((s) => s.folVisible);
+  const industry = useTimelineStore((s) => s.industry);
   const setSnapshot = useTimelineStore((s) => s.setSnapshot);
 
   const isoDate = currentDate.toISOString().slice(0, 10);
-  const key = `${isoDate}|${brand}|${folVisible}`;
+  const key = `${isoDate}|${brand}|${folVisible}|${industry}`;
 
   // Debounce: update the fetched key after a short delay
   const [debouncedKey, setDebouncedKey] = useState(key);
@@ -28,12 +29,12 @@ export function useKGSnapshot() {
     return () => clearTimeout(t);
   }, [key]);
 
-  const [dIso, dBrand, dFol] = debouncedKey.split("|");
+  const [dIso, dBrand, dFol, dIndustry] = debouncedKey.split("|");
   const includeFol = dFol === "true";
 
   const { data, error } = useSWR(
-    ["kg-snapshot", dIso, dBrand, includeFol],
-    () => fetchKGSnapshot(dIso, dBrand, includeFol),
+    ["kg-snapshot", dIso, dBrand, includeFol, dIndustry],
+    () => fetchKGSnapshot(dIso, dBrand, includeFol, undefined, dIndustry),
     {
       revalidateOnFocus: false,
       keepPreviousData: true,

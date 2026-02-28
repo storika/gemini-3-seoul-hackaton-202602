@@ -100,12 +100,18 @@ def _find_real_image(
 
     year_str = str(start_year)
 
-    # 1) year + model name match
+    # 1) year + model name match (case-insensitive for English names)
     for model_name in model_names:
         clean = model_name.split("(")[0].strip()
+        clean_lower = clean.lower()
         for fname in files:
-            if fname.startswith(year_str) and clean in fname:
+            if fname.startswith(year_str) and (clean in fname or clean_lower in fname.lower()):
                 return f"/images/real/{quote(product_id, safe='')}/{quote(fname, safe='')}"
+
+    # 2) year-only match (fallback)
+    for fname in files:
+        if fname.startswith(year_str):
+            return f"/images/real/{quote(product_id, safe='')}/{quote(fname, safe='')}"
 
     return ""
 

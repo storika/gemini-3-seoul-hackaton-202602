@@ -17,8 +17,10 @@ def kg_snapshot(
     brand: str = Query("all", description="Brand filter: chamisul, chumchurum, saero, or all"),
     alpha: float = Query(TIMELINE_ALPHA, description="Temporal decay alpha"),
     include_fol: bool = Query(False, description="Include FOL evidence layer"),
+    industry: str = Query("all", description="Industry filter: soju, whisky, or all"),
 ):
     """Return a KG snapshot at the given date."""
     target = datetime.fromisoformat(date)
     brand_filter = brand if brand != "all" else None
-    return build_kg_snapshot(target, brand_filter=brand_filter, alpha=alpha, include_fol=include_fol)
+    industry_filter = industry if industry != "all" else None
+    return build_kg_snapshot(target, brand_filter=brand_filter, alpha=alpha, include_fol=include_fol, industry_filter=industry_filter)

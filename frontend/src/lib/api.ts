@@ -22,11 +22,13 @@ export async function fetchKGSnapshot(
   date: string,
   brand: string = "all",
   includeFol: boolean = false,
-  alpha?: number
+  alpha?: number,
+  industry: string = "all"
 ): Promise<KGSnapshot> {
   const params = new URLSearchParams({ date, brand });
   if (includeFol) params.set("include_fol", "true");
   if (alpha !== undefined) params.set("alpha", String(alpha));
+  if (industry && industry !== "all") params.set("industry", industry);
   const res = await fetch(`/api/kg/snapshot?${params}`);
   if (!res.ok) throw new Error("Failed to fetch KG snapshot");
   return res.json();

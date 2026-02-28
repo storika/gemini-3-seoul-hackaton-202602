@@ -29,7 +29,7 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   currentDate: new Date(1924, 0, 1),
   brand: "all",
   productType: "all",
-  industry: "all",
+  industry: "soju",
   events: [],
   models: [],
   snapshot: null,

@@ -18,10 +18,12 @@ export interface TimelineEvent {
 export interface KGNode {
   id: string;
   label: string;
+  label_ko?: string;
   type: string;
   brand: string;
   temporal_weight: number;
   added_date: string;
+  event_id?: string;
 }
 
 export interface KGEdge {

@@ -57,6 +57,7 @@ def build_kg_snapshot(
     brand_filter: str | None = None,
     alpha: float = TIMELINE_ALPHA,
     include_fol: bool = False,
+    industry_filter: str | None = None,
 ) -> dict[str, Any]:
     """Build a KG snapshot at *target_date*.
 
@@ -82,6 +83,8 @@ def build_kg_snapshot(
 
     for event in ALL_EVENTS:
         if event.date > target_date:
+            continue
+        if industry_filter and industry_filter != "all" and event.industry != industry_filter:
             continue
         if brand_filter and brand_filter != "all" and event.brand != brand_filter and event.brand != "multi":
             continue

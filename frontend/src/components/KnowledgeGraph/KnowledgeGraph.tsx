@@ -4,6 +4,7 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import { useTimelineStore } from "@/stores/timeline-store";
 import { useKGRenderer } from "./useKGRenderer";
 import NodePopup from "./NodePopup";
+import ReasoningPanel from "./ReasoningPanel";
 import type { ModelEntry } from "@/lib/types";
 
 interface NodeData {
@@ -63,12 +64,13 @@ export default function KnowledgeGraph() {
         <button
           className={`fol-toggle${folVisible ? " active" : ""}`}
           onClick={toggleFOL}
-          title="Toggle FOL Evidence Layer"
+          title="Toggle Reasoning Graph"
         >
-          <span style={{ fontSize: 12, fontWeight: 700 }}>&and;</span> FOL
+          <span style={{ fontSize: 12, fontWeight: 700 }}>&and;</span> Reasoning
         </button>
       </div>
       <div ref={containerRef} className="cy-container" />
+      {folVisible && <ReasoningPanel />}
       <NodePopup
         node={selectedNode}
         modelGallery={modelGallery}
