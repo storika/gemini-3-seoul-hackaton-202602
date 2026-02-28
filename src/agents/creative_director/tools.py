@@ -34,7 +34,7 @@ async def generate_image(
     """Generate a product image using Imagen 4 and save to demo/generated_images/.
 
     Args:
-        brand_name: The brand name (TIRTIR, ANUA, COSRX).
+        brand_name: The brand name (Chamisul, Chum Churum, Saero).
         product_name: The product to feature.
         style: Photography style (editorial, lifestyle, flat lay, etc.).
         context: Additional visual context for the image.
@@ -95,7 +95,7 @@ async def generate_video(
     This calls the real Veo 3.1 API. Video generation takes 2-5 minutes.
 
     Args:
-        brand_name: The brand name (TIRTIR, ANUA, COSRX).
+        brand_name: The brand name (Chamisul, Chum Churum, Saero).
         product_name: The product to feature.
         style: Video style (cinematic reveal, ASMR application, brand story, etc.).
         hero_ingredient: Optional hero ingredient to highlight visually.
@@ -163,10 +163,10 @@ def build_creative_brief(
     target_platform: str = "TikTok",
     content_type: str = "product_launch",
 ) -> dict:
-    """Build a creative brief for a K-beauty brand campaign.
+    """Build a creative brief for a Korean liquor brand campaign.
 
     Args:
-        brand_name: The brand name (TIRTIR, ANUA, COSRX).
+        brand_name: The brand name (Chamisul, Chum Churum, Saero).
         campaign_goal: What the campaign should achieve.
         target_platform: Primary distribution platform.
         content_type: Type of content (product_launch, seasonal, brand_story, trend_response).
@@ -183,20 +183,20 @@ def build_creative_brief(
     specs = platform_specs.get(target_platform, platform_specs["TikTok"])
 
     brand_guidelines = {
-        "TIRTIR": {
-            "visual_tone": "Bold, radiant, inclusive",
-            "colors": "Red accents, warm tones",
-            "must_include": "Shade diversity, cushion compact",
+        "CHAMISUL": {
+            "visual_tone": "Pure, clean, traditional",
+            "colors": "Green accents, bamboo tones",
+            "must_include": "Bamboo charcoal filtration, clean soju imagery",
         },
-        "ANUA": {
-            "visual_tone": "Gentle, minimal, natural",
-            "colors": "Soft greens, earth tones",
-            "must_include": "Heartleaf motif, ingredient transparency",
+        "CHUM CHURUM": {
+            "visual_tone": "Soft, trendy, youthful",
+            "colors": "Blue accents, water tones",
+            "must_include": "Alkaline water, smooth taste messaging",
         },
-        "COSRX": {
-            "visual_tone": "Clinical, honest, transformative",
-            "colors": "White, clean, medical-inspired",
-            "must_include": "Before/after results, ingredient callouts",
+        "SAERO": {
+            "visual_tone": "Modern, bold, zero-sugar",
+            "colors": "Orange accents, vibrant tones",
+            "must_include": "Zero sugar messaging, Saerogumi character",
         },
     }
 

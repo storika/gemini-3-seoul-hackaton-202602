@@ -61,7 +61,7 @@ async def generate_context(content: str, existing_keywords: list[str] | None = N
     """Generate a contextual summary for a memory note."""
     kw_hint = f"\nExisting keywords: {', '.join(existing_keywords)}" if existing_keywords else ""
     prompt = (
-        "Generate a brief contextual summary (1-2 sentences) for the following K-beauty brand information. "
+        "Generate a brief contextual summary (1-2 sentences) for the following Korean liquor brand information. "
         "Focus on why this information matters for brand strategy and marketing.\n\n"
         f"Content: {content}{kw_hint}"
     )
@@ -83,7 +83,7 @@ async def find_connections(
         f"- ID={n['id']}: {n['content'][:100]}" for n in candidate_notes[:20]
     )
     prompt = (
-        "Given the following new K-beauty note and a list of existing notes, "
+        "Given the following new Korean liquor note and a list of existing notes, "
         "identify which existing notes are strongly related. "
         "Return only the IDs of related notes as a comma-separated list. "
         "If none are related, return 'NONE'.\n\n"
@@ -100,7 +100,7 @@ async def summarize_memories(brand_namespace: str, category: str, note_texts: li
     """Consolidate multiple notes into a single high-quality summary."""
     notes_blob = "\n".join([f"- {text}" for text in note_texts])
     prompt = (
-        f"The following are multiple memory notes regarding the K-beauty brand '{brand_namespace}' "
+        f"The following are multiple memory notes regarding the Korean liquor brand '{brand_namespace}' "
         f"in the category '{category}'. Consolidate these into a single, comprehensive, and "
         "strategically useful summary that retains all critical facts (ingredients, claims, "
         "achievements) while removing redundancy. Keep the tone professional and brand-aligned.\n\n"

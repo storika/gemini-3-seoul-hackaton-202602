@@ -1,7 +1,7 @@
 """Root agent orchestrator — ADK entry point.
 
 Routes requests to sub-agents:
-  - trend_pipeline: Search + analyze K-beauty trends
+  - trend_pipeline: Search + analyze Korean liquor/soju trends
   - content_pipeline: Creative content generation + brand validation
   - brand_guard: Standalone brand identity verification
 """

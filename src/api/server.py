@@ -1,4 +1,4 @@
-"""FastAPI application for K-Beauty Brand Identity Evolution Timeline."""
+"""FastAPI application for Soju Wars: 100-Year Brand Evolution Timeline."""
 
 from __future__ import annotations
 
@@ -39,7 +39,9 @@ _img_dir = Path(__file__).parent.parent.parent / "generated_images"
 _img_dir.mkdir(exist_ok=True)
 app.mount("/images", StaticFiles(directory=str(_img_dir)), name="images")
 
-# Static files — frontend SPA (catch-all, must be last)
+# Static files — legacy Vanilla JS SPA (disabled when using Next.js frontend)
+# To re-enable: set SERVE_LEGACY_SPA=1
+import os as _os
 _web_dir = Path(__file__).parent.parent / "web"
-if _web_dir.is_dir():
+if _web_dir.is_dir() and _os.getenv("SERVE_LEGACY_SPA"):
     app.mount("/", StaticFiles(directory=str(_web_dir), html=True), name="static")

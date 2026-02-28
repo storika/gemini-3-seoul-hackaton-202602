@@ -59,7 +59,7 @@ class SessionManager:
         )
 
         prompt = (
-            "Summarize the following K-beauty brand conversation. "
+            "Summarize the following Korean liquor brand conversation. "
             "Extract: 1) A brief summary (2-3 sentences), "
             "2) Key decisions made, 3) Topics discussed.\n\n"
             "Format your response as:\n"

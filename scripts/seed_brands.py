@@ -39,13 +39,13 @@ def main() -> None:
 
     # Print stats
     print("\n=== Memory Stats ===")
-    for brand in ["tirtir", "anua", "cosrx"]:
+    for brand in ["chamisul", "chumchurum", "saero"]:
         stats = memory.stats(brand)
         print(f"  {brand.upper()}: {stats}")
 
     # Quick test search
     print("\n=== Quick Search Test ===")
-    results = memory.search("cushion foundation", "tirtir", k=3)
+    results = memory.search("bamboo charcoal soju", "chamisul", k=3)
     for r in results:
         print(f"  [{r.get('combined_score', 0):.3f}] {r.get('document', '')[:80]}")
 

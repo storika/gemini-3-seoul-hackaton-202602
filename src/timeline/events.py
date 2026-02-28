@@ -28,12 +28,12 @@ class TimelineEvent:
 
     id: str
     date: datetime
-    brand: str  # "tirtir", "anua", "cosrx", "jinro", "chamisul", "chum_churum", "saero", or "multi"
+    brand: str  # "jinro", "chamisul", "chum_churum", "saero", or "multi"
     title: str
     title_ko: str
     description: str
     category: str  # "founding", "product_launch", "viral", "award", "corporate", "campaign", "expansion", "model_change", "market_shift"
-    industry: str = "kbeauty"  # "kbeauty" or "soju"
+    industry: str = "soju"
     kg_mutations: list[KGMutation] = field(default_factory=list)
     video_prompt: str = ""
     impact_score: float = 1.0  # 1.0~5.0 scale for visual emphasis

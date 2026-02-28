@@ -18,7 +18,7 @@ def search_brand_trends(brand_namespace: str, query: str) -> dict:
     """Search brand memory for trend-related information.
 
     Args:
-        brand_namespace: Brand to search (tirtir, anua, cosrx).
+        brand_namespace: Brand to search (chamisul, chumchurum, saero).
         query: The trend or topic to search for.
 
     Returns:

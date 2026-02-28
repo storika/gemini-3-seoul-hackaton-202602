@@ -80,10 +80,10 @@ def build_product_video_prompt(
     style: str = "smooth cinematic reveal",
     hero_ingredient: str = "",
 ) -> str:
-    """Build a Veo prompt for K-beauty product video."""
+    """Build a Veo prompt for Korean soju product video."""
     prompt = (
         f"{style} of {brand_name} {product_name}. "
-        "Elegant Korean beauty commercial style. "
+        "Elegant Korean soju commercial style. "
         "Close-up product shots with soft lighting transitions. "
         "Clean, minimal aesthetic."
     )
@@ -101,6 +101,6 @@ def build_brand_story_prompt(
     return (
         f"Brand story video for {brand_name}: {narrative}. "
         f"Mood: {mood}. "
-        "Cinematic K-beauty style, natural lighting, "
-        "glass skin close-ups, 9:16 vertical format for social media."
+        "Cinematic Korean soju style, natural lighting, "
+        "product close-ups, 9:16 vertical format for social media."
     )

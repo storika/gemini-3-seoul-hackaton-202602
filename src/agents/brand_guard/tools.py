@@ -17,7 +17,7 @@ def check_brand_alignment(brand_namespace: str, content: str) -> dict:
     """Check if content aligns with brand identity and values.
 
     Args:
-        brand_namespace: Brand to check against (tirtir, anua, cosrx).
+        brand_namespace: Brand to check against (chamisul, chumchurum, saero).
         content: The content to evaluate for brand alignment.
 
     Returns:
@@ -58,7 +58,7 @@ def check_ingredient_accuracy(brand_namespace: str, product_name: str, claimed_i
     """Verify ingredient claims against the knowledge graph.
 
     Args:
-        brand_namespace: Brand to verify (tirtir, anua, cosrx).
+        brand_namespace: Brand to verify (chamisul, chumchurum, saero).
         product_name: Name of the product being checked.
         claimed_ingredients: Comma-separated list of claimed ingredients.
 

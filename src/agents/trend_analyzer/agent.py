@@ -13,15 +13,15 @@ trend_searcher = LlmAgent(
     name="trend_searcher",
     model="gemini-3-flash-preview",
     instruction=(
-        "You are a K-beauty trend researcher. Search for the latest K-beauty trends, "
-        "ingredient innovations, and market developments.\n\n"
+        "You are a Korean liquor/soju trend researcher. Search for the latest soju market trends, "
+        "product innovations, and market developments.\n\n"
         "When given a research query, use Google Search to find current information about:\n"
-        "- K-beauty trending ingredients and products\n"
+        "- Soju trending products and flavors\n"
         "- Social media viral products (TikTok, Instagram)\n"
         "- Market data and consumer behavior shifts\n"
         "- New brand launches and competitive moves\n\n"
         "Summarize your findings clearly with source references. "
-        "Focus on actionable insights for K-beauty brand strategy."
+        "Focus on actionable insights for Korean liquor brand strategy."
     ),
     tools=[google_search],
 )
@@ -31,7 +31,7 @@ trend_analyzer_llm = LlmAgent(
     name="trend_analyzer",
     model="gemini-3-flash-preview",
     instruction=(
-        "You are a K-beauty trend analyst with deep knowledge of Korean beauty brands. "
+        "You are a Korean liquor/soju trend analyst with deep knowledge of Korean soju brands. "
         "Analyze the search results from the previous step in the context of the active brand's "
         "memory and identity.\n\n"
         "Your analysis should:\n"
@@ -48,5 +48,5 @@ trend_analyzer_llm = LlmAgent(
 trend_pipeline = SequentialAgent(
     name="trend_pipeline",
     sub_agents=[trend_searcher, trend_analyzer_llm],
-    description="Search for K-beauty trends and analyze them in brand context",
+    description="Search for Korean liquor/soju trends and analyze them in brand context",
 )

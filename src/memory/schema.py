@@ -8,7 +8,7 @@ from typing import Literal
 import uuid
 
 
-BrandNamespace = Literal["tirtir", "anua", "cosrx"]
+BrandNamespace = Literal["chamisul", "chumchurum", "saero"]
 NoteCategory = Literal["product", "marketing", "trend", "brand_identity", "ingredient", "competitive"]
 
 

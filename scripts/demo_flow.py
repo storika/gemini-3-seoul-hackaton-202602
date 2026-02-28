@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""End-to-end demo script for K-Beauty Brand Agent.
+"""End-to-end demo script for Soju Brand Agent.
 
 Demonstrates:
 1. Seed data loading → KG + memory
@@ -25,7 +25,7 @@ from src.media.veo_client import build_product_video_prompt, build_brand_story_p
 
 def main() -> None:
     print("=" * 60)
-    print("K-BEAUTY BRAND AGENT — E2E DEMO")
+    print("SOJU BRAND AGENT — E2E DEMO")
     print("=" * 60)
 
     # ── Step 1: Seed Data ──────────────────────────────────────
@@ -43,28 +43,28 @@ def main() -> None:
 
     # Add product-specific notes for richer search results
     memory.add_note(
-        "TIRTIR Mask Fit Red Cushion is the hero product with 40 shades globally, "
-        "SPF 40, satin glow finish, #1 foundation on Amazon US and Japan",
-        "tirtir", "product", tags=["cushion", "hero", "shade diversity"],
-        keywords=["tirtir", "cushion", "foundation", "shades"],
+        "Chamisul Original is the flagship soju with bamboo charcoal filtration, "
+        "16.9% ABV, #1 soju brand in Korea for decades",
+        "chamisul", "product", tags=["soju", "hero", "bamboo charcoal"],
+        keywords=["chamisul", "soju", "bamboo", "original"],
     )
     memory.add_note(
-        "ANUA Heartleaf 77% Soothing Toner is the #1 bestseller with 77% heartleaf concentration, "
-        "28.6M+ TikTok views, Amazon #1 in Facial Toners",
-        "anua", "product", tags=["toner", "hero", "heartleaf"],
-        keywords=["anua", "toner", "heartleaf", "soothing"],
+        "Chum Churum is known for its soft taste using alkaline water, "
+        "famous 'shake it' campaign with Lee Hyori, popular among younger drinkers",
+        "chumchurum", "product", tags=["soju", "hero", "alkaline water"],
+        keywords=["chumchurum", "soju", "alkaline", "soft"],
     )
     memory.add_note(
-        "COSRX Advanced Snail 96 Mucin Power Essence — 96% snail mucin concentration, "
-        "Amazon #1 Best Seller in Beauty, sales surged 90-1000% from 2023-2024",
-        "cosrx", "product", tags=["essence", "hero", "snail mucin"],
-        keywords=["cosrx", "snail", "mucin", "essence"],
+        "Saero is the zero-sugar soju pioneer with virtual character Saerogumi, "
+        "targeting MZ generation, rapid market share growth since 2022 launch",
+        "saero", "product", tags=["soju", "hero", "zero sugar"],
+        keywords=["saero", "soju", "zero sugar", "MZ"],
     )
 
     print(f"  Loaded {len(triplets)} triplets, {len(brand_notes)} brand notes, {len(trend_notes)} trend notes")
     print(f"  Added 3 product-specific memory notes")
 
-    for brand in ["tirtir", "anua", "cosrx"]:
+    for brand in ["chamisul", "chumchurum", "saero"]:
         stats = memory.stats(brand)
         print(f"  {brand.upper()}: {stats['graph_entities']} entities, {stats['graph_triplets']} triplets")
 
@@ -72,9 +72,9 @@ def main() -> None:
     print("\n[2/6] Brand memory search with temporal decay...")
 
     queries = [
-        ("tirtir", "cushion foundation shade diversity"),
-        ("anua", "heartleaf toner sensitive skin"),
-        ("cosrx", "snail mucin hydration essence"),
+        ("chamisul", "bamboo charcoal filtration original soju"),
+        ("chumchurum", "alkaline water soft taste"),
+        ("saero", "zero sugar soju MZ generation"),
     ]
 
     for brand, query in queries:
@@ -88,25 +88,25 @@ def main() -> None:
     # ── Step 3: Knowledge Graph Traversal ──────────────────────
     print("\n[3/6] Knowledge graph traversal...")
 
-    print("\n  TIRTIR → neighbors of 'Mask Fit Red Cushion Foundation':")
-    tirtir_neighbors = memory.graph_store.get_neighbors("tirtir", "Mask Fit Red Cushion Foundation", max_hops=1)
-    for t in tirtir_neighbors[:5]:
+    print("\n  Chamisul → neighbors of 'Chamisul Original':")
+    chamisul_neighbors = memory.graph_store.get_neighbors("chamisul", "Chamisul Original", max_hops=1)
+    for t in chamisul_neighbors[:5]:
         print(f"    {t.subject} → {t.predicate} → {t.object}")
 
-    print("\n  COSRX → all predicates:")
-    predicates = memory.graph_store.get_predicates("cosrx")
+    print("\n  Saero → all predicates:")
+    predicates = memory.graph_store.get_predicates("saero")
     print(f"    {predicates}")
 
-    print("\n  ANUA → entities with HERO_INGREDIENT_OF:")
-    anua_triplets = memory.graph_store.get_all_triplets("anua")
-    hero = [t for t in anua_triplets if t.predicate == "HERO_INGREDIENT_OF"]
-    for t in hero:
+    print("\n  Chum Churum → entities with HIRED_MODEL:")
+    churum_triplets = memory.graph_store.get_all_triplets("chumchurum")
+    models = [t for t in churum_triplets if t.predicate == "HIRED_MODEL"]
+    for t in models:
         print(f"    {t.subject} → {t.predicate} → {t.object}")
 
     # ── Step 4: Context Injection ──────────────────────────────
     print("\n[4/6] Building context injection for agents...")
 
-    context = memory.build_context_injection("new product launch strategy for Gen Z", "tirtir")
+    context = memory.build_context_injection("new zero-sugar soju launch strategy for MZ generation", "chamisul")
     print(f"\n  Context length: {len(context)} chars")
     print(f"  Preview (first 300 chars):\n    {context[:300]}")
 
@@ -114,8 +114,8 @@ def main() -> None:
     print("\n[5/6] Generating creative brief...")
 
     brief = build_creative_brief(
-        brand_name="TIRTIR",
-        campaign_goal="Launch new matcha skincare line targeting Gen Z on TikTok",
+        brand_name="CHAMISUL",
+        campaign_goal="Launch new premium soju targeting MZ generation on TikTok",
         target_platform="TikTok",
         content_type="product_launch",
     )
@@ -128,23 +128,23 @@ def main() -> None:
     print("\n[6/6] Building media generation prompts...")
 
     img_prompt = build_product_image_prompt(
-        "TIRTIR", "Matcha Skin Toner",
+        "Chamisul", "Chamisul Original",
         style="lifestyle flat lay photography",
-        context="matcha powder, green tea leaves, morning skincare ritual",
+        context="bamboo charcoal, Korean drinking culture, evening social gathering",
     )
     print(f"\n  Imagen 4 prompt:\n    {img_prompt}")
 
     vid_prompt = build_product_video_prompt(
-        "ANUA", "Heartleaf 77% Soothing Toner",
-        style="ASMR product application",
-        hero_ingredient="heartleaf extract",
+        "Chum Churum", "Chum Churum Original",
+        style="cinematic product reveal",
+        hero_ingredient="alkaline water",
     )
     print(f"\n  Veo 3.1 prompt:\n    {vid_prompt}")
 
     story_prompt = build_brand_story_prompt(
-        "COSRX",
-        "From a founder's sensitive skin struggle to the world's #1 snail mucin essence",
-        mood="authentic and inspiring",
+        "Saero",
+        "From zero-sugar innovation to capturing the MZ generation with Saerogumi",
+        mood="modern and energetic",
     )
     print(f"\n  Brand story prompt:\n    {story_prompt}")
 

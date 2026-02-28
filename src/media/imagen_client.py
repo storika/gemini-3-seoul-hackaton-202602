@@ -61,11 +61,11 @@ def build_product_image_prompt(
     style: str = "editorial product photography",
     context: str = "",
 ) -> str:
-    """Build an optimized Imagen prompt for K-beauty product imagery."""
+    """Build an optimized Imagen prompt for Korean soju product imagery."""
     base = (
         f"{style} of {brand_name} {product_name}, "
-        "Korean beauty aesthetic, clean minimalist background, "
-        "soft diffused lighting, high-end cosmetics photography"
+        "Korean soju aesthetic, clean minimalist background, "
+        "soft diffused lighting, high-end beverage photography"
     )
     if context:
         base += f", {context}"
@@ -81,6 +81,6 @@ def build_lifestyle_image_prompt(
     return (
         f"Lifestyle campaign photo for {brand_name}: {concept}. "
         f"Model: {demographic}. "
-        "Natural lighting, K-beauty glass skin aesthetic, "
-        "minimal makeup, healthy radiant skin, editorial quality"
+        "Natural lighting, Korean soju culture aesthetic, "
+        "social gathering ambiance, editorial quality"
     )

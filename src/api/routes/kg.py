@@ -14,7 +14,7 @@ router = APIRouter(prefix="/api/kg", tags=["kg"])
 @router.get("/snapshot")
 def kg_snapshot(
     date: str = Query(..., description="ISO date string, e.g. 2023-06-15"),
-    brand: str = Query("all", description="Brand filter: tirtir, anua, cosrx, or all"),
+    brand: str = Query("all", description="Brand filter: chamisul, chumchurum, saero, or all"),
     alpha: float = Query(TIMELINE_ALPHA, description="Temporal decay alpha"),
     include_fol: bool = Query(False, description="Include FOL evidence layer"),
 ):

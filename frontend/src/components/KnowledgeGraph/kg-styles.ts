@@ -1,0 +1,112 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const cyStylesheet: any[] = [
+  {
+    selector: "node",
+    style: {
+      label: "data(label)",
+      "font-size": "10px",
+      "font-family": "Inter, sans-serif",
+      color: "#e8e8ec",
+      "text-valign": "bottom",
+      "text-margin-y": 6,
+      "text-outline-width": 2,
+      "text-outline-color": "#0f1117",
+      width: "data(size)",
+      height: "data(size)",
+      "background-color": "data(color)",
+      "background-opacity": "data(opacity)",
+      "border-width": "data(borderWidth)",
+      "border-color": "data(color)",
+      "border-style": "data(borderStyle)" as any,
+      "shadow-blur": "data(shadowBlur)" as any,
+      "shadow-color": "data(color)" as any,
+      "shadow-opacity": "data(shadowOpacity)" as any,
+      shape: "data(shape)",
+      "transition-property":
+        "background-opacity, width, height, shadow-blur" as any,
+      "transition-duration": "0.4s" as any,
+    },
+  },
+  {
+    selector: "node.highlighted",
+    style: {
+      "border-width": 3,
+      "border-color": "#fff",
+      "shadow-blur": 20 as any,
+      "shadow-color": "#fff" as any,
+      "shadow-opacity": 0.5 as any,
+      "z-index": 999,
+    },
+  },
+  {
+    selector: "node.neighbor",
+    style: { "border-width": 2, "border-color": "#aaa" },
+  },
+  {
+    selector: "node.dimmed",
+    style: {
+      "background-opacity": 0.15,
+      "border-opacity": 0.15,
+      "text-opacity": 0.2,
+    },
+  },
+  {
+    selector: "edge",
+    style: {
+      width: 1.5,
+      "line-color": "data(color)",
+      "line-opacity": "data(opacity)",
+      "line-style": "data(lineStyle)" as any,
+      "target-arrow-color": "data(color)",
+      "target-arrow-shape": "triangle",
+      "arrow-scale": 0.7,
+      "curve-style": "bezier",
+      label: "data(relation)",
+      "font-size": "8px",
+      color: "#555",
+      "text-rotation": "autorotate",
+      "text-outline-width": 1,
+      "text-outline-color": "#0f1117",
+      "transition-property": "line-opacity" as any,
+      "transition-duration": "0.4s" as any,
+    },
+  },
+  {
+    selector: "edge.highlighted",
+    style: {
+      "line-color": "#fff",
+      "line-opacity": 0.9,
+      width: 2.5,
+      "target-arrow-color": "#fff",
+      color: "#e8e8ec",
+      "font-size": "9px",
+    },
+  },
+  {
+    selector: "edge.dimmed",
+    style: { "line-opacity": 0.08 },
+  },
+  {
+    selector: "node.fol-node",
+    style: {
+      "border-style": "double" as any,
+      "border-width": 2,
+      "font-size": "9px",
+      "text-valign": "bottom",
+      "text-margin-y": 4,
+    },
+  },
+  {
+    selector: "edge.fol-edge",
+    style: {
+      "line-style": "dashed",
+      "line-dash-pattern": [6, 3] as any,
+      "target-arrow-shape": "diamond",
+      "arrow-scale": 0.6,
+    },
+  },
+  {
+    selector: ".fol-hidden",
+    style: { display: "none" },
+  },
+];

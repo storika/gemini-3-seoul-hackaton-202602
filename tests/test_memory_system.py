@@ -27,65 +27,65 @@ def _build_seeded_memory() -> BrandMemorySystem:
 def test_add_note_and_search():
     memory = BrandMemorySystem()
     memory.add_note(
-        content="TIRTIR Mask Fit Red Cushion is the hero product with 40 shades globally",
-        brand_namespace="tirtir",
+        content="Chamisul Original is the flagship soju with bamboo charcoal filtration",
+        brand_namespace="chamisul",
         category="product",
-        tags=["cushion", "hero"],
-        keywords=["tirtir", "cushion", "foundation"],
+        tags=["soju", "hero"],
+        keywords=["chamisul", "soju", "bamboo"],
     )
-    results = memory.search("cushion foundation", "tirtir", k=5)
+    results = memory.search("bamboo charcoal soju", "chamisul", k=5)
     assert len(results) >= 1
-    assert "cushion" in results[0]["document"].lower()
+    assert "chamisul" in results[0]["document"].lower()
 
 
 def test_add_triplet_and_graph():
     memory = BrandMemorySystem()
     t = KGTriplet(
-        subject="TIRTIR",
+        subject="Chamisul",
         predicate="PRODUCES",
-        object="Mask Fit Red Cushion",
-        brand_namespace="tirtir",
+        object="Chamisul Original",
+        brand_namespace="chamisul",
     )
     memory.add_triplet(t)
-    assert memory.graph_store.triplet_count("tirtir") == 1
-    assert memory.graph_store.entity_count("tirtir") == 2
+    assert memory.graph_store.triplet_count("chamisul") == 1
+    assert memory.graph_store.entity_count("chamisul") == 2
 
 
 def test_graph_expansion():
     memory = BrandMemorySystem()
     memory.add_triplet(KGTriplet(
-        subject="TIRTIR", predicate="PRODUCES", object="Mask Fit Red Cushion",
-        brand_namespace="tirtir",
+        subject="Chamisul", predicate="PRODUCES", object="Chamisul Original",
+        brand_namespace="chamisul",
     ))
     memory.add_triplet(KGTriplet(
-        subject="Mask Fit Red Cushion", predicate="CONTAINS_INGREDIENT", object="Hyaluronic acid",
-        brand_namespace="tirtir",
+        subject="Chamisul Original", predicate="CONTAINS_INGREDIENT", object="Bamboo Charcoal",
+        brand_namespace="chamisul",
     ))
-    expanded = memory.expand_with_graph("tirtir", ["TIRTIR"], max_hops=2)
+    expanded = memory.expand_with_graph("chamisul", ["Chamisul"], max_hops=2)
     objects = {t.object for t in expanded}
-    assert "Hyaluronic acid" in objects
+    assert "Bamboo Charcoal" in objects
 
 
 def test_brand_namespace_isolation():
     memory = BrandMemorySystem()
     memory.add_note(
-        content="TIRTIR is a K-beauty cushion brand",
-        brand_namespace="tirtir",
+        content="Chamisul is the original Korean soju brand with 100 years of history",
+        brand_namespace="chamisul",
         category="brand_identity",
     )
     memory.add_note(
-        content="ANUA is a heartleaf-focused skincare brand",
-        brand_namespace="anua",
+        content="Chum Churum is a soft alkaline water soju brand",
+        brand_namespace="chumchurum",
         category="brand_identity",
     )
-    tirtir_results = memory.search("K-beauty brand", "tirtir", k=5)
-    anua_results = memory.search("K-beauty brand", "anua", k=5)
+    chamisul_results = memory.search("Korean soju brand", "chamisul", k=5)
+    churum_results = memory.search("Korean soju brand", "chumchurum", k=5)
 
     # Each should find their own brand's note
-    assert len(tirtir_results) >= 1
-    assert len(anua_results) >= 1
-    assert "tirtir" in tirtir_results[0]["document"].lower()
-    assert "anua" in anua_results[0]["document"].lower()
+    assert len(chamisul_results) >= 1
+    assert len(churum_results) >= 1
+    assert "chamisul" in chamisul_results[0]["document"].lower()
+    assert "chum churum" in churum_results[0]["document"].lower()
 
 
 def test_temporal_reranking():
@@ -95,8 +95,8 @@ def test_temporal_reranking():
 
     # Add old note first (should rank lower)
     old_note = MemoryNote(
-        content="COSRX snail mucin essence is popular",
-        brand_namespace="cosrx",
+        content="Saero zero sugar soju is gaining popularity",
+        brand_namespace="saero",
         category="product",
         created_at=old,
     )
@@ -105,15 +105,15 @@ def test_temporal_reranking():
 
     # Add recent note
     new_note = MemoryNote(
-        content="COSRX snail mucin saw 90-1000% sales surge in 2024",
-        brand_namespace="cosrx",
+        content="Saero zero sugar soju captured 10% market share in 2024",
+        brand_namespace="saero",
         category="product",
         created_at=now,
     )
     memory._notes_cache[new_note.id] = new_note
     memory.vector_store.add_note(new_note)
 
-    results = memory.search("snail mucin", "cosrx", k=2, now=now)
+    results = memory.search("zero sugar soju", "saero", k=2, now=now)
     assert len(results) == 2
     # Recent note should have higher combined score
     assert results[0]["combined_score"] >= results[1]["combined_score"]
@@ -121,25 +121,25 @@ def test_temporal_reranking():
 
 def test_seeded_memory_search():
     memory = _build_seeded_memory()
-    results = memory.search("cushion foundation shade diversity", "tirtir", k=3)
+    results = memory.search("bamboo charcoal soju filtration", "chamisul", k=3)
     assert len(results) >= 1
 
 
 def test_seeded_memory_triplets():
     memory = _build_seeded_memory()
-    results = memory.get_weighted_triplets("snail mucin essence", "cosrx", k=5)
+    results = memory.get_weighted_triplets("zero sugar soju", "saero", k=5)
     assert len(results) >= 1
 
 
 def test_build_context_injection():
     memory = _build_seeded_memory()
-    ctx = memory.build_context_injection("heartleaf toner skincare", "anua")
+    ctx = memory.build_context_injection("alkaline water soft soju", "chumchurum")
     assert len(ctx) > 0
     assert "No relevant memory found" not in ctx
 
 
 def test_stats():
     memory = _build_seeded_memory()
-    stats = memory.stats("tirtir")
+    stats = memory.stats("chamisul")
     assert stats["graph_triplets"] > 0
     assert stats["graph_entities"] > 0

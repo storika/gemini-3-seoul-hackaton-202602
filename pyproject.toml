@@ -1,7 +1,7 @@
 [project]
-name = "kbeauty-brand-agent"
+name = "soju-brand-agent"
 version = "0.1.0"
-description = "K-Beauty Brand Agent with Long-Term Memory — A-Mem style knowledge graph + Memoria temporal decay"
+description = "Soju Brand Agent with Long-Term Memory — A-Mem style knowledge graph + Memoria temporal decay"
 requires-python = ">=3.10"
 dependencies = [
     "google-adk>=1.0",

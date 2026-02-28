@@ -1,4 +1,4 @@
-"""Configuration management for K-Beauty Brand Agent."""
+"""Configuration management for Soju Brand Agent."""
 
 import os
 from pathlib import Path

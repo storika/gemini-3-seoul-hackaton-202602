@@ -10,9 +10,9 @@ from src.config import SEED_DATA_PATH
 def test_load_seed_json():
     data = load_seed_json(SEED_DATA_PATH)
     assert "brands" in data
-    assert "tirtir" in data["brands"]
-    assert "anua" in data["brands"]
-    assert "cosrx" in data["brands"]
+    assert "chamisul" in data["brands"]
+    assert "chumchurum" in data["brands"]
+    assert "saero" in data["brands"]
 
 
 def test_extract_triplets_not_empty():
@@ -26,9 +26,9 @@ def test_triplets_contain_all_brands():
     data = load_seed_json(SEED_DATA_PATH)
     triplets = extract_triplets(data)
     namespaces = {t.brand_namespace for t in triplets}
-    assert "tirtir" in namespaces
-    assert "anua" in namespaces
-    assert "cosrx" in namespaces
+    assert "chamisul" in namespaces
+    assert "chumchurum" in namespaces
+    assert "saero" in namespaces
 
 
 def test_triplets_have_key_predicates():
@@ -36,33 +36,30 @@ def test_triplets_have_key_predicates():
     triplets = extract_triplets(data)
     predicates = {t.predicate for t in triplets}
     assert "PRODUCES" in predicates
-    assert "CONTAINS_INGREDIENT" in predicates
-    assert "SOLD_AT" in predicates
-    assert "ACTIVE_IN_MARKET" in predicates
-    assert "TARGETS_DEMOGRAPHIC" in predicates
+    assert "OWNED_BY" in predicates
+    assert "HIRED_MODEL" in predicates
+    assert "EXPERIENCED_EVENT" in predicates
 
 
-def test_triplets_hero_ingredient():
+def test_triplets_hired_model():
     data = load_seed_json(SEED_DATA_PATH)
     triplets = extract_triplets(data)
-    hero_triplets = [t for t in triplets if t.predicate == "HERO_INGREDIENT_OF"]
-    assert len(hero_triplets) >= 2  # at least snail mucin + heartleaf
+    model_triplets = [t for t in triplets if t.predicate == "HIRED_MODEL"]
+    assert len(model_triplets) >= 2  # multiple models across brands
 
 
-def test_triplets_endorsement():
+def test_triplets_historical_events():
     data = load_seed_json(SEED_DATA_PATH)
     triplets = extract_triplets(data)
-    endorsements = [t for t in triplets if t.predicate == "ENDORSES"]
-    assert len(endorsements) >= 1
-    v_endorsement = [t for t in endorsements if "V" in t.subject]
-    assert len(v_endorsement) == 1
+    event_triplets = [t for t in triplets if t.predicate == "EXPERIENCED_EVENT"]
+    assert len(event_triplets) >= 1
 
 
-def test_triplets_competition():
+def test_triplets_produces():
     data = load_seed_json(SEED_DATA_PATH)
     triplets = extract_triplets(data)
-    competitions = [t for t in triplets if t.predicate == "COMPETES_WITH"]
-    assert len(competitions) >= 2
+    products = [t for t in triplets if t.predicate == "PRODUCES"]
+    assert len(products) >= 2
 
 
 def test_extract_memory_notes():
@@ -73,9 +70,9 @@ def test_extract_memory_notes():
 
     # Check brand coverage
     namespaces = {n.brand_namespace for n in notes}
-    assert "tirtir" in namespaces
-    assert "anua" in namespaces
-    assert "cosrx" in namespaces
+    assert "chamisul" in namespaces
+    assert "chumchurum" in namespaces
+    assert "saero" in namespaces
 
 
 def test_memory_notes_have_categories():
@@ -96,6 +93,6 @@ def test_extract_trend_notes():
 
 def test_load_all():
     triplets, brand_notes, trend_notes = load_all(SEED_DATA_PATH)
-    assert len(triplets) > 50  # expecting lots of relationships
-    assert len(brand_notes) > 10
-    assert len(trend_notes) > 5
+    assert len(triplets) > 10  # expecting relationships across 3 brands
+    assert len(brand_notes) > 5
+    assert len(trend_notes) > 2

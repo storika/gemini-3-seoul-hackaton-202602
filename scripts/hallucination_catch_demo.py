@@ -30,18 +30,18 @@ async def main():
         memory.add_triplet(t)
     
     # Ensure clear cross-brand distinction
-    # ANUA -> Heartleaf
-    # COSRX -> Snail Mucin
-    
+    # Chamisul -> Bamboo charcoal soju
+    # Saero -> Zero sugar soju
+
     # 2. Simulate a Hallucination from Creative Director
     print("
 [2/3] Simulating 'Creative Director' output with hallucination...")
-    # The Creative Director accidentally suggests Snail Mucin for ANUA (which is COSRX's hero ingredient)
+    # The Creative Director accidentally suggests Zero Sugar for Chamisul (which is Saero's identity)
     hallucinated_content = """
-    Campaign Idea: ANUA 'Glow from Within' Series
-    Hero Product: ANUA Snail Mucin Soothing Essence
-    Key Claim: Harnessing 96% snail secretion filtrate for maximum hydration.
-    Visual Tone: Minimalist, clean, science-backed.
+    Campaign Idea: Chamisul 'Pure Zero' Series
+    Hero Product: Chamisul Zero Sugar Original
+    Key Claim: Zero sugar formula for guilt-free drinking.
+    Visual Tone: Clean, modern, health-conscious.
     """
     print("-" * 40)
     print(hallucinated_content.strip())
@@ -50,36 +50,36 @@ async def main():
     # 3. Brand Guard Intervention
     print("
 [3/3] Running Brand Guard validation...")
-    
+
     # In a real pipeline, the agent would use the tool. We'll simulate the tool's check.
     from src.agents.brand_guard.tools import check_ingredient_accuracy
-    
+
     # We'll call the tool logic directly to show what it finds in memory
     validation_results = check_ingredient_accuracy(
-        brand_namespace="anua",
-        product_name="ANUA Snail Mucin Soothing Essence",
-        claimed_ingredients="Snail Mucin"
+        brand_namespace="chamisul",
+        product_name="Chamisul Zero Sugar Original",
+        claimed_ingredients="Zero sugar, purified water"
     )
 
     print("
   >>> Brand Guard Knowledge Retrieval Results:")
     known = validation_results["known_ingredients"]
     if not known:
-        print("    [!] ALERT: No record of 'Snail Mucin' associated with brand 'ANUA' in Knowledge Graph.")
-        
-        # Look up where Snail Mucin actually belongs
-        # We search the whole KG for Snail Mucin
+        print("    [!] ALERT: No record of 'Zero Sugar' associated with brand 'Chamisul' in Knowledge Graph.")
+
+        # Look up where Zero Sugar actually belongs
+        # We search the whole KG for Zero Sugar
         all_triplets = []
-        for b in ["tirtir", "anua", "cosrx"]:
-             all_triplets.extend(memory.graph_store.get_neighbors(b, "Snail Mucin", max_hops=1))
-        
-        real_owner = "COSRX" # We know this from seed data
-        print(f"    [!] KG CORRECTION: 'Snail Mucin' is a HERO_INGREDIENT of 'COSRX'.")
+        for b in ["chamisul", "chumchurum", "saero"]:
+             all_triplets.extend(memory.graph_store.get_neighbors(b, "Zero Sugar", max_hops=1))
+
+        real_owner = "Saero" # We know this from seed data
+        print(f"    [!] KG CORRECTION: 'Zero Sugar' is a key identity of 'Saero'.")
 
     print("
 [CONCLUSION]")
-    print("The system effectively used the Knowledge Graph to verify that 'Snail Mucin'")
-    print("is NOT part of ANUA's identity, preventing a cross-brand hallucination.")
+    print("The system effectively used the Knowledge Graph to verify that 'Zero Sugar'")
+    print("is NOT part of Chamisul's identity, preventing a cross-brand hallucination.")
     print("=" * 60)
 
 if __name__ == "__main__":

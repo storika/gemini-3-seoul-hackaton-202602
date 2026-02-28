@@ -26,15 +26,15 @@ def _seed_memory() -> BrandMemorySystem:
 
 def test_check_brand_alignment_returns_identity():
     _seed_memory()
-    result = check_brand_alignment("tirtir", "Bold inclusive campaign with red compact imagery")
+    result = check_brand_alignment("chamisul", "Clean bamboo charcoal soju with pure taste")
     assert "brand_identity" in result
     assert len(result["brand_identity"]) > 0
-    assert result["brand_namespace"] == "tirtir"
+    assert result["brand_namespace"] == "chamisul"
 
 
-def test_check_brand_alignment_anua():
+def test_check_brand_alignment_chumchurum():
     _seed_memory()
-    result = check_brand_alignment("anua", "Gentle heartleaf skincare for sensitive skin")
+    result = check_brand_alignment("chumchurum", "Soft alkaline water soju for smooth drinking")
     assert "brand_identity" in result
     assert len(result["brand_identity"]) > 0
 
@@ -42,20 +42,20 @@ def test_check_brand_alignment_anua():
 def test_check_ingredient_accuracy():
     _seed_memory()
     result = check_ingredient_accuracy(
-        "cosrx",
-        "Advanced Snail 96 Mucin Power Essence",
-        "Snail mucin, Allantoin, Panthenol",
+        "saero",
+        "Saero Zero Sugar",
+        "Zero sugar, purified water, rice",
     )
     assert "claimed_ingredients" in result
     assert len(result["claimed_ingredients"]) == 3
     assert "vector_search_results" in result
 
 
-def test_check_ingredient_accuracy_tirtir():
+def test_check_ingredient_accuracy_chamisul():
     _seed_memory()
     result = check_ingredient_accuracy(
-        "tirtir",
-        "Mask Fit Red Cushion Foundation",
-        "Hyaluronic acid, Niacinamide, Propolis",
+        "chamisul",
+        "Chamisul Original",
+        "Bamboo charcoal, purified water, rice",
     )
-    assert "Hyaluronic acid" in result["claimed_ingredients"]
+    assert "Bamboo charcoal" in result["claimed_ingredients"]

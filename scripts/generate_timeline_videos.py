@@ -71,7 +71,7 @@ async def main():
             print(f"Event '{args.event}' not found.")
             sys.exit(1)
 
-    print(f"K-Beauty Timeline Video Generator")
+    print(f"Soju Wars Timeline Video Generator")
     print(f"{'=' * 50}")
     print(f"Events: {len(events)}  |  Output: {OUTPUT_DIR}")
     if args.dry_run:

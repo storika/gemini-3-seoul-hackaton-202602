@@ -93,7 +93,7 @@ def save_to_memory(
 
     Args:
         content: The information to store.
-        brand_namespace: Brand namespace (tirtir, anua, cosrx).
+        brand_namespace: Brand namespace (chamisul, chumchurum, saero).
         category: Note category (product, marketing, trend, brand_identity, ingredient, competitive).
         tags: Comma-separated tags.
 
