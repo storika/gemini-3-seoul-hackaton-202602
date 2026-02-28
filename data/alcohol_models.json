@@ -374,6 +374,55 @@
         { "start_year": 2022, "end_year": 2025, "models": ["아이유"], "notes": ["패키지 리뉴얼 맞춰 재발탁"], "confidence": "high" }
       ]
     }
+    ,
+    {
+      "entity_type": "product",
+      "product_id": "whisky_jw_red",
+      "product_name_ko": "조니워커 레드 라벨",
+      "company_ko": "디아지오(Diageo)",
+      "product_type": "scotch_whisky",
+      "timeline": [
+        { "start_year": 1999, "end_year": 1999, "models": ["Harvey Keitel(하비 카이텔)"], "notes": ["'Keep Walking' 최초 TV 광고, 콜로세움 사자 장면"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2025, "models": ["제품 중심(하이볼 캠페인)"], "notes": ["한국 하이볼 트렌드 본격화, 레드 라벨 하이볼 바 프랜차이즈 확대"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "whisky_jw_black",
+      "product_name_ko": "조니워커 블랙 라벨",
+      "company_ko": "디아지오(Diageo)",
+      "product_type": "scotch_whisky",
+      "timeline": [
+        { "start_year": 2009, "end_year": 2009, "models": ["Robert Carlyle(로버트 칼라일)"], "notes": ["'The Man Who Walked Around The World' — 6.5분 원테이크 광고, 광고 역사상 최장 트래킹 숏"], "confidence": "high" },
+        { "start_year": 2013, "end_year": 2015, "models": ["Jude Law(주드 로)"], "notes": ["2013 'A Gentleman's Wager' 단편영화, 2015 'Joy Will Take You Further' 캠페인"], "confidence": "high" },
+        { "start_year": 2015, "end_year": 2015, "models": ["Jenson Button(젠슨 버튼)"], "notes": ["F1 챔피언, 'Joy Will Take You Further' 캠페인"], "confidence": "high" },
+        { "start_year": 2025, "end_year": 2025, "models": ["Sabrina Carpenter(사브리나 카펜터)"], "notes": ["다년 글로벌 파트너십, 'Short n Sweet' 투어 연계, 블랙 라벨 칵테일 중심"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "whisky_jw_blue",
+      "product_name_ko": "조니워커 블루 라벨",
+      "company_ko": "디아지오(Diageo)",
+      "product_type": "scotch_whisky",
+      "timeline": [
+        { "start_year": 2011, "end_year": 2011, "models": ["Christina Hendricks(크리스티나 헨드릭스)"], "notes": ["글로벌 여성 앰배서더, 위스키 성별 고정관념 타파"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2021, "models": ["CL(씨엘, 이채린)"], "notes": ["'Keep Walking' 글로벌 캠페인, 아시아 시장(한국 포함) 대표"], "confidence": "high" },
+        { "start_year": 2024, "end_year": 2025, "models": ["조인성", "쟈니(NCT 127)", "허니제이", "손종원"], "notes": ["한국 전용 'Cheers to My Success' 캠페인. 블루 라벨 4인 앰배서더 체제. GQ Korea 협업."], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "whisky_jw_global",
+      "product_name_ko": "조니워커 (글로벌 브랜드)",
+      "company_ko": "디아지오(Diageo)",
+      "product_type": "scotch_whisky",
+      "timeline": [
+        { "start_year": 2006, "end_year": 2025, "models": ["Mika Häkkinen(미카 해키넨)"], "notes": ["F1 챔피언, 글로벌 책임 음주 앰배서더, 50개국 이상 방문"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2021, "models": ["Priyanka Chopra Jonas(프리양카 초프라 조나스)"], "notes": ["글로벌 브랜드 앰배서더"], "confidence": "medium" },
+        { "start_year": 2022, "end_year": 2022, "models": ["제품 중심(The Walkers 캠페인)"], "notes": ["한국·태국 시장 대상 Keep Walking 리전 확장 캠페인"], "confidence": "high" }
+      ]
+    }
   ],
   "normalization": {
     "year_inclusive": true,
