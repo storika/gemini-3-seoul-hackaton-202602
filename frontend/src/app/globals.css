@@ -563,6 +563,135 @@ body {
 .popup-chip.fol-imply { border-left: 2px solid #FFD54F; }
 .popup-chip.fol-explain { border-left: 2px solid #81C784; }
 
+/* ── LIVE Mode ────────────────────────────────────────────────────────────── */
+
+/* LIVE button */
+.live-button {
+  padding: 6px 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+}
+.live-button:hover { background: rgba(255,179,0,0.12); color: #FFB300; border-color: rgba(255,179,0,0.4); }
+.live-button.live-active {
+  background: rgba(255,179,0,0.18);
+  color: #FFB300;
+  border-color: #FFB300;
+  box-shadow: 0 0 12px rgba(255,179,0,0.35), inset 0 0 8px rgba(255,179,0,0.08);
+  animation: live-pulse 2s ease-in-out infinite;
+}
+@keyframes live-pulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(255,179,0,0.35), inset 0 0 8px rgba(255,179,0,0.08); }
+  50% { box-shadow: 0 0 20px rgba(255,179,0,0.55), inset 0 0 12px rgba(255,179,0,0.15); }
+}
+
+/* KG panel golden border in LIVE mode */
+.kg-panel.live-mode { border-right: 2px solid rgba(255,179,0,0.35); }
+
+/* LIVE badge in stats */
+.live-badge {
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: rgba(255,179,0,0.2);
+  color: #FFB300;
+  animation: live-pulse 2s ease-in-out infinite;
+}
+.live-badge::before { content: none !important; }
+
+/* LIVE Reasoning Panel */
+.live-reasoning-panel { background: rgba(15,17,23,0.97); }
+.live-reasoning-header h3 { color: #FFB300; font-size: 14px; }
+
+/* Ambassador bar chart */
+.live-reasoning-bars {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.live-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.live-bar-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 100px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.live-bar-track {
+  flex: 1;
+  height: 20px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.live-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  transition: width 0.6s ease;
+  min-width: 32px;
+}
+.live-bar-fill span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  white-space: nowrap;
+}
+.live-bar-years {
+  font-size: 10px;
+  color: var(--text-muted);
+  min-width: 70px;
+  white-space: nowrap;
+}
+
+/* Synthesis chains section */
+.live-reasoning-chains {
+  padding: 8px 12px;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.live-chains-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFB300;
+  padding: 4px 0;
+}
+
+/* Narrative summary */
+.live-reasoning-narrative {
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  background: rgba(255,179,0,0.04);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }

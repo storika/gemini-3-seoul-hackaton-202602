@@ -6,7 +6,7 @@ from fastapi import APIRouter
 
 from src.timeline.event_data import TIMELINE_EVENTS
 from src.timeline.event_data_whisky import WHISKY_TIMELINE_EVENTS
-from src.timeline.kg_snapshot import _serialize_event
+from src.timeline.kg_snapshot import _serialize_event, compute_live_recommendation
 from src.timeline.model_gallery import MODEL_GALLERY, serialize_model
 
 router = APIRouter(prefix="/api/timeline", tags=["timeline"])
@@ -56,3 +56,12 @@ def timeline_range(industry: str | None = None):
         "total_events": len(events),
         "brands": sorted({e.brand for e in events}),
     }
+
+
+@router.get("/live-recommendation")
+def live_recommendation(industry: str | None = None, brand: str | None = None):
+    """Return composite ideal ambassador recommendation using temporal decay."""
+    return compute_live_recommendation(
+        industry_filter=industry,
+        brand_filter=brand,
+    )

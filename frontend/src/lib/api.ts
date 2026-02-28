@@ -1,4 +1,4 @@
-import type { TimelineEvent, KGSnapshot, ModelEntry, VideoStatus } from "./types";
+import type { TimelineEvent, KGSnapshot, ModelEntry, VideoStatus, LiveRecommendation } from "./types";
 
 export async function fetchEvents(industry?: string): Promise<TimelineEvent[]> {
   const params = new URLSearchParams();
@@ -37,6 +37,19 @@ export async function fetchKGSnapshot(
 export async function fetchVideoStatus(eventId: string): Promise<VideoStatus> {
   const res = await fetch(`/api/media/video/${eventId}`);
   if (!res.ok) return { status: "not_found" };
+  return res.json();
+}
+
+export async function fetchLiveRecommendation(
+  industry?: string,
+  brand?: string
+): Promise<LiveRecommendation> {
+  const params = new URLSearchParams();
+  if (industry && industry !== "all") params.set("industry", industry);
+  if (brand && brand !== "all") params.set("brand", brand);
+  const qs = params.toString();
+  const res = await fetch(`/api/timeline/live-recommendation${qs ? `?${qs}` : ""}`);
+  if (!res.ok) throw new Error("Failed to fetch live recommendation");
   return res.json();
 }
 

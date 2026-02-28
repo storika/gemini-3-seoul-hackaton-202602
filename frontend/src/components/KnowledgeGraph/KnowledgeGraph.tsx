@@ -21,6 +21,7 @@ export default function KnowledgeGraph() {
   const snapshot = useTimelineStore((s) => s.snapshot);
   const folVisible = useTimelineStore((s) => s.folVisible);
   const toggleFOL = useTimelineStore((s) => s.toggleFOL);
+  const liveMode = useTimelineStore((s) => s.liveMode);
   const { update, handleNodeClick } = useKGRenderer(containerRef);
   const [selectedNode, setSelectedNode] = useState<NodeData | null>(null);
   const [popupPos, setPopupPos] = useState({ x: 0, y: 0 });
@@ -56,17 +57,19 @@ export default function KnowledgeGraph() {
   const eventCount = snapshot?.stats.active_events ?? 0;
 
   return (
-    <section className="kg-panel">
+    <section className={`kg-panel${liveMode ? " live-mode" : ""}`}>
       <div className="kg-stats">
         <span>{nodeCount} nodes</span>
         <span>{edgeCount} edges</span>
         <span>{eventCount} events</span>
+        {liveMode && <span className="live-badge">LIVE</span>}
         <button
           className={`fol-toggle${folVisible ? " active" : ""}`}
           onClick={toggleFOL}
           title="Toggle Reasoning Graph"
         >
-          <span style={{ fontSize: 12, fontWeight: 700 }}>&and;</span> Reasoning
+          <span style={{ fontSize: 12, fontWeight: 700 }}>&and;</span>{" "}
+          {liveMode ? "LIVE Reasoning" : "Reasoning"}
         </button>
       </div>
       <div ref={containerRef} className="cy-container" />

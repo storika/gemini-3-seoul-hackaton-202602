@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { TimelineEvent, KGSnapshot, ModelEntry } from "@/lib/types";
+import type { TimelineEvent, KGSnapshot, ModelEntry, LiveRecommendation } from "@/lib/types";
 
 interface TimelineState {
   currentDate: Date;
@@ -12,6 +12,8 @@ interface TimelineState {
   isPlaying: boolean;
   folVisible: boolean;
   selectedEventId: string | null;
+  liveMode: boolean;
+  liveRecommendation: LiveRecommendation | null;
 
   setCurrentDate: (date: Date) => void;
   setBrand: (brand: string) => void;
@@ -23,6 +25,8 @@ interface TimelineState {
   setIsPlaying: (playing: boolean) => void;
   toggleFOL: () => void;
   setSelectedEventId: (id: string | null) => void;
+  setLiveMode: (live: boolean) => void;
+  setLiveRecommendation: (rec: LiveRecommendation | null) => void;
 }
 
 export const useTimelineStore = create<TimelineState>((set) => ({
@@ -36,6 +40,8 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   isPlaying: false,
   folVisible: false,
   selectedEventId: null,
+  liveMode: false,
+  liveRecommendation: null,
 
   setCurrentDate: (date) => set({ currentDate: date }),
   setBrand: (brand) => set({ brand }),
@@ -47,4 +53,6 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   setIsPlaying: (playing) => set({ isPlaying: playing }),
   toggleFOL: () => set((s) => ({ folVisible: !s.folVisible })),
   setSelectedEventId: (id) => set({ selectedEventId: id }),
+  setLiveMode: (live) => set({ liveMode: live }),
+  setLiveRecommendation: (rec) => set({ liveRecommendation: rec }),
 }));

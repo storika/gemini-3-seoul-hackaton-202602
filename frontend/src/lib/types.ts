@@ -65,3 +65,32 @@ export interface VideoStatus {
   path?: string;
   detail?: string;
 }
+
+// ── LIVE Mode ────────────────────────────────────────────────────────────────
+
+export interface LiveAmbassador {
+  name: string;
+  brand: string;
+  percent: number;
+  score: number;
+  years: string;
+}
+
+export interface LiveFOLChain {
+  predicates: string[];
+  rule: string;
+  conclusion: string;
+  brand: string;
+  weight: number;
+}
+
+export interface LiveSynthesis {
+  narrative_ko: string;
+  narrative_en: string;
+  fol_chains: LiveFOLChain[];
+}
+
+export interface LiveRecommendation {
+  ambassadors: LiveAmbassador[];
+  synthesis: LiveSynthesis;
+}
