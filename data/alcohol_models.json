@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.4",
+  "generated_at": "2026-02-28",
+  "country": "KR",
+  "category": "alcohol",
+  "entities": [
+    {
+      "entity_type": "product",
+      "product_id": "soju_chamisul",
+      "product_name_ko": "참이슬",
+      "company_ko": "하이트진로",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 1999, "end_year": 1999, "models": ["이영애"], "notes": ["초대 모델, 판매량 4배 급증"], "confidence": "high" },
+        { "start_year": 2000, "end_year": 2000, "models": ["황수정"], "confidence": "high" },
+        { "start_year": 2001, "end_year": 2001, "models": ["박주미"], "confidence": "high" },
+        { "start_year": 2002, "end_year": 2002, "models": ["김정은"], "confidence": "high" },
+        { "start_year": 2003, "end_year": 2003, "models": ["최지연"], "confidence": "high" },
+        { "start_year": 2004, "end_year": 2004, "models": ["김태희"], "notes": ["포스터 도난 화제, 모델료 연 2억 원"], "confidence": "high" },
+        { "start_year": 2005, "end_year": 2005, "models": ["성유리"], "notes": ["모델료 약 3억 원"], "confidence": "high" },
+        { "start_year": 2006, "end_year": 2006, "models": ["남상미"], "confidence": "high" },
+        { "start_year": 2007, "end_year": 2007, "models": ["김아중"], "confidence": "high" },
+        { "start_year": 2008, "end_year": 2008, "models": ["김민정"], "confidence": "high" },
+        { "start_year": 2009, "end_year": 2009, "models": ["하지원"], "confidence": "high" },
+        { "start_year": 2010, "end_year": 2011, "models": ["이민정"], "confidence": "high" },
+        { "start_year": 2012, "end_year": 2012, "models": ["싸이", "문채원"], "notes": ["복수 모델 동시 기용 시작"], "confidence": "high" },
+        { "start_year": 2013, "end_year": 2013, "models": ["김영광", "이유비", "유아인", "문채원"], "notes": ["멀티 모델 전략, 문채원 2년 연속"], "confidence": "high" },
+        { "start_year": 2014, "end_year": 2014, "models": ["공효진", "이수혁"], "notes": ["2013.12 발탁 발표, 2014년 활동"], "confidence": "high" },
+        { "start_year": 2014, "end_year": 2018, "models": ["아이유"], "notes": ["2014.11.21 발탁, 1차 계약 (~2018.12)"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2019, "models": ["아이린"], "confidence": "high" },
+        { "start_year": 2020, "end_year": 2025, "models": ["아이유"], "notes": ["2차 계약, 2024.3 재계약 10년차, 주류업계 역대 최장수 모델"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_jinro_isback",
+      "product_name_ko": "진로(진로이즈백)",
+      "company_ko": "하이트진로",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2019, "end_year": 2025, "models": ["진로 두꺼비(캐릭터)"], "notes": ["2019.4 출시, 캐릭터 IP 중심 운영"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2021, "models": ["SF9 찬희"], "notes": ["두꺼비와 함께 TV CF 출연"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_chumchurum",
+      "product_name_ko": "처음처럼",
+      "company_ko": "롯데칠성",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2006, "end_year": 2006, "models": ["이영아"], "notes": ["2006.2.7 출시, 초대 모델"], "confidence": "high" },
+        { "start_year": 2007, "end_year": 2007, "models": ["구혜선"], "notes": ["2007 상반기 약 6개월"], "confidence": "high" },
+        { "start_year": 2007, "end_year": 2012, "models": ["이효리"], "notes": ["2007.11 계약, 8회 재계약, 5년 활동, '효리주', 점유율 11%→15%"], "confidence": "high" },
+        { "start_year": 2012, "end_year": 2013, "models": ["효린", "구하라", "현아"], "notes": ["2012.11 세 명 동시 계약, 아이돌 3인 체제"], "confidence": "high" },
+        { "start_year": 2013, "end_year": 2013, "models": ["조인성", "고준희"], "notes": ["최초 남녀 배우 동반 모델"], "confidence": "high" },
+        { "start_year": 2014, "end_year": 2016, "models": ["신민아"], "notes": ["2014.7 발탁, 약 2년 활동"], "confidence": "high" },
+        { "start_year": 2016, "end_year": 2020, "models": ["수지"], "notes": ["2016.9 발탁, 약 4년 활동, 2020.11 계약 만료"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2022, "models": ["제니"], "notes": ["2021.2 발탁, 처음처럼 리뉴얼"], "confidence": "high" },
+        { "start_year": 2023, "end_year": 2023, "models": ["한소희"], "notes": ["2023.3 발탁, 1년 계약"], "confidence": "high" },
+        { "start_year": 2024, "end_year": 2025, "models": ["김지원", "구교환"], "notes": ["2024.4 발탁, 패키지 리뉴얼"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_saero",
+      "product_name_ko": "새로",
+      "company_ko": "롯데칠성",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2022, "end_year": 2022, "models": ["새로구미(캐릭터)", "권은비", "정은지(성우)"], "notes": ["2022.9 출시, 권은비 얼굴 모델, 정은지 여성 새로구미 성우"], "confidence": "high" },
+        { "start_year": 2023, "end_year": 2023, "models": ["새로구미(캐릭터)", "이도현(성우/실사)"], "notes": ["남성형 새로구미 론칭"], "confidence": "high" },
+        { "start_year": 2024, "end_year": 2024, "models": ["새로구미(캐릭터)", "박지훈(성우)", "김혜윤(성우)"], "notes": ["새로 살구 신제품"], "confidence": "high" },
+        { "start_year": 2025, "end_year": 2025, "models": ["새로구미(캐릭터)", "이준영(성우)", "정채연(성우)"], "notes": ["아홉 꼬리 에디션"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_goodday",
+      "product_name_ko": "좋은데이",
+      "company_ko": "무학",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2006, "end_year": 2008, "models": ["정준호", "채연"], "confidence": "medium" },
+        { "start_year": 2009, "end_year": 2009, "models": ["진구"], "confidence": "medium" },
+        { "start_year": 2010, "end_year": 2010, "models": ["정준호", "김흥국"], "confidence": "medium" },
+        { "start_year": 2012, "end_year": 2012, "models": ["정준호", "시크릿"], "confidence": "medium" },
+        { "start_year": 2013, "end_year": 2013, "models": ["박한별"], "confidence": "medium" },
+        { "start_year": 2014, "end_year": 2014, "models": ["조윤희"], "confidence": "medium" },
+        { "start_year": 2015, "end_year": 2015, "models": ["박수진"], "confidence": "high" },
+        { "start_year": 2016, "end_year": 2017, "models": ["박보영"], "confidence": "high" },
+        { "start_year": 2018, "end_year": 2018, "models": ["손나은"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2019, "models": ["김세정", "백종원"], "confidence": "high" },
+        { "start_year": 2020, "end_year": 2020, "models": ["이나은"], "notes": ["논란으로 2021.3 조기 계약 종료"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2021, "models": ["브레이브걸스"], "notes": ["2021.9 발탁"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_ipseju",
+      "product_name_ko": "잎새주",
+      "company_ko": "보해양조",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2002, "end_year": 2002, "models": ["장나라"], "notes": ["출시 초대 모델, '나라주' 별칭"], "confidence": "high" },
+        { "start_year": 2005, "end_year": 2006, "models": ["정려원"], "confidence": "high" },
+        { "start_year": 2007, "end_year": 2007, "models": ["김옥빈"], "confidence": "high" },
+        { "start_year": 2008, "end_year": 2008, "models": ["한지민"], "confidence": "high" },
+        { "start_year": 2009, "end_year": 2011, "models": ["백지영"], "notes": ["3년 계약"], "confidence": "high" },
+        { "start_year": 2016, "end_year": 2017, "models": ["혜리"], "notes": ["2016.7 발탁"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2025, "models": ["송가인"], "notes": ["미스 트롯 우승 후 2019.12 발탁, 최장수 모델"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_ipseju_brother",
+      "product_name_ko": "잎새주 부라더",
+      "company_ko": "보해양조",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2015, "end_year": 2015, "models": ["홍진영"], "notes": ["저도수 서브 브랜드 전용 모델"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_daesun",
+      "product_name_ko": "대선",
+      "company_ko": "대선주조",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2009, "end_year": 2010, "models": ["한예슬"], "notes": ["1년간 활동"], "confidence": "medium" },
+        { "start_year": 2015, "end_year": 2016, "models": ["박기량"], "notes": ["부산 출신 프로골퍼, 2년 연속"], "confidence": "high" },
+        { "start_year": 2017, "end_year": 2018, "models": ["김건모"], "notes": ["소비자 투표 선정"], "confidence": "high" },
+        { "start_year": 2018, "end_year": 2020, "models": ["마마무"], "notes": ["2018 발탁, 2019.9 1년 연장, 팬덤 기반 지역 점유율 확대"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2021, "models": ["한예슬"], "notes": ["신제품 '다이아몬드' 모델 재발탁"], "confidence": "high" },
+        { "start_year": 2025, "end_year": 2025, "models": ["파랑(가상 모델)"], "notes": ["2025.1 대선 159 출시, AI 가상 모델"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_terra",
+      "product_name_ko": "테라",
+      "company_ko": "하이트진로",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2019, "end_year": 2025, "models": ["공유"], "notes": ["2019.3 출시 초대 모델, 약 6년 활동, 2025.2 계약 종료"], "confidence": "high" },
+        { "start_year": 2025, "end_year": 2025, "models": ["지창욱"], "notes": ["2025.3 공유 후임 발탁"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_terra_light",
+      "product_name_ko": "테라 라이트",
+      "company_ko": "하이트진로",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2024, "end_year": 2024, "models": ["이동욱"], "notes": ["2024.7 출시 초대 모델"], "confidence": "high" },
+        { "start_year": 2025, "end_year": 2025, "models": ["주지훈"], "notes": ["2025.6 이동욱 후임 발탁"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_kelly",
+      "product_name_ko": "켈리",
+      "company_ko": "하이트진로",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2023, "end_year": 2025, "models": ["손석구"], "notes": ["2023.4.4 출시"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_cass",
+      "product_name_ko": "카스",
+      "company_ko": "오비맥주",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2014, "end_year": 2014, "models": ["지창욱"], "notes": ["카스 프레시, 세월호 참사 연상 논란으로 4월 광고 중단"], "confidence": "high" },
+        { "start_year": 2017, "end_year": 2018, "models": ["고든 램지"], "notes": ["신선함 강조, 2018 재계약"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2019, "models": ["김준현", "손나은"], "notes": ["'캬~' 캠페인"], "confidence": "high" },
+        { "start_year": 2020, "end_year": 2020, "models": ["세훈", "찬열"], "notes": ["EXO-SC 여름 캠페인"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2021, "models": ["윤여정"], "notes": ["'올 뉴 카스' 리뉴얼, 투명병"], "confidence": "high" },
+        { "start_year": 2022, "end_year": 2022, "models": ["박명수"], "notes": ["'진짜 여름 스냅' 캠페인"], "confidence": "high" },
+        { "start_year": 2023, "end_year": 2023, "models": ["일반인/청춘 모델"], "notes": ["참여형 캠페인"], "confidence": "medium" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_cass_bitz",
+      "product_name_ko": "카스 비츠",
+      "company_ko": "오비맥주",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2014, "end_year": 2014, "models": ["T.O.P"], "notes": ["카스 비츠 별도 제품 모델"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_cass_light",
+      "product_name_ko": "카스 라이트",
+      "company_ko": "오비맥주",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2024, "end_year": 2024, "models": ["전종서"], "confidence": "high" },
+        { "start_year": 2024, "end_year": 2025, "models": ["오상욱", "설인아"], "notes": ["'나만의 라이트 타임' 캠페인"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_kloud",
+      "product_name_ko": "클라우드",
+      "company_ko": "롯데칠성",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2014, "end_year": 2016, "models": ["전지현"], "notes": ["2014.4 출시 초대 모델, 100일 만에 2700만 병"], "confidence": "high" },
+        { "start_year": 2016, "end_year": 2017, "models": ["설현"], "notes": ["2016.5 발탁"], "confidence": "high" },
+        { "start_year": 2018, "end_year": 2018, "models": ["김혜수", "김태리"], "notes": ["2018.4 동시 발탁, '마이 프리미엄' 캠페인"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2020, "models": ["전지현"], "notes": ["2019.11 재발탁"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_kloud_draft",
+      "product_name_ko": "클라우드 생 드래프트",
+      "company_ko": "롯데칠성",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2020, "end_year": 2020, "models": ["박서준"], "notes": ["초대 모델"], "confidence": "high" },
+        { "start_year": 2021, "end_year": 2022, "models": ["BTS"], "notes": ["글로벌 시장 마케팅"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_krush",
+      "product_name_ko": "크러시(KRUSH)",
+      "company_ko": "롯데칠성",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2023, "end_year": 2025, "models": ["카리나(에스파)"], "notes": ["2023.11 출시, 2025.4 재계약, 2030 타겟"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_kloud_nonalcoholic",
+      "product_name_ko": "클라우드 논알콜릭",
+      "company_ko": "롯데칠성",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2025, "end_year": 2025, "models": ["안성재"], "notes": ["미쉐린 3스타 셰프, 2025.9 발탁"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_hite",
+      "product_name_ko": "하이트",
+      "company_ko": "하이트진로",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2009, "end_year": 2010, "models": ["빅뱅"], "notes": ["'So Fresh, So Cool' CM송"], "confidence": "medium" },
+        { "start_year": 2011, "end_year": 2015, "models": ["현빈"], "notes": ["역대 최장수 하이트 모델, 3회 재계약"], "confidence": "high" },
+        { "start_year": 2019, "end_year": 2019, "models": ["강다니엘"], "notes": ["스페셜 캔 한정, 정식 전속 모델 여부 불명확"], "confidence": "low" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_max",
+      "product_name_ko": "맥스(Max)",
+      "company_ko": "하이트진로",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 2011, "end_year": 2017, "models": ["하정우"], "notes": ["7년 장기 모델, 당시 주류업계 역대 최장수 기록"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "fruit_soju_sunhari",
+      "product_name_ko": "순하리",
+      "company_ko": "롯데칠성",
+      "product_type": "flavored_soju",
+      "timeline": [
+        { "start_year": 2022, "end_year": 2022, "models": ["제니"], "notes": ["글로벌 캠페인, 한정판 라벨 제품"], "confidence": "high" },
+        { "start_year": 2023, "end_year": 2025, "models": ["안유진"], "notes": ["순하리 레몬진 모델, IVE"], "confidence": "high" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "sparkling_soju_isul_ttokttok",
+      "product_name_ko": "이슬톡톡",
+      "company_ko": "하이트진로",
+      "product_type": "sparkling_soju",
+      "timeline": [
+        { "start_year": 2016, "end_year": 2017, "models": ["아이유"], "notes": ["2016.3 출시 초대 모델, IOI(나영/청하/세정) 온라인 바이럴 참여"], "confidence": "high" },
+        { "start_year": 2022, "end_year": 2025, "models": ["아이유"], "notes": ["패키지 리뉴얼 맞춰 재발탁"], "confidence": "high" }
+      ]
+    }
+  ],
+  "normalization": {
+    "year_inclusive": true,
+    "end_year_null_means_present": false,
+    "model_naming_rule": "person_name_or_character",
+    "confidence_levels": ["high", "medium", "low"]
+  }
+}
