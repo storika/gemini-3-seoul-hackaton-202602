@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2026-02-28",
+    "description": "Johnnie Walker Scotch Whisky brand history for Space-Time Knowledge Graph",
+    "schema": "entity-relationship-attribute model with temporal tags"
+  },
+  "industry_context": {
+    "trends_over_time": {
+      "1820_1900": "존 워커의 식료품점에서 블렌딩 시작, 아들 알렉산더가 본격 브랜드화, 사각 병 도입",
+      "1906_1945": "레드/블랙 라벨 명명, 스트라이딩 맨 로고 탄생(1908), 세계 1위 스카치 달성(1945)",
+      "1945_1997": "글로벌 확장기, 기네스 인수(1986), 디아지오 합병(1997)",
+      "1992_2015": "블루 라벨 출시(1992), 'Keep Walking' 캠페인(1999), 프리미엄 전략 본격화",
+      "2015_present": "'Joy Will Take You Further', 하이볼 트렌드, 한국 시장 앰배서더 마케팅 강화, 차세대 음주자 공략"
+    }
+  },
+  "brands": {
+    "johnnie_walker": {
+      "entity_type": "Brand",
+      "identifiers": {
+        "name_en": "Johnnie Walker",
+        "name_kr": "조니워커",
+        "parent_company": "Diageo"
+      },
+      "founding": {
+        "year": 1820,
+        "founder": "John Walker",
+        "location": "Kilmarnock, Scotland",
+        "historical_origin": "존 워커가 킬마녹에서 식료품점을 열고 위스키 블렌딩을 시작. 아들 알렉산더 워커가 'Old Highland Whisky'를 만들며 브랜드 본격화."
+      },
+      "philosophy": {
+        "core_mission": "전진하는 삶의 정신을 위스키에 담다",
+        "brand_ethos": "Keep Walking — 진보, 회복력, 앞으로 나아가는 삶의 여정. 2015년부터 'Joy Will Take You Further'로 기쁨이 성공의 원동력이라는 메시지 추가.",
+        "korean_localization": "2025 한국 캠페인 'Cheers to My Success' — 성공은 남의 기준이 아닌 나만의 만족"
+      },
+      "visual_identity": {
+        "striding_man": {
+          "created": 1908,
+          "artist": "Tom Browne",
+          "description": "탑햇과 테일코트를 입고 활보하는 신사. 1999년 'Keep Walking' 캠페인에서 방향이 좌→우로 전환(전진=미래).",
+          "redesign_history": [
+            {"year": 1909, "artist": "Sir Bernard Partridge", "note": "세련된 도시적 느낌으로 리파인"},
+            {"year": 1927, "artist": "Doris Zinkeisen", "note": "최초의 여성 아티스트 참여, 날씬한 실루엣, 최초 레드 컬러 적용"},
+            {"year": 1999, "artist": "BBH London", "note": "좌→우 방향 전환, 미니멀 실루엣으로 현대화"}
+          ]
+        },
+        "bottle_design": "1860년 도입된 사각형 병과 24도 기울어진 라벨이 시그니처"
+      },
+      "historical_events": [
+        {
+          "year": 1820,
+          "event": "존 워커 킬마녹 식료품점 개업",
+          "significance": "위스키 블렌딩의 시초"
+        },
+        {
+          "year": 1860,
+          "event": "사각형 병 & 24도 라벨 도입",
+          "significance": "운송 시 깨짐 방지 및 진열대 차별화"
+        },
+        {
+          "year": 1908,
+          "event": "스트라이딩 맨 로고 탄생",
+          "significance": "Tom Browne 작, 스피릿 브랜드 최초의 캐릭터 로고"
+        },
+        {
+          "year": 1909,
+          "event": "레드 라벨 & 블랙 라벨 공식 명명",
+          "significance": "컬러 라벨 체계의 시작"
+        },
+        {
+          "year": 1934,
+          "event": "조지 5세 왕실 보증(Royal Warrant) 획득",
+          "significance": "영국 왕실이 인정한 스카치 위스키"
+        },
+        {
+          "year": 1945,
+          "event": "레드 라벨, 세계 최다 판매 스카치 등극",
+          "significance": "글로벌 No.1 스카치 위스키 지위 확립"
+        },
+        {
+          "year": 1992,
+          "event": "블루 라벨 출시",
+          "significance": "울트라 프리미엄 블렌디드 위스키의 새 기준 제시"
+        },
+        {
+          "year": 1997,
+          "event": "디아지오(Diageo) 출범, 조니워커 편입",
+          "significance": "기네스 + 그랜드 메트로폴리탄 합병으로 세계 최대 주류 그룹 소속"
+        },
+        {
+          "year": 1999,
+          "event": "'Keep Walking' 캠페인 런칭",
+          "significance": "BBH London 제작, £1억 글로벌 론칭. 1999-2008년간 $22억 추가 매출 창출"
+        },
+        {
+          "year": 2013,
+          "event": "조니워커 하우스 서울 오픈",
+          "significance": "전 세계 세 번째 조니워커 하우스 (상하이, 베이징 다음)"
+        },
+        {
+          "year": 2019,
+          "event": "한국 하이볼 트렌드 본격화",
+          "significance": "디아지오 코리아, 레드 라벨 하이볼 바 프랜차이즈 확대"
+        },
+        {
+          "year": 2021,
+          "event": "에든버러 프린시스 스트리트 방문객 센터 오픈",
+          "significance": "£3,500만 투자, 브랜드 체험 공간"
+        },
+        {
+          "year": 2025,
+          "event": "한국 'Cheers to My Success' 캠페인",
+          "significance": "조인성 등 4인 앰배서더 체제, 한국 시장 맞춤 프리미엄 전략"
+        }
+      ],
+      "ambassador_history": {
+        "global": [
+          {
+            "name": "Harvey Keitel",
+            "name_kr": "하비 카이텔",
+            "period": "1999",
+            "significance": "'Keep Walking' 최초 TV 광고 출연 (콜로세움 사자 장면)"
+          },
+          {
+            "name": "Robert Carlyle",
+            "name_kr": "로버트 칼라일",
+            "period": "2009",
+            "significance": "'The Man Who Walked Around The World' — 6.5분 원테이크 광고, 광고 역사상 최장 트래킹 숏"
+          },
+          {
+            "name": "Christina Hendricks",
+            "name_kr": "크리스티나 헨드릭스",
+            "period": "2011",
+            "significance": "위스키 성별 고정관념 타파, 여성 글로벌 앰배서더"
+          },
+          {
+            "name": "Jude Law",
+            "name_kr": "주드 로",
+            "period": "2013-2015",
+            "significance": "'A Gentleman's Wager' 단편영화 & 'Joy Will Take You Further' 캠페인"
+          },
+          {
+            "name": "Jenson Button",
+            "name_kr": "젠슨 버튼",
+            "period": "2015",
+            "significance": "F1 챔피언, 'Joy Will Take You Further' 캠페인"
+          },
+          {
+            "name": "Mika Häkkinen",
+            "name_kr": "미카 해키넨",
+            "period": "2006-present",
+            "significance": "글로벌 책임 음주 앰배서더, 50개국 이상 방문"
+          },
+          {
+            "name": "CL (Lee Chae-rin)",
+            "name_kr": "씨엘 (이채린)",
+            "period": "2021",
+            "significance": "'Keep Walking' 글로벌 캠페인 아시아 대표. 2NE1 출신, 한국 솔로 최초 빌보드 Top 100"
+          },
+          {
+            "name": "Priyanka Chopra Jonas",
+            "name_kr": "프리양카 초프라 조나스",
+            "period": "2021",
+            "significance": "글로벌 브랜드 앰배서더"
+          },
+          {
+            "name": "Sabrina Carpenter",
+            "name_kr": "사브리나 카펜터",
+            "period": "2025",
+            "significance": "다년 글로벌 파트너십, 'Short n' Sweet' 투어 연계, 차세대 위스키 소비층 공략"
+          }
+        ],
+        "korea": [
+          {
+            "name": "CL (Lee Chae-rin)",
+            "name_kr": "씨엘 (이채린)",
+            "period": "2021",
+            "significance": "글로벌 캠페인이나 아시아(한국 포함) 시장에서 대대적 활용"
+          },
+          {
+            "name": "Jo In-sung",
+            "name_kr": "조인성",
+            "period": "2024-present",
+            "significance": "조니워커 블루 앰배서더. 트렌디함과 품격을 겸비한 이미지. 한국 시장 '앰배서더' 호칭 전환의 시작점."
+          },
+          {
+            "name": "Johnny (NCT 127)",
+            "name_kr": "쟈니 (NCT 127)",
+            "period": "2024-present",
+            "significance": "조니워커 블루 'Cheers to My Success' 캠페인 앰배서더. MZ세대 타겟."
+          },
+          {
+            "name": "Honey J",
+            "name_kr": "허니제이",
+            "period": "2024-present",
+            "significance": "댄서. 조니워커 블루 'Cheers to My Success' 캠페인 앰배서더. 스트릿 문화 대표."
+          },
+          {
+            "name": "Son Jong-won",
+            "name_kr": "손종원",
+            "period": "2024-present",
+            "significance": "미슐랭 스타 셰프. 조니워커 블루 'Cheers to My Success' 캠페인 앰배서더. F&B 전문성 대표."
+          }
+        ]
+      },
+      "campaigns": [
+        {
+          "name": "Keep Walking",
+          "period": "1999-present",
+          "agency": "BBH London",
+          "description": "브랜드 사상 가장 성공적인 캠페인. 스트라이딩 맨 방향 전환, 전진의 정신.",
+          "sales_impact": "1999-2008 사이 $22억 추가 매출 창출"
+        },
+        {
+          "name": "The Man Who Walked Around The World",
+          "period": "2009",
+          "description": "로버트 칼라일이 스코틀랜드 해안을 걸으며 브랜드 역사를 들려주는 6.5분 원테이크 광고"
+        },
+        {
+          "name": "A Gentleman's Wager",
+          "period": "2013",
+          "description": "주드 로 주연 단편영화, 제이크 스콧 감독"
+        },
+        {
+          "name": "Joy Will Take You Further",
+          "period": "2015",
+          "description": "브랜드 역사상 최대 규모 캠페인. 50개국 이상 활성화, 2.7억 소비자 도달.",
+          "sales_impact": "Keep Walking의 진화 — 기쁨이 진보의 원동력"
+        },
+        {
+          "name": "The Walkers (Korea/Thailand)",
+          "period": "2022",
+          "description": "한국·태국 시장 대상 Keep Walking 리전 확장 캠페인"
+        },
+        {
+          "name": "Cheers to My Success (치얼스 투 마이 석세스)",
+          "period": "2025",
+          "description": "한국 전용 조니워커 블루 캠페인. 4인 앰배서더 체제 (조인성, 쟈니, 허니제이, 손종원). '성공은 나만의 만족'. GQ Korea 협업."
+        }
+      ],
+      "products": {
+        "red_label": {
+          "full_name": "Johnnie Walker Red Label",
+          "name_kr": "조니워커 레드 라벨",
+          "launched": 1909,
+          "age_statement": "NAS (No Age Statement)",
+          "key_claim": "세계에서 가장 많이 팔리는 스카치 위스키 (1945년~). 하이볼 베이스로 한국 시장에서 재조명."
+        },
+        "black_label": {
+          "full_name": "Johnnie Walker Black Label",
+          "name_kr": "조니워커 블랙 라벨",
+          "launched": 1909,
+          "age_statement": "12 Years",
+          "key_claim": "1865년 'Old Highland Whisky'에서 기원. 가장 대표적인 블렌디드 스카치."
+        },
+        "double_black": {
+          "full_name": "Johnnie Walker Double Black",
+          "name_kr": "조니워커 더블 블랙",
+          "launched": 2011,
+          "age_statement": "NAS",
+          "key_claim": "블랙 라벨보다 스모키하고 피티한 맛, 강하게 그을린 캐스크 사용"
+        },
+        "green_label": {
+          "full_name": "Johnnie Walker Green Label",
+          "name_kr": "조니워커 그린 라벨",
+          "launched": 1997,
+          "age_statement": "15 Years",
+          "key_claim": "블렌디드 몰트(그레인 위스키 불포함), 2004년 그린 라벨로 리네이밍"
+        },
+        "gold_label_reserve": {
+          "full_name": "Johnnie Walker Gold Label Reserve",
+          "name_kr": "조니워커 골드 라벨 리저브",
+          "launched": 1997,
+          "age_statement": "NAS (기존 18년산에서 변경)",
+          "key_claim": "원래 100주년 기념 18년산, 2013년 리저브로 리뉴얼"
+        },
+        "aged_18_years": {
+          "full_name": "Johnnie Walker Aged 18 Years",
+          "name_kr": "조니워커 18년",
+          "launched": 2017,
+          "age_statement": "18 Years",
+          "key_claim": "기존 플래티넘 라벨 리브랜딩. 여행 소매점 전용에서 코어 라인업 편입."
+        },
+        "blue_label": {
+          "full_name": "Johnnie Walker Blue Label",
+          "name_kr": "조니워커 블루 라벨",
+          "launched": 1992,
+          "age_statement": "NAS (희귀 캐스크 핸드 셀렉트)",
+          "key_claim": "울트라 프리미엄 블렌디드 스카치. 한국 시장에서 '성공'과 '축하'의 상징."
+        },
+        "xr_21": {
+          "full_name": "Johnnie Walker XR 21",
+          "name_kr": "조니워커 XR 21",
+          "launched": "2000s",
+          "age_statement": "21 Years",
+          "key_claim": "조지 5세 기사 작위 기념. 아시아 시장에서 인기."
+        },
+        "king_george_v": {
+          "full_name": "Johnnie Walker King George V",
+          "name_kr": "조니워커 킹 조지 5세",
+          "launched": null,
+          "age_statement": "NAS",
+          "key_claim": "1934년 왕실 보증 기념. 조지 5세 치세(1910-1936) 당시 가동 중이던 증류소 원액만 사용. 폐쇄된 포트 엘렌 증류소 원액 포함."
+        },
+        "swing": {
+          "full_name": "Johnnie Walker Swing",
+          "name_kr": "조니워커 스윙",
+          "launched": 1932,
+          "age_statement": "NAS",
+          "key_claim": "흔들리는 독특한 병 디자인. 대서양 횡단 여객선의 흔들림에서 영감."
+        }
+      },
+      "korean_market": {
+        "subsidiary": "Diageo Korea (디아지오 코리아)",
+        "key_milestones": [
+          {
+            "year": 2013,
+            "event": "조니워커 하우스 서울 오픈 (세계 3번째)"
+          },
+          {
+            "year": 2019,
+            "event": "레드 라벨 하이볼 트렌드 주도, 바 프랜차이즈 협업"
+          },
+          {
+            "year": 2020,
+            "event": "조니워커 200주년 기념 한국 한정판 출시"
+          },
+          {
+            "year": 2024,
+            "event": "조니워커 블루 앰배서더 하우스 프로젝트"
+          },
+          {
+            "year": 2025,
+            "event": "'Cheers to My Success' 한국 전용 캠페인 론칭"
+          }
+        ],
+        "market_position": "한국 스카치 위스키 시장 리더. 블랙 라벨은 편의점 기준 700mL 약 9만원대(2023년 기준)."
+      }
+    }
+  }
+}
