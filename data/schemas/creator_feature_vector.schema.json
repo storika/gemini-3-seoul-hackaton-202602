@@ -1,64 +1,103 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Creator Feature Vector Profile",
-  "description": "Schema for analyzing 10,000+ creators for brand matching in Alcohol & K-Beauty industries.",
+  "title": "Hyper-Detailed Creator Visual Persona Schema v2",
+  "description": "Multi-layered visual analysis for brand-creator matching and AI content synthesis in Soju Wars (100-Year Brand Evolution).",
   "type": "object",
   "properties": {
     "creator_id": { "type": "string", "description": "Unique identifier (e.g., @username)" },
     "metadata": {
       "type": "object",
       "properties": {
-        "primary_platform": { "type": "string", "enum": ["tiktok", "instagram", "youtube", "none"] },
+        "primary_platform": { "type": "string", "enum": ["tiktok", "instagram", "youtube", "shorts"] },
         "follower_count": { "type": "integer" },
-        "main_category": { "type": "string", "enum": ["beauty", "lifestyle", "food_drink", "fashion", "entertainment"] }
+        "main_category": { "type": "string", "enum": ["beauty", "lifestyle", "food_drink", "fashion", "tech_art"] }
       }
     },
-    "feature_vector": {
+    "visual_persona_deep": {
       "type": "object",
-      "description": "Normalized values (0.0 to 1.0) for each dimension.",
       "properties": {
-        "visual_persona": {
+        "beauty_archetype": {
           "type": "object",
+          "description": "Granular 'Face & Aura' classification for precise brand alignment and Imagen 3/Veo prompt generation.",
           "properties": {
-            "purity_clean": { "type": "number" },
-            "sophisticated_premium": { "type": "number" },
-            "friendly_approachable": { "type": "number" },
-            "trendy_hip": { "type": "number" }
+            "pure_innocent": { "type": "number", "description": "Transparent, first-love vibe, 'Girl Next Door' (e.g., Chamisul's core identity)" },
+            "moody_cinematic": { "type": "number", "description": "Deep eyes, storytelling face, arthouse film vibe, high emotional resonance" },
+            "chic_cold": { "type": "number", "description": "Sharp, urban, 'Ice Queen' (e.g., Saero's sophisticated Gumiho vibe)" },
+            "sultry_alluring": { "type": "number", "description": "Mysterious, sexy, captivating, nocturnal (e.g., Premium dark-night lounge/Whisky)" },
+            "lovely_juicy": { "type": "number", "description": "Fruity, high-energy, sunshine smile, popping colors (e.g., Fruit-flavored soju)" },
+            "quirky_individualistic": { "type": "number", "description": "Unconventional, charmingly unique, memorable features, Gen-Z trendsetter" },
+            "elegant_classic": { "type": "number", "description": "Timeless, balanced, mature grace, high-end prestige (e.g., 100-year legacy brands)" },
+            "royal_noble": { "type": "number", "description": "Born-to-be luxury, high-society, 'Old Money' look, sophisticated calm" },
+            "hip_crush": { "type": "number", "description": "Strong charisma, street-style, 'Girl Crush', bold and experimental" },
+            "androgynous_neutral": { "type": "number", "description": "Gender-neutral, minimal, clean-cut, modern, fresh-faced" },
+            "healthy_vitality": { "type": "number", "description": "Athletic, glowing skin, energetic, refreshing (e.g., Beer or active-lifestyle brands)" },
+            "intellectual_calm": { "type": "number", "description": "Smart, professional, trustworthy, calm, minimal makeup look" },
+            "vintage_analog": { "type": "number", "description": "Retro-friendly features that fit 1950s-80s aesthetics, 'Classical Beauty'" },
+            "cyber_virtual_perfect": { "type": "number", "description": "AI-like, flawless, high-tech, futuristic, uncanny-valley chic (e.g., Metaverse/Saero world)" }
           }
         },
-        "influence_power": {
+        "facial_feature_details": {
           "type": "object",
           "properties": {
-            "engagement_rate": { "type": "number" },
-            "viral_potential": { "type": "number" },
-            "trustworthiness": { "type": "number" }
+            "eye_vibe": { "type": "string", "enum": ["sparkling", "deep_monolid", "sharp_cat", "soft_puppy", "dreamy", "intense"] },
+            "smile_type": { "type": "string", "enum": ["dimpled", "toothless_chic", "full_sunshine", "smirk", "gentle"] },
+            "face_shape_index": { "type": "string", "enum": ["oval_smooth", "heart_pointed", "square_charismatic", "round_friendly", "diamond_sharp"] },
+            "skin_texture_spec": {
+              "type": "object",
+              "properties": {
+                "glass_skin_level": { "type": "number" },
+                "velvet_matte_level": { "type": "number" },
+                "natural_texture_index": { "type": "number", "description": "Presence of natural freckles, moles, or raw skin texture" }
+              }
+            }
           }
         },
-        "brand_affinity": {
+        "color_harmony_vector": {
           "type": "object",
           "properties": {
-            "alcohol_suitability": { "type": "number" },
-            "kbeauty_suitability": { "type": "number" },
-            "brand_loyalty_index": { "type": "number" }
-          }
-        },
-        "risk_management": {
-          "type": "object",
-          "properties": {
-            "brand_safety_score": { "type": "number" },
-            "competitor_overlap": { "type": "number" }
+            "seasonal_type": { "type": "string", "enum": ["spring_warm", "summer_cool", "autumn_warm", "winter_cool"] },
+            "dominant_tone": { "type": "string", "enum": ["pastel", "vivid", "muted", "deep", "neon", "earthy"] },
+            "contrast_preference": { "type": "number", "description": "0: Low contrast/Tonal, 1: High contrast/Graphic" }
           }
         }
       }
     },
-    "audience_demographics": {
+    "brand_fit_logic": {
       "type": "object",
       "properties": {
-        "top_age_group": { "type": "string", "enum": ["10s", "20s", "30s", "40s_plus"] },
-        "gender_ratio_male": { "type": "number" },
-        "global_reach_index": { "type": "number" }
+        "soju_affinity_matrix": {
+          "type": "object",
+          "properties": {
+            "chamisul_clean_index": { "type": "number" },
+            "chumchurum_soft_index": { "type": "number" },
+            "saero_zero_hip_index": { "type": "number" },
+            "jinro_retro_index": { "type": "number" },
+            "premium_single_malt_index": { "type": "number" }
+          }
+        },
+        "kbeauty_role_suitability": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["skincare_model", "color_makeup_expert", "derma_specialist", "luxury_ambassador", "clean_beauty_advocate"] }
+        }
+      }
+    },
+    "temporal_evolution_compatibility": {
+      "type": "object",
+      "description": "How well the creator fits into specific eras of the 100-year Soju timeline.",
+      "properties": {
+        "era_1924_1950_classic": { "type": "number", "description": "Traditional Korean beauty, Hanbok suitability, elegant nostalgia" },
+        "era_1960_1980_industrial": { "type": "number", "description": "Old-school poster girl, cinematic industrial nostalgia, city-pop vibe" },
+        "era_1990_2010_digital_y2k": { "type": "number", "description": "Techno, hip-hop, early digital/cyber vibe, experimental Y2K" },
+        "era_2020_2026_future_meta": { "type": "number", "description": "Modern, clean-zero, AI-driven aesthetics, minimalist future" }
+      }
+    },
+    "risk_management": {
+      "type": "object",
+      "properties": {
+        "brand_safety_score": { "type": "number" },
+        "competitor_overlap_index": { "type": "number" }
       }
     }
   },
-  "required": ["creator_id", "feature_vector"]
+  "required": ["creator_id", "visual_persona_deep"]
 }

@@ -2,111 +2,420 @@
   {
     "creator_id": "IU_아이유",
     "metadata": { "primary_platform": "youtube", "follower_count": 9600000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.98, "sophisticated_premium": 0.75, "friendly_approachable": 0.92, "trendy_hip": 0.85 },
-      "influence_power": { "engagement_rate": 0.95, "viral_potential": 0.98, "trustworthiness": 0.97 },
-      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.98, "brand_loyalty_index": 0.99 },
-      "risk_management": { "brand_safety_score": 0.98, "competitor_overlap": 0.1 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "pure_innocent": 0.99,
+        "lovely_juicy": 0.95,
+        "moody_cinematic": 0.85,
+        "intellectual_calm": 0.8,
+        "elegant_classic": 0.88,
+        "vintage_analog": 0.92,
+        "cyber_virtual_perfect": 0.6
+      },
+      "facial_feature_details": {
+        "eye_vibe": "sparkling",
+        "smile_type": "full_sunshine",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": { "glass_skin_level": 0.98, "velvet_matte_level": 0.2, "natural_texture_index": 0.1 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "spring_warm",
+        "dominant_tone": "pastel",
+        "contrast_preference": 0.3
+      }
     },
-    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.52, "global_reach_index": 0.9 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.99,
+        "chumchurum_soft_index": 0.92,
+        "saero_zero_hip_index": 0.7,
+        "jinro_retro_index": 0.95,
+        "premium_single_malt_index": 0.75
+      },
+      "kbeauty_role_suitability": ["skincare_model", "luxury_ambassador", "clean_beauty_advocate"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.92,
+      "era_1960_1980_industrial": 0.88,
+      "era_1990_2010_digital_y2k": 0.85,
+      "era_2020_2026_future_meta": 0.95
+    },
+    "risk_management": { "brand_safety_score": 0.99, "competitor_overlap_index": 0.1 }
   },
   {
     "creator_id": "GongYoo_공유",
     "metadata": { "primary_platform": "none", "follower_count": 4000000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.7, "sophisticated_premium": 0.98, "friendly_approachable": 0.95, "trendy_hip": 0.78 },
-      "influence_power": { "engagement_rate": 0.88, "viral_potential": 0.85, "trustworthiness": 0.96 },
-      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.82, "brand_loyalty_index": 0.95 },
-      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.2 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "elegant_classic": 0.99,
+        "intellectual_calm": 0.97,
+        "healthy_vitality": 0.92,
+        "moody_cinematic": 0.95,
+        "royal_noble": 0.9,
+        "vintage_analog": 0.85
+      },
+      "facial_feature_details": {
+        "eye_vibe": "deep_monolid",
+        "smile_type": "gentle",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": { "glass_skin_level": 0.7, "velvet_matte_level": 0.6, "natural_texture_index": 0.3 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "autumn_warm",
+        "dominant_tone": "earthy",
+        "contrast_preference": 0.6
+      }
     },
-    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.45, "global_reach_index": 0.88 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.85,
+        "chumchurum_soft_index": 0.8,
+        "saero_zero_hip_index": 0.6,
+        "jinro_retro_index": 0.9,
+        "premium_single_malt_index": 0.99
+      },
+      "kbeauty_role_suitability": ["luxury_ambassador", "derma_specialist"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.8,
+      "era_1960_1980_industrial": 0.98,
+      "era_1990_2010_digital_y2k": 0.6,
+      "era_2020_2026_future_meta": 0.85
+    },
+    "risk_management": { "brand_safety_score": 0.99, "competitor_overlap_index": 0.15 }
   },
   {
     "creator_id": "Karina_카리나",
     "metadata": { "primary_platform": "instagram", "follower_count": 12000000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.75, "sophisticated_premium": 0.88, "friendly_approachable": 0.55, "trendy_hip": 0.99 },
-      "influence_power": { "engagement_rate": 0.92, "viral_potential": 0.99, "trustworthiness": 0.88 },
-      "brand_affinity": { "alcohol_suitability": 0.85, "kbeauty_suitability": 0.99, "brand_loyalty_index": 0.8 },
-      "risk_management": { "brand_safety_score": 0.92, "competitor_overlap": 0.4 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "cyber_virtual_perfect": 0.99,
+        "chic_cold": 0.98,
+        "hip_crush": 0.97,
+        "sultry_alluring": 0.92,
+        "royal_noble": 0.85,
+        "quirky_individualistic": 0.8
+      },
+      "facial_feature_details": {
+        "eye_vibe": "sharp_cat",
+        "smile_type": "toothless_chic",
+        "face_shape_index": "heart_pointed",
+        "skin_texture_spec": { "glass_skin_level": 0.99, "velvet_matte_level": 0.1, "natural_texture_index": 0.05 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "winter_cool",
+        "dominant_tone": "vivid",
+        "contrast_preference": 0.9
+      }
     },
-    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.48, "global_reach_index": 0.95 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.7,
+        "chumchurum_soft_index": 0.65,
+        "saero_zero_hip_index": 0.99,
+        "jinro_retro_index": 0.5,
+        "premium_single_malt_index": 0.88
+      },
+      "kbeauty_role_suitability": ["color_makeup_expert", "luxury_ambassador"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.3,
+      "era_1960_1980_industrial": 0.4,
+      "era_1990_2010_digital_y2k": 0.95,
+      "era_2020_2026_future_meta": 0.99
+    },
+    "risk_management": { "brand_safety_score": 0.94, "competitor_overlap_index": 0.35 }
   },
   {
     "creator_id": "SonSukKu_손석구",
     "metadata": { "primary_platform": "instagram", "follower_count": 1500000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.45, "sophisticated_premium": 0.92, "friendly_approachable": 0.88, "trendy_hip": 0.9 },
-      "influence_power": { "engagement_rate": 0.9, "viral_potential": 0.95, "trustworthiness": 0.93 },
-      "brand_affinity": { "alcohol_suitability": 0.98, "kbeauty_suitability": 0.75, "brand_loyalty_index": 0.85 },
-      "risk_management": { "brand_safety_score": 0.95, "competitor_overlap": 0.3 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "moody_cinematic": 0.99,
+        "sultry_alluring": 0.95,
+        "chic_cold": 0.9,
+        "healthy_vitality": 0.85,
+        "vintage_analog": 0.88,
+        "intellectual_calm": 0.82
+      },
+      "facial_feature_details": {
+        "eye_vibe": "intense",
+        "smile_type": "smirk",
+        "face_shape_index": "square_charismatic",
+        "skin_texture_spec": { "glass_skin_level": 0.5, "velvet_matte_level": 0.7, "natural_texture_index": 0.5 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "autumn_warm",
+        "dominant_tone": "deep",
+        "contrast_preference": 0.7
+      }
     },
-    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.4, "global_reach_index": 0.75 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.6,
+        "chumchurum_soft_index": 0.8,
+        "saero_zero_hip_index": 0.92,
+        "jinro_retro_index": 0.85,
+        "premium_single_malt_index": 0.98
+      },
+      "kbeauty_role_suitability": ["luxury_ambassador", "derma_specialist"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.6,
+      "era_1960_1980_industrial": 0.95,
+      "era_1990_2010_digital_y2k": 0.75,
+      "era_2020_2026_future_meta": 0.9
+    },
+    "risk_management": { "brand_safety_score": 0.96, "competitor_overlap_index": 0.25 }
   },
   {
     "creator_id": "Jennie_제니",
     "metadata": { "primary_platform": "instagram", "follower_count": 85000000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.78, "sophisticated_premium": 0.99, "friendly_approachable": 0.65, "trendy_hip": 0.99 },
-      "influence_power": { "engagement_rate": 0.98, "viral_potential": 0.99, "trustworthiness": 0.9 },
-      "brand_affinity": { "alcohol_suitability": 0.9, "kbeauty_suitability": 0.99, "brand_loyalty_index": 0.7 },
-      "risk_management": { "brand_safety_score": 0.94, "competitor_overlap": 0.6 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "hip_crush": 0.99,
+        "quirky_individualistic": 0.98,
+        "royal_noble": 0.95,
+        "lovely_juicy": 0.92,
+        "chic_cold": 0.9,
+        "cyber_virtual_perfect": 0.85
+      },
+      "facial_feature_details": {
+        "eye_vibe": "sharp_cat",
+        "smile_type": "gentle",
+        "face_shape_index": "round_friendly",
+        "skin_texture_spec": { "glass_skin_level": 0.95, "velvet_matte_level": 0.3, "natural_texture_index": 0.2 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "winter_cool",
+        "dominant_tone": "vivid",
+        "contrast_preference": 0.85
+      }
     },
-    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.35, "global_reach_index": 0.99 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.8,
+        "chumchurum_soft_index": 0.95,
+        "saero_zero_hip_index": 0.9,
+        "jinro_retro_index": 0.7,
+        "premium_single_malt_index": 0.99
+      },
+      "kbeauty_role_suitability": ["color_makeup_expert", "luxury_ambassador"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.4,
+      "era_1960_1980_industrial": 0.6,
+      "era_1990_2010_digital_y2k": 0.99,
+      "era_2020_2026_future_meta": 0.98
+    },
+    "risk_management": { "brand_safety_score": 0.95, "competitor_overlap_index": 0.5 }
   },
   {
     "creator_id": "BaekJongWon_백종원",
     "metadata": { "primary_platform": "youtube", "follower_count": 6000000, "main_category": "food_drink" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.3, "sophisticated_premium": 0.4, "friendly_approachable": 0.99, "trendy_hip": 0.5 },
-      "influence_power": { "engagement_rate": 0.85, "viral_potential": 0.9, "trustworthiness": 0.98 },
-      "brand_affinity": { "alcohol_suitability": 0.95, "kbeauty_suitability": 0.1, "brand_loyalty_index": 0.9 },
-      "risk_management": { "brand_safety_score": 0.98, "competitor_overlap": 0.2 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "intellectual_calm": 0.85,
+        "healthy_vitality": 0.9,
+        "vintage_analog": 0.95,
+        "elegant_classic": 0.6,
+        "pure_innocent": 0.4
+      },
+      "facial_feature_details": {
+        "eye_vibe": "sparkling",
+        "smile_type": "full_sunshine",
+        "face_shape_index": "round_friendly",
+        "skin_texture_spec": { "glass_skin_level": 0.3, "velvet_matte_level": 0.5, "natural_texture_index": 0.8 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "spring_warm",
+        "dominant_tone": "earthy",
+        "contrast_preference": 0.4
+      }
     },
-    "audience_demographics": { "top_age_group": "40s_plus", "gender_ratio_male": 0.65, "global_reach_index": 0.6 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.7,
+        "chumchurum_soft_index": 0.75,
+        "saero_zero_hip_index": 0.5,
+        "jinro_retro_index": 0.99,
+        "premium_single_malt_index": 0.85
+      },
+      "kbeauty_role_suitability": ["clean_beauty_advocate"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.85,
+      "era_1960_1980_industrial": 0.99,
+      "era_1990_2010_digital_y2k": 0.7,
+      "era_2020_2026_future_meta": 0.6
+    },
+    "risk_management": { "brand_safety_score": 0.99, "competitor_overlap_index": 0.1 }
   },
   {
     "creator_id": "AnSungJae_안성재",
     "metadata": { "primary_platform": "none", "follower_count": 500000, "main_category": "food_drink" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.5, "sophisticated_premium": 0.95, "friendly_approachable": 0.6, "trendy_hip": 0.85 },
-      "influence_power": { "engagement_rate": 0.94, "viral_potential": 0.96, "trustworthiness": 0.99 },
-      "brand_affinity": { "alcohol_suitability": 0.92, "kbeauty_suitability": 0.3, "brand_loyalty_index": 0.85 },
-      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.1 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "intellectual_calm": 0.99,
+        "chic_cold": 0.95,
+        "elegant_classic": 0.92,
+        "royal_noble": 0.9,
+        "moody_cinematic": 0.85
+      },
+      "facial_feature_details": {
+        "eye_vibe": "intense",
+        "smile_type": "toothless_chic",
+        "face_shape_index": "diamond_sharp",
+        "skin_texture_spec": { "glass_skin_level": 0.6, "velvet_matte_level": 0.8, "natural_texture_index": 0.4 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "winter_cool",
+        "dominant_tone": "deep",
+        "contrast_preference": 0.9
+      }
     },
-    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.55, "global_reach_index": 0.85 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.5,
+        "chumchurum_soft_index": 0.6,
+        "saero_zero_hip_index": 0.95,
+        "jinro_retro_index": 0.7,
+        "premium_single_malt_index": 0.99
+      },
+      "kbeauty_role_suitability": ["luxury_ambassador", "derma_specialist"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.5,
+      "era_1960_1980_industrial": 0.7,
+      "era_1990_2010_digital_y2k": 0.8,
+      "era_2020_2026_future_meta": 0.98
+    },
+    "risk_management": { "brand_safety_score": 0.99, "competitor_overlap_index": 0.05 }
   },
   {
     "creator_id": "Suzy_수지",
     "metadata": { "primary_platform": "instagram", "follower_count": 19000000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.99, "sophisticated_premium": 0.9, "friendly_approachable": 0.85, "trendy_hip": 0.82 },
-      "influence_power": { "engagement_rate": 0.91, "viral_potential": 0.9, "trustworthiness": 0.96 },
-      "brand_affinity": { "alcohol_suitability": 0.95, "kbeauty_suitability": 0.99, "brand_loyalty_index": 0.92 },
-      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.3 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "pure_innocent": 0.99,
+        "moody_cinematic": 0.98,
+        "elegant_classic": 0.95,
+        "lovely_juicy": 0.9,
+        "royal_noble": 0.92,
+        "vintage_analog": 0.94
+      },
+      "facial_feature_details": {
+        "eye_vibe": "soft_puppy",
+        "smile_type": "full_sunshine",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": { "glass_skin_level": 0.99, "velvet_matte_level": 0.1, "natural_texture_index": 0.05 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "summer_cool",
+        "dominant_tone": "pastel",
+        "contrast_preference": 0.2
+      }
     },
-    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.45, "global_reach_index": 0.92 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.99,
+        "chumchurum_soft_index": 0.95,
+        "saero_zero_hip_index": 0.8,
+        "jinro_retro_index": 0.92,
+        "premium_single_malt_index": 0.9
+      },
+      "kbeauty_role_suitability": ["skincare_model", "luxury_ambassador", "clean_beauty_advocate"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.98,
+      "era_1960_1980_industrial": 0.95,
+      "era_1990_2010_digital_y2k": 0.7,
+      "era_2020_2026_future_meta": 0.92
+    },
+    "risk_management": { "brand_safety_score": 0.99, "competitor_overlap_index": 0.2 }
   },
   {
     "creator_id": "JoInSung_조인성",
     "metadata": { "primary_platform": "none", "follower_count": 1000000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.6, "sophisticated_premium": 0.97, "friendly_approachable": 0.8, "trendy_hip": 0.75 },
-      "influence_power": { "engagement_rate": 0.82, "viral_potential": 0.8, "trustworthiness": 0.95 },
-      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.8, "brand_loyalty_index": 0.9 },
-      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.2 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "elegant_classic": 0.98,
+        "moody_cinematic": 0.97,
+        "healthy_vitality": 0.95,
+        "intellectual_calm": 0.9,
+        "vintage_analog": 0.92,
+        "royal_noble": 0.88
+      },
+      "facial_feature_details": {
+        "eye_vibe": "dreamy",
+        "smile_type": "gentle",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": { "glass_skin_level": 0.6, "velvet_matte_level": 0.6, "natural_texture_index": 0.4 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "autumn_warm",
+        "dominant_tone": "muted",
+        "contrast_preference": 0.5
+      }
     },
-    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.48, "global_reach_index": 0.8 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.88,
+        "chumchurum_soft_index": 0.85,
+        "saero_zero_hip_index": 0.7,
+        "jinro_retro_index": 0.95,
+        "premium_single_malt_index": 0.96
+      },
+      "kbeauty_role_suitability": ["luxury_ambassador", "derma_specialist"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.8,
+      "era_1960_1980_industrial": 0.98,
+      "era_1990_2010_digital_y2k": 0.6,
+      "era_2020_2026_future_meta": 0.85
+    },
+    "risk_management": { "brand_safety_score": 0.99, "competitor_overlap_index": 0.15 }
   },
   {
     "creator_id": "LeeHyori_이효리",
     "metadata": { "primary_platform": "instagram", "follower_count": 1500000, "main_category": "entertainment" },
-    "feature_vector": {
-      "visual_persona": { "purity_clean": 0.4, "sophisticated_premium": 0.85, "friendly_approachable": 0.98, "trendy_hip": 0.95 },
-      "influence_power": { "engagement_rate": 0.96, "viral_potential": 0.99, "trustworthiness": 0.94 },
-      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.9, "brand_loyalty_index": 0.85 },
-      "risk_management": { "brand_safety_score": 0.96, "competitor_overlap": 0.3 }
+    "visual_persona_deep": {
+      "beauty_archetype": {
+        "healthy_vitality": 0.99,
+        "hip_crush": 0.98,
+        "quirky_individualistic": 0.95,
+        "lovely_juicy": 0.9,
+        "vintage_analog": 0.92,
+        "sultry_alluring": 0.94
+      },
+      "facial_feature_details": {
+        "eye_vibe": "sparkling",
+        "smile_type": "full_sunshine",
+        "face_shape_index": "oval_smooth",
+        "skin_texture_spec": { "glass_skin_level": 0.4, "velvet_matte_level": 0.4, "natural_texture_index": 0.9 }
+      },
+      "color_harmony_vector": {
+        "seasonal_type": "autumn_warm",
+        "dominant_tone": "vivid",
+        "contrast_preference": 0.8
+      }
     },
-    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.5, "global_reach_index": 0.75 }
+    "brand_fit_logic": {
+      "soju_affinity_matrix": {
+        "chamisul_clean_index": 0.7,
+        "chumchurum_soft_index": 0.99,
+        "saero_zero_hip_index": 0.85,
+        "jinro_retro_index": 0.9,
+        "premium_single_malt_index": 0.8
+      },
+      "kbeauty_role_suitability": ["color_makeup_expert", "clean_beauty_advocate"]
+    },
+    "temporal_evolution_compatibility": {
+      "era_1924_1950_classic": 0.6,
+      "era_1960_1980_industrial": 0.85,
+      "era_1990_2010_digital_y2k": 0.99,
+      "era_2020_2026_future_meta": 0.9
+    },
+    "risk_management": { "brand_safety_score": 0.97, "competitor_overlap_index": 0.3 }
   }
 ]
