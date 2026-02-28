@@ -27,26 +27,112 @@ The system constructs a dynamic knowledge graph that evolves across a 100–200 
 
 ---
 
+## End-to-End Pipeline
+
+The system is **not just a history viewer** — it's a full pipeline from century-scale brand analysis to actionable influencer campaigns.
+
+```
+ STEP 1              STEP 2               STEP 3                STEP 4               STEP 5
+ HISTORY             LIVE                 DISCOVER              CREATE               OUTREACH
+ ─────────────►      ─────────────►       ─────────────►        ─────────────►       ─────────────►
+
+ Scrub 100-200yr     Temporal decay       Search micro-         Generate sample      Hyper-personalized
+ timeline. KG        scores all past      influencer networks   content for the      outreach at scale.
+ mutates. FOL        ambassadors →        for creators who      optimal creator      Voice calls,
+ reasoning chains    "Ideal Ambassador    match the ideal       combinations.        brand guides,
+ explain WHY each    DNA" composite       DNA attributes.       Imagen 4 images +    ready-to-publish
+ era succeeded.      (e.g. IU 30%,        Brand Guard agent     Veo 3.1 video ads    social posts per
+                     이효리 20%...)       validates brand fit.  per creator.         creator.
+```
+
+### Step 1: HISTORY — Century-Scale Temporal Reasoning
+
+Drag through **100+ years** of brand history. The knowledge graph grows, mutates, and evolves as events unfold. FOL reasoning chains explain the causal logic behind every brand's success or failure in each era.
+
+- **Soju** (1924–2026, Korean): 진로 설립 under Japanese colonial rule → IMF 위기가 만든 국민 소주 참이슬 → 아이유 10년 브랜드 충성도 → 새로 제로슈거 파괴적 혁신
+- **Whisky** (1820–2026, English): John Walker's grocery shop → Striding Man icon → Keep Walking $2.2B campaign → Sabrina Carpenter Gen Z bridge
+
+### Step 2: LIVE — Ideal Ambassador DNA Composite
+
+Press the **LIVE** button to jump to 2026-02-28. The system scores **every ambassador across the entire timeline** using temporal decay and produces a weighted composite:
+
+```
+raw_score = temporal_weight × event_impact × (1 + duration_bonus)
+
+where:
+  temporal_weight = exp(-alpha × days_since_midpoint)
+  event_impact    = average impact_score of matching events
+  duration_bonus  = min(1.0, (end_year - start_year) / 10)
+```
+
+Same-name ambassadors are aggregated, then normalized to percentages. The result is the **"Ideal Ambassador DNA"** — a ranked breakdown showing exactly which historical attributes matter most right now.
+
+FOL conclusions from the top-ranked ambassadors are synthesized into a composite reasoning narrative.
+
+### Step 3: DISCOVER — Micro-Influencer Network Search
+
+The ideal DNA attributes feed into **Storika Social Ontology** to discover real micro-influencers whose profiles match:
+
+- **Brand Guard Agent** (Gemini 3 Flash) validates each candidate:
+  - Image Lineage (40%) — does the creator's visual identity fit the brand's ambassador history?
+  - CF History & Risk (30%) — past 3 years competitor overlap check
+  - Visual Consistency (30%) — public aesthetic matches brand identity
+- Candidates must score **> 0.70** to pass validation
+- Result: a curated shortlist of creators with engagement metrics, follower data, and brand-fit reasoning
+
+### Step 4: CREATE — AI-Generated Sample Content
+
+For each selected creator, a **two-step AI pipeline** generates personalized content:
+
+1. **Gemini 3 Flash** analyzes the creator's real Instagram photos — appearance, fashion style, photography mood, aesthetic fingerprint
+2. **Imagen 4** generates brand-aligned content variations based on that analysis:
+   - Hero shots (product + creator aesthetic)
+   - Lifestyle images (natural context)
+   - Intimate close-ups (product detail)
+3. **Veo 3.1** generates short-form vertical video (9:16) per creator
+4. **Carousel packages** with Korean text overlays for Instagram
+5. **Product swap** variations — same creator aesthetic, different products for multi-brand campaigns
+
+### Step 5: OUTREACH — Hyper-Personalized at Scale
+
+Automated outreach pipeline per creator:
+
+- **Voice calls** (ElevenLabs) — personalized Korean scripts per creator
+- **Brand guidelines** — per-creator alignment documents
+- **Ready-to-publish posts** — platform-optimized social content packages
+- **Creator content kits** — all generated images, carousels, videos bundled for delivery
+
+---
+
 ## Key Features
 
-### 1. Interactive Century-Scale Timeline
+### Interactive Century-Scale Timeline
 Drag through 100+ years of brand history. Watch the knowledge graph grow, mutate, and evolve in real-time as events unfold — from Jinro's founding under Japanese colonial rule (1924) to AI-directed brand strategy (2026).
 
-### 2. Dynamic Knowledge Graph Visualization
+### Dynamic Knowledge Graph Visualization
 Powered by Cytoscape.js, the graph renders brand entities, people, products, campaigns, and their relationships. Temporal decay weights control node opacity — recent connections are vivid, older ones fade but persist.
 
-### 3. Reasoning Graph (FOL Evidence Layer)
+### Reasoning Graph (FOL Evidence Layer)
 Toggle the Reasoning Graph to see causal chains explaining **why** brands succeeded at specific moments in history:
 - **Soju (Korean)**: Era-contextual narratives connecting social conditions to brand decisions (e.g., "웰빙 열풍 + 참이슬 독점 피로 → 처음처럼이 파고든 시장 틈새")
 - **Whisky (English)**: British and world history-grounded reasoning (e.g., "Post-Napoleonic Britain's Industrial Revolution → John Walker's blending innovation → 200-year whisky dynasty")
 
-### 4. Multi-Industry Tabs
+### LIVE Mode: Ideal Ambassador DNA
+Press LIVE to aggregate all historical ambassador data with temporal decay scoring into a composite recommendation — showing exactly which past ambassador attributes are most relevant for today's campaign.
+
+### Multi-Industry Tabs
 Switch between **SOJU**, **BEER**, and **WHISKY** industries. Each industry has its own timeline events, knowledge graph, reasoning chains, brand colors, and model gallery.
 
-### 5. AI Campaign Generator
-Generate brand campaign images (Imagen 4.0) and video ads (Veo 3.1) that are historically informed — the AI understands what worked in each era and why.
+### Multi-Agent Orchestration (Google ADK)
+A **Liquor Director** root agent coordinates specialized sub-agents:
+- **Trend Analyzer** — searches and analyzes real-time market trends against brand memory
+- **Creative Director** — generates briefs, images (Imagen 4), and videos (Veo 3.1) with brand-specific guidelines
+- **Brand Guard** — validates celebrity/creator brand fit with a 0.70 threshold scoring system
 
-### 6. Model Gallery with Historical Profiles
+### Hyper-Personalized Influencer Outreach
+End-to-end pipeline from creator discovery to content delivery: voice outreach, brand guides, AI-generated per-creator content (hero, lifestyle, carousel, video), and product swap variations.
+
+### Model Gallery with Historical Profiles
 Browse brand ambassadors across decades with real profile images, era context, and their impact on brand trajectory.
 
 ---
@@ -54,27 +140,43 @@ Browse brand ambassadors across decades with real profile images, era context, a
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    Frontend (Next.js 15)                  │
-│  Timeline ← → KG Visualization ← → Reasoning Panel      │
-│  Zustand Store │ SWR Cache │ Cytoscape.js Renderer       │
-└───────────────────────┬─────────────────────────────────┘
-                        │ REST API
-┌───────────────────────┴─────────────────────────────────┐
-│                  Backend (FastAPI + Python)               │
-│                                                          │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │ Timeline API  │  │ KG Snapshot  │  │ Media Gen API │  │
-│  │ (events,     │  │ (temporal    │  │ (Imagen 4.0,  │  │
-│  │  models)     │  │  decay, FOL) │  │  Veo 3.1)     │  │
-│  └──────────────┘  └──────────────┘  └───────────────┘  │
-│                                                          │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │          Temporal Knowledge Engine                │   │
-│  │  Event Data → KG Mutations → FOL Evidence        │   │
-│  │  Industry Filter │ Brand Filter │ Date Window     │   │
-│  └──────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                      Frontend (Next.js 15)                       │
+│  Timeline ← → KG Visualization ← → Reasoning Panel ← → LIVE   │
+│  Zustand Store │ SWR Cache │ Cytoscape.js Renderer              │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │ REST API
+┌───────────────────────────┴─────────────────────────────────────┐
+│                    Backend (FastAPI + Python)                     │
+│                                                                  │
+│  ┌─────────────┐  ┌─────────────┐  ┌────────────┐  ┌────────┐  │
+│  │ Timeline API │  │ KG Snapshot │  │ LIVE Rec.  │  │ Media  │  │
+│  │ (events,    │  │ (temporal   │  │ (temporal  │  │ Gen API│  │
+│  │  models)    │  │  decay,FOL) │  │  scoring)  │  │Imagen4 │  │
+│  └─────────────┘  └─────────────┘  └────────────┘  │Veo 3.1 │  │
+│                                                      └────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │              Temporal Knowledge Engine                    │   │
+│  │  Event Data → KG Mutations → FOL Evidence → LIVE Decay   │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│                                                                  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │           Google ADK Multi-Agent System                   │   │
+│  │  Liquor Director → Trend Analyzer → Creative Director    │   │
+│  │                  → Brand Guard (fit validation)           │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│                                                                  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │        Influencer Outreach Pipeline                       │   │
+│  │  Discovery → Voice → Guidelines → Content → Carousel     │   │
+│  │  Storika Social Ontology │ ElevenLabs │ Imagen 4 │ Veo   │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│                                                                  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │        Hybrid Memory (Graph + Vector)                     │   │
+│  │  ChromaDB │ NetworkX │ Temporal Decay │ Consolidation     │   │
+│  └──────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ### Google AI Stack
@@ -109,38 +211,58 @@ Browse brand ambassadors across decades with real profile images, era context, a
 
 ```
 src/
-├── agents/          # Google ADK multi-agent system
+├── agents/                     # Google ADK multi-agent system
+│   ├── agent.py                #   Liquor Director (root orchestrator)
+│   ├── trend_analyzer/         #   Market trend search & analysis
+│   ├── creative_director/      #   Imagen 4 + Veo 3.1 content generation
+│   └── brand_guard/            #   Celebrity/creator brand-fit validation
 ├── api/
-│   └── routes/      # FastAPI endpoints (timeline, KG, media)
-├── media/           # Imagen 4.0 & Veo 3.1 clients
-├── memory/          # Hybrid Graph + Vector memory
+│   └── routes/                 # FastAPI endpoints (timeline, KG, media, LIVE)
+├── media/                      # Imagen 4.0 & Veo 3.1 clients
+├── memory/                     # Hybrid Graph + Vector memory
+│   ├── memory_system.py        #   BrandMemorySystem (search, enrich, consolidate)
+│   ├── graph_store.py          #   NetworkX KG per brand namespace
+│   ├── vector_store.py         #   ChromaDB vector store wrapper
+│   └── temporal_decay.py       #   Exponential weighted decay
 └── timeline/
-    ├── events.py           # Event & KGMutation data models
-    ├── event_data.py       # Soju timeline (1924-2026, 16 events)
-    ├── event_data_whisky.py # Whisky timeline (1820-2026, 16 events)
-    ├── fol_evidence.py     # FOL reasoning chains (soju + whisky)
-    ├── kg_snapshot.py      # Temporal KG builder with decay
-    └── model_gallery.py    # Brand ambassador profiles
+    ├── events.py               # Event & KGMutation data models
+    ├── event_data.py           # Soju timeline (1924-2026, 16 events)
+    ├── event_data_whisky.py    # Whisky timeline (1820-2026, 16 events)
+    ├── fol_evidence.py         # FOL reasoning chains (32 events, soju + whisky)
+    ├── kg_snapshot.py          # Temporal KG builder + LIVE recommendation engine
+    └── model_gallery.py        # 70+ ambassador profiles across 25+ products
+
+scripts/
+└── outreach/                   # Hyper-personalized influencer outreach pipeline
+    ├── creators.py             #   Creator discovery (Storika Social Ontology)
+    ├── generate_creator_content.py  # Gemini analysis + Imagen 4 content gen
+    ├── generate_voice.py       #   ElevenLabs personalized Korean voice calls
+    ├── generate_guidelines.py  #   Per-creator brand alignment guides
+    ├── generate_posts.py       #   Ready-to-publish social content
+    ├── generate_carousel.py    #   Imagen 4 multi-slide carousels
+    ├── generate_video.py       #   Veo 3.1 short-form vertical video
+    ├── product_swap.py         #   Same aesthetic, different products
+    └── demo.py                 #   Interactive 8-step pipeline walkthrough
 
 frontend/
 ├── src/
-│   ├── app/                # Next.js App Router
+│   ├── app/                    # Next.js App Router
 │   ├── components/
-│   │   ├── Header.tsx           # Industry & brand tabs
+│   │   ├── Header.tsx               # Industry & brand tabs
 │   │   ├── KnowledgeGraph/
-│   │   │   ├── KnowledgeGraph.tsx   # Main KG visualization
-│   │   │   ├── ReasoningPanel.tsx   # FOL reasoning display
+│   │   │   ├── KnowledgeGraph.tsx   # KG visualization + LIVE mode
+│   │   │   ├── ReasoningPanel.tsx   # FOL reasoning + LIVE ambassador bars
 │   │   │   ├── useKGRenderer.ts     # Cytoscape.js renderer
 │   │   │   └── NodePopup.tsx        # Node detail popup
-│   │   └── Timeline/               # Timeline slider & events
+│   │   └── Timeline/               # Timeline slider + LIVE button
 │   ├── hooks/
 │   │   ├── useTimelineData.ts   # SWR data fetching
 │   │   └── useKGSnapshot.ts     # Debounced KG updates
 │   ├── stores/
-│   │   └── timeline-store.ts    # Zustand global state
+│   │   └── timeline-store.ts   # Zustand state (+ liveMode, liveRecommendation)
 │   └── lib/
-│       ├── api.ts       # API client functions
-│       ├── types.ts     # TypeScript interfaces
+│       ├── api.ts       # API client (+ fetchLiveRecommendation)
+│       ├── types.ts     # TypeScript interfaces (+ Live* types)
 │       └── constants.ts # Brand colors & config
 ```
 
