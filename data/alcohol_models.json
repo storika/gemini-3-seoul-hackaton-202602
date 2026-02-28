@@ -1,9 +1,43 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "generated_at": "2026-02-28",
   "country": "KR",
   "category": "alcohol",
   "entities": [
+    {
+      "entity_type": "product",
+      "product_id": "soju_jinro_classic",
+      "product_name_ko": "진로 소주",
+      "company_ko": "진로(현 하이트진로)",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 1970, "end_year": 1979, "models": ["노주현", "서영춘", "민지환", "백일섭"], "notes": ["남성 배우 중심, 25도 고도수 시대, 자연 배경 이미지 광고"], "confidence": "medium" },
+        { "start_year": 1980, "end_year": 1989, "models": ["독고영재"], "notes": ["터프한 남성 이미지, 두꺼비 마스코트 활용, 최민식은 산소주 모델로 확인"], "confidence": "medium" },
+        { "start_year": 1993, "end_year": 1998, "models": ["진로골드(제품 중심)"], "notes": ["1993 진로골드(25도) 출시, 1998.10 참이슬(23도) 출시로 브랜드 전환"], "confidence": "medium" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_green",
+      "product_name_ko": "그린소주(경월그린)",
+      "company_ko": "두산경월(현 롯데칠성)",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 1993, "end_year": 2000, "models": ["제품 중심(브랜드 이미지 마케팅)"], "notes": ["1993.11 출시, 초록색 병/스크루캡, 대관령 청정수 콘셉트, 점유율 3%→17.1%(1998)→5.7%(2000, 참이슬 충격)"], "confidence": "medium" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "soju_san",
+      "product_name_ko": "산(山) 소주",
+      "company_ko": "두산(현 롯데칠성)",
+      "product_type": "soju",
+      "timeline": [
+        { "start_year": 2001, "end_year": 2001, "models": ["최민식", "유오성"], "notes": ["2001 출시, 녹차 성분 함유"], "confidence": "medium" },
+        { "start_year": 2002, "end_year": 2002, "models": ["장동건"], "notes": ["소주 광고 남성 모델 마지막 세대"], "confidence": "medium" },
+        { "start_year": 2003, "end_year": 2005, "models": ["손예진"], "notes": ["여성 모델 전환"], "confidence": "medium" }
+      ]
+    },
     {
       "entity_type": "product",
       "product_id": "soju_chamisul",
@@ -138,6 +172,33 @@
     },
     {
       "entity_type": "product",
+      "product_id": "beer_crown",
+      "product_name_ko": "크라운맥주",
+      "company_ko": "조선맥주(현 하이트진로)",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 1960, "end_year": 1979, "models": ["현석"], "notes": ["크라운맥주 초창기"], "confidence": "low" },
+        { "start_year": 1980, "end_year": 1989, "models": ["조용필"], "notes": ["조용필 '촛불' 배경 '호수' 편"], "confidence": "medium" },
+        { "start_year": 1980, "end_year": 1989, "models": ["노주현"], "notes": ["젠틀 이미지, 출처 불명확"], "confidence": "low" }
+      ]
+    },
+    {
+      "entity_type": "product",
+      "product_id": "beer_ob",
+      "product_name_ko": "OB맥주/OB라거",
+      "company_ko": "동양맥주(현 오비맥주)",
+      "product_type": "beer",
+      "timeline": [
+        { "start_year": 1989, "end_year": 1989, "models": ["이현세"], "notes": ["OB 수퍼드라이 1989.6 출시, 보리밭 질주 이미지"], "confidence": "medium" },
+        { "start_year": 1993, "end_year": 1996, "models": ["이덕화"], "notes": ["OB라거 초기"], "confidence": "medium" },
+        { "start_year": 1996, "end_year": 1998, "models": ["박중훈", "박준형", "최종원", "홍석천"], "notes": ["'랄랄라 댄스' 캠페인, 90년대 대표 맥주 광고"], "confidence": "high" },
+        { "start_year": 1998, "end_year": 1998, "models": ["김승우", "허준호", "유재석"], "notes": [], "confidence": "medium" },
+        { "start_year": 1999, "end_year": 1999, "models": ["박신양"], "notes": ["호주 올로케 촬영"], "confidence": "medium" },
+        { "start_year": 2001, "end_year": 2002, "models": ["정우성", "이정재"], "notes": ["절친 듀오 출연"], "confidence": "medium" }
+      ]
+    },
+    {
+      "entity_type": "product",
       "product_id": "beer_terra",
       "product_name_ko": "테라",
       "company_ko": "하이트진로",
@@ -175,6 +236,16 @@
       "company_ko": "오비맥주",
       "product_type": "beer",
       "timeline": [
+        { "start_year": 1994, "end_year": 1994, "models": ["조형기", "신은경", "권해효"], "notes": ["1994.6 출시(진로쿠어스), '신선해서 맛있다'"], "confidence": "high" },
+        { "start_year": 1995, "end_year": 1996, "models": ["최민수"], "notes": ["'남자 맥주' 콘셉트"], "confidence": "high" },
+        { "start_year": 1997, "end_year": 1997, "models": ["최민수", "김혜수"], "notes": ["'소리까지 시원하다' 투톱"], "confidence": "high" },
+        { "start_year": 1999, "end_year": 1999, "models": ["송승헌"], "notes": ["'살아있는 맛 카스 후레쉬'"], "confidence": "high" },
+        { "start_year": 2000, "end_year": 2008, "models": ["무명/비연예인 모델 위주"], "notes": ["카스는 이 시기 무명 모델+자체 BGM 전략 고수"], "confidence": "high" },
+        { "start_year": 2009, "end_year": 2009, "models": ["이민호"], "notes": ["카스 2X 광고"], "confidence": "high" },
+        { "start_year": 2010, "end_year": 2010, "models": ["2PM", "윤은혜"], "notes": ["카스 후레쉬"], "confidence": "high" },
+        { "start_year": 2011, "end_year": 2011, "models": ["조인성"], "notes": ["카스 본제품 재기용"], "confidence": "high" },
+        { "start_year": 2012, "end_year": 2012, "models": ["김수현"], "confidence": "high" },
+        { "start_year": 2013, "end_year": 2013, "models": ["김우빈", "이종석"], "notes": ["더블 캐스팅"], "confidence": "high" },
         { "start_year": 2014, "end_year": 2014, "models": ["지창욱"], "notes": ["카스 프레시, 세월호 참사 연상 논란으로 4월 광고 중단"], "confidence": "high" },
         { "start_year": 2017, "end_year": 2018, "models": ["고든 램지"], "notes": ["신선함 강조, 2018 재계약"], "confidence": "high" },
         { "start_year": 2019, "end_year": 2019, "models": ["김준현", "손나은"], "notes": ["'캬~' 캠페인"], "confidence": "high" },
@@ -201,6 +272,9 @@
       "company_ko": "오비맥주",
       "product_type": "beer",
       "timeline": [
+        { "start_year": 2010, "end_year": 2010, "models": ["싸이", "하지원"], "notes": ["카스 라이트 상반기"], "confidence": "high" },
+        { "start_year": 2010, "end_year": 2011, "models": ["싸이", "G.NA"], "notes": ["카스 라이트 하반기~2011"], "confidence": "high" },
+        { "start_year": 2012, "end_year": 2012, "models": ["이동욱", "CL"], "notes": ["CL(2NE1)"], "confidence": "high" },
         { "start_year": 2024, "end_year": 2024, "models": ["전종서"], "confidence": "high" },
         { "start_year": 2024, "end_year": 2025, "models": ["오상욱", "설인아"], "notes": ["'나만의 라이트 타임' 캠페인"], "confidence": "high" }
       ]
@@ -226,7 +300,8 @@
       "product_type": "beer",
       "timeline": [
         { "start_year": 2020, "end_year": 2020, "models": ["박서준"], "notes": ["초대 모델"], "confidence": "high" },
-        { "start_year": 2021, "end_year": 2022, "models": ["BTS"], "notes": ["글로벌 시장 마케팅"], "confidence": "high" }
+        { "start_year": 2021, "end_year": 2022, "models": ["BTS"], "notes": ["글로벌 시장 마케팅"], "confidence": "high" },
+        { "start_year": 2023, "end_year": 2024, "models": ["전지현", "박서준"], "notes": ["이후 모델 교체, 2024.2~3 단종 (크러시로 역량 집중)"], "confidence": "medium" }
       ]
     },
     {
@@ -256,6 +331,12 @@
       "company_ko": "하이트진로",
       "product_type": "beer",
       "timeline": [
+        { "start_year": 1993, "end_year": 1993, "models": ["제품 중심(천연암반수)"], "notes": ["1993.4 출시, 30초 광고 중 맥주 등장 3초, 나머지 '지하 150m 천연암반수'"], "confidence": "high" },
+        { "start_year": 1994, "end_year": 1995, "models": ["박상원", "최수종", "음정희", "한석규"], "notes": ["'맥주의 90%는 물' 캠페인, 복수 모델"], "confidence": "medium" },
+        { "start_year": 1996, "end_year": 1996, "models": ["제품 중심(물사랑 캠페인)"], "notes": ["1996 시장점유율 1위 달성"], "confidence": "medium" },
+        { "start_year": 2002, "end_year": 2002, "models": ["이병헌"], "confidence": "high" },
+        { "start_year": 2006, "end_year": 2006, "models": ["박지성"], "notes": ["포스터 및 간접 언급 확인"], "confidence": "medium" },
+        { "start_year": 2008, "end_year": 2008, "models": ["보아"], "notes": ["'보아의 솔직한 맥주 이야기' 편"], "confidence": "high" },
         { "start_year": 2009, "end_year": 2010, "models": ["빅뱅"], "notes": ["'So Fresh, So Cool' CM송"], "confidence": "medium" },
         { "start_year": 2011, "end_year": 2015, "models": ["현빈"], "notes": ["역대 최장수 하이트 모델, 3회 재계약"], "confidence": "high" },
         { "start_year": 2019, "end_year": 2019, "models": ["강다니엘"], "notes": ["스페셜 캔 한정, 정식 전속 모델 여부 불명확"], "confidence": "low" }
