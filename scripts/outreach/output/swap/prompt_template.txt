@@ -2,10 +2,10 @@
 
 Premium product photography: {product_description} on a dark volcanic stone surface with soft natural backlighting. The bottle/glass is centered, with subtle moisture droplets. A few {garnish} placed artfully nearby. Clean minimalist composition, lots of negative space. Warm white and soft gold color palette. Jeju-inspired natural backdrop. 1:1 aspect ratio, editorial quality, shot on medium format camera.
 
-=== PRODUCTS ===
-  복순도가 손막걸리: a milky white ceramic Boksoondoga makgeolli bottle with minimalist Korean label
-  프리미엄 위스키: an amber-colored premium whiskey bottle with gold label, whiskey glass with ice
-  프리미엄 소주: a sleek frosted green premium soju bottle with modern minimalist label, small soju glass
+=== PRODUCTS (Gemini-analyzed from actual bottle images) ===
+  복순도가 손막걸리: A tall, slender clear plastic bottle of Boksoondoga makgeolli showing a natural separation of pale yellow liquid and thick white sediment, featuring a scalloped base and a white paper-wrapped top tied with brown twine.
+  프리미엄 위스키: A professional studio photograph of a Johnnie Walker Black Label bottle, featuring its iconic square clear glass shape filled with amber whisky, a signature slanted black label with gold and white typography, and a small '12' year age statement label at the base.
+  프리미엄 소주: A classic emerald green glass soju bottle with a white label featuring a large blue water droplet and black Korean calligraphy text '참이슬' with 'fresh' written in blue script below it, topped with a green screw cap.
 
 === KEY INSIGHT ===
 Same scene structure, same lighting, same composition.

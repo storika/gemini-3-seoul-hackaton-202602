@@ -1,0 +1,26 @@
+{
+  "boksoondoga.png": {
+    "bottle_shape": "A tall, slender, and elegant silhouette that tapers significantly from a wide, scalloped 'petal' base towards a narrow neck.",
+    "color": "The liquid inside is naturally separated into a translucent pale amber top layer and a dense, creamy off-white sediment layer at the bottom; the bottle is clear, and the label and cap wrap are stark white.",
+    "label_design": "A minimalist white paper band around the neck featuring black and red Korean typography, including the brand name 'Boksoondoga' and a website URL at the bottom.",
+    "material": "Clear, glossy plastic (PET) bottle with a matte white paper covering over the cap, secured with a rustic brown hemp twine.",
+    "distinctive_features": "The rustic paper-wrapped top tied with twine, the unique scalloped base design, and the prominent natural separation of the rice wine layers.",
+    "prompt_description": "A tall, slender clear plastic bottle of Boksoondoga makgeolli showing a natural separation of pale yellow liquid and thick white sediment, featuring a scalloped base and a white paper-wrapped top tied with brown twine."
+  },
+  "soju.jpeg": {
+    "bottle_shape": "A classic cylindrical soju bottle with a slightly tapered base, rounded shoulders, and a long, slender neck leading to a green screw cap.",
+    "color": "The bottle is made of transparent emerald green glass. The label is primarily white with a vibrant blue water droplet icon and black Korean text. The liquid inside appears clear.",
+    "label_design": "A clean white label featuring a large, stylized blue water droplet on the left. To the right, the Korean brand name '참이슬' (Chamisul) is written in bold, black calligraphic characters. Below the Korean text, the word 'fresh' is written in a light blue, lowercase cursive font. Small green and black text is visible at the bottom of the label.",
+    "material": "Glossy emerald green glass with a matching green metallic screw cap.",
+    "distinctive_features": "The iconic emerald green glass bottle, the prominent blue water droplet logo, and the distinctive black Korean calligraphy for the Chamisul brand.",
+    "prompt_description": "A classic emerald green glass soju bottle with a white label featuring a large blue water droplet and black Korean calligraphy text '참이슬' with 'fresh' written in blue script below it, topped with a green screw cap."
+  },
+  "johnnie_walker.jpeg": {
+    "bottle_shape": "Tall, rectangular square-shaped bottle with sharp vertical edges, a flat base, and a long, slender neck leading to a black screw cap.",
+    "color": "The liquid is a rich amber-gold; the glass is transparent; the main label is deep black with gold and white lettering; the cap is black with a gold seal.",
+    "label_design": "Features a signature diagonal black label slanted from top-left to bottom-right. The brand name 'JOHNNIE WALKER' is in gold serif font, 'BLACK LABEL' is prominently displayed in bold white serif capitals, and 'Blended Scotch Whisky' is in gold script. A secondary small rectangular label at the bottom displays the number '12' inside a gold-bordered box.",
+    "material": "Transparent, high-gloss clear glass with a smooth finish, showcasing the liquid inside.",
+    "distinctive_features": "The iconic square bottle silhouette, the distinctive 24-degree slanted label, and the '12' year age statement at the bottom.",
+    "prompt_description": "A professional studio photograph of a Johnnie Walker Black Label bottle, featuring its iconic square clear glass shape filled with amber whisky, a signature slanted black label with gold and white typography, and a small '12' year age statement label at the base."
+  }
+}
