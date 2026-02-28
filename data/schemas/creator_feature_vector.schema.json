@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Creator Feature Vector Profile",
+  "description": "Schema for analyzing 10,000+ creators for brand matching in Alcohol & K-Beauty industries.",
+  "type": "object",
+  "properties": {
+    "creator_id": { "type": "string", "description": "Unique identifier (e.g., @username)" },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "primary_platform": { "type": "string", "enum": ["tiktok", "instagram", "youtube", "none"] },
+        "follower_count": { "type": "integer" },
+        "main_category": { "type": "string", "enum": ["beauty", "lifestyle", "food_drink", "fashion", "entertainment"] }
+      }
+    },
+    "feature_vector": {
+      "type": "object",
+      "description": "Normalized values (0.0 to 1.0) for each dimension.",
+      "properties": {
+        "visual_persona": {
+          "type": "object",
+          "properties": {
+            "purity_clean": { "type": "number" },
+            "sophisticated_premium": { "type": "number" },
+            "friendly_approachable": { "type": "number" },
+            "trendy_hip": { "type": "number" }
+          }
+        },
+        "influence_power": {
+          "type": "object",
+          "properties": {
+            "engagement_rate": { "type": "number" },
+            "viral_potential": { "type": "number" },
+            "trustworthiness": { "type": "number" }
+          }
+        },
+        "brand_affinity": {
+          "type": "object",
+          "properties": {
+            "alcohol_suitability": { "type": "number" },
+            "kbeauty_suitability": { "type": "number" },
+            "brand_loyalty_index": { "type": "number" }
+          }
+        },
+        "risk_management": {
+          "type": "object",
+          "properties": {
+            "brand_safety_score": { "type": "number" },
+            "competitor_overlap": { "type": "number" }
+          }
+        }
+      }
+    },
+    "audience_demographics": {
+      "type": "object",
+      "properties": {
+        "top_age_group": { "type": "string", "enum": ["10s", "20s", "30s", "40s_plus"] },
+        "gender_ratio_male": { "type": "number" },
+        "global_reach_index": { "type": "number" }
+      }
+    }
+  },
+  "required": ["creator_id", "feature_vector"]
+}

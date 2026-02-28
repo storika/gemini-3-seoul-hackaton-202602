@@ -1,0 +1,112 @@
+[
+  {
+    "creator_id": "IU_아이유",
+    "metadata": { "primary_platform": "youtube", "follower_count": 9600000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.98, "sophisticated_premium": 0.75, "friendly_approachable": 0.92, "trendy_hip": 0.85 },
+      "influence_power": { "engagement_rate": 0.95, "viral_potential": 0.98, "trustworthiness": 0.97 },
+      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.98, "brand_loyalty_index": 0.99 },
+      "risk_management": { "brand_safety_score": 0.98, "competitor_overlap": 0.1 }
+    },
+    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.52, "global_reach_index": 0.9 }
+  },
+  {
+    "creator_id": "GongYoo_공유",
+    "metadata": { "primary_platform": "none", "follower_count": 4000000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.7, "sophisticated_premium": 0.98, "friendly_approachable": 0.95, "trendy_hip": 0.78 },
+      "influence_power": { "engagement_rate": 0.88, "viral_potential": 0.85, "trustworthiness": 0.96 },
+      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.82, "brand_loyalty_index": 0.95 },
+      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.2 }
+    },
+    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.45, "global_reach_index": 0.88 }
+  },
+  {
+    "creator_id": "Karina_카리나",
+    "metadata": { "primary_platform": "instagram", "follower_count": 12000000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.75, "sophisticated_premium": 0.88, "friendly_approachable": 0.55, "trendy_hip": 0.99 },
+      "influence_power": { "engagement_rate": 0.92, "viral_potential": 0.99, "trustworthiness": 0.88 },
+      "brand_affinity": { "alcohol_suitability": 0.85, "kbeauty_suitability": 0.99, "brand_loyalty_index": 0.8 },
+      "risk_management": { "brand_safety_score": 0.92, "competitor_overlap": 0.4 }
+    },
+    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.48, "global_reach_index": 0.95 }
+  },
+  {
+    "creator_id": "SonSukKu_손석구",
+    "metadata": { "primary_platform": "instagram", "follower_count": 1500000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.45, "sophisticated_premium": 0.92, "friendly_approachable": 0.88, "trendy_hip": 0.9 },
+      "influence_power": { "engagement_rate": 0.9, "viral_potential": 0.95, "trustworthiness": 0.93 },
+      "brand_affinity": { "alcohol_suitability": 0.98, "kbeauty_suitability": 0.75, "brand_loyalty_index": 0.85 },
+      "risk_management": { "brand_safety_score": 0.95, "competitor_overlap": 0.3 }
+    },
+    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.4, "global_reach_index": 0.75 }
+  },
+  {
+    "creator_id": "Jennie_제니",
+    "metadata": { "primary_platform": "instagram", "follower_count": 85000000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.78, "sophisticated_premium": 0.99, "friendly_approachable": 0.65, "trendy_hip": 0.99 },
+      "influence_power": { "engagement_rate": 0.98, "viral_potential": 0.99, "trustworthiness": 0.9 },
+      "brand_affinity": { "alcohol_suitability": 0.9, "kbeauty_suitability": 0.99, "brand_loyalty_index": 0.7 },
+      "risk_management": { "brand_safety_score": 0.94, "competitor_overlap": 0.6 }
+    },
+    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.35, "global_reach_index": 0.99 }
+  },
+  {
+    "creator_id": "BaekJongWon_백종원",
+    "metadata": { "primary_platform": "youtube", "follower_count": 6000000, "main_category": "food_drink" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.3, "sophisticated_premium": 0.4, "friendly_approachable": 0.99, "trendy_hip": 0.5 },
+      "influence_power": { "engagement_rate": 0.85, "viral_potential": 0.9, "trustworthiness": 0.98 },
+      "brand_affinity": { "alcohol_suitability": 0.95, "kbeauty_suitability": 0.1, "brand_loyalty_index": 0.9 },
+      "risk_management": { "brand_safety_score": 0.98, "competitor_overlap": 0.2 }
+    },
+    "audience_demographics": { "top_age_group": "40s_plus", "gender_ratio_male": 0.65, "global_reach_index": 0.6 }
+  },
+  {
+    "creator_id": "AnSungJae_안성재",
+    "metadata": { "primary_platform": "none", "follower_count": 500000, "main_category": "food_drink" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.5, "sophisticated_premium": 0.95, "friendly_approachable": 0.6, "trendy_hip": 0.85 },
+      "influence_power": { "engagement_rate": 0.94, "viral_potential": 0.96, "trustworthiness": 0.99 },
+      "brand_affinity": { "alcohol_suitability": 0.92, "kbeauty_suitability": 0.3, "brand_loyalty_index": 0.85 },
+      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.1 }
+    },
+    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.55, "global_reach_index": 0.85 }
+  },
+  {
+    "creator_id": "Suzy_수지",
+    "metadata": { "primary_platform": "instagram", "follower_count": 19000000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.99, "sophisticated_premium": 0.9, "friendly_approachable": 0.85, "trendy_hip": 0.82 },
+      "influence_power": { "engagement_rate": 0.91, "viral_potential": 0.9, "trustworthiness": 0.96 },
+      "brand_affinity": { "alcohol_suitability": 0.95, "kbeauty_suitability": 0.99, "brand_loyalty_index": 0.92 },
+      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.3 }
+    },
+    "audience_demographics": { "top_age_group": "20s", "gender_ratio_male": 0.45, "global_reach_index": 0.92 }
+  },
+  {
+    "creator_id": "JoInSung_조인성",
+    "metadata": { "primary_platform": "none", "follower_count": 1000000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.6, "sophisticated_premium": 0.97, "friendly_approachable": 0.8, "trendy_hip": 0.75 },
+      "influence_power": { "engagement_rate": 0.82, "viral_potential": 0.8, "trustworthiness": 0.95 },
+      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.8, "brand_loyalty_index": 0.9 },
+      "risk_management": { "brand_safety_score": 0.99, "competitor_overlap": 0.2 }
+    },
+    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.48, "global_reach_index": 0.8 }
+  },
+  {
+    "creator_id": "LeeHyori_이효리",
+    "metadata": { "primary_platform": "instagram", "follower_count": 1500000, "main_category": "entertainment" },
+    "feature_vector": {
+      "visual_persona": { "purity_clean": 0.4, "sophisticated_premium": 0.85, "friendly_approachable": 0.98, "trendy_hip": 0.95 },
+      "influence_power": { "engagement_rate": 0.96, "viral_potential": 0.99, "trustworthiness": 0.94 },
+      "brand_affinity": { "alcohol_suitability": 0.99, "kbeauty_suitability": 0.9, "brand_loyalty_index": 0.85 },
+      "risk_management": { "brand_safety_score": 0.96, "competitor_overlap": 0.3 }
+    },
+    "audience_demographics": { "top_age_group": "30s", "gender_ratio_male": 0.5, "global_reach_index": 0.75 }
+  }
+]
